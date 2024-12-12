@@ -1,0 +1,252 @@
+{
+    "products": [
+        {
+            "id": 1,
+            "name": "Organic Cotton T-Shirt",
+            "price": 29.99,
+            "type": "T-Shirt",
+            "category": "Women's Clothing",
+            "tags": [
+                "Sustainable",
+                "Organic",
+                "Vegan"
+            ],
+            "style": "Casual",
+            "store": {
+                "name": "EcoModa",
+                "location": {
+                    "city_name": "Madrid",
+                    "country": "Spain",
+                    "latitude": 40.4168,
+                    "longitude": -3.7038
+                },
+                "transport_method": "Truck"
+            },
+            "product_rating": 4.5,
+            "weight": 0.2,
+            "weight_unit": "kg",
+            "available_colors": [
+                "White",
+                "Black",
+                "Olive Green"
+            ],
+            "available_sizes": [
+                "S",
+                "M",
+                "L",
+                "XL"
+            ],
+            "materials": [
+                "Organic Cotton",
+                "Plant-Based Dyes"
+            ],
+            "image": "https://static.zara.net/assets/public/5648/1331/59e94deeb986/6e8e8baac4d6/1589276899126/1589276899126.jpg?ts=1726765018132&w=375",
+            "description": "100% organic cotton t-shirt, perfect for daily wear. Ethically and environmentally made.",
+            "stock": 120,
+            "date_added": "2024-12-01T14:00:00Z",
+            "promotions": [
+                {
+                    "discount": 10,
+                    "description": "10% off purchases over 50€",
+                    "start_date": "2024-12-01T00:00:00Z",
+                    "end_date": "2024-12-31T23:59:59Z"
+                }
+            ],
+            "reviews": [
+                {
+                    "user": "Carlos M.",
+                    "comment": "Very comfortable and excellent quality.",
+                    "rating": 5,
+                    "date": "2024-12-05T12:00:00Z"
+                },
+                {
+                    "user": "Laura P.",
+                    "comment": "The color is perfect, but it could be a bit more fitted.",
+                    "rating": 4,
+                    "date": "2024-12-06T10:30:00Z"
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "name": "Recycled Denim Jeans",
+            "price": 49.99,
+            "type": "Jeans",
+            "category": "Men's Clothing",
+            "tags": [
+                "Recycled",
+                "Eco-Friendly"
+            ],
+            "style": "Classic",
+            "store": {
+                "name": "GreenStyle",
+                "location": {
+                    "city_name": "Berlin",
+                    "country": "Germany",
+                    "latitude": 52.5200,
+                    "longitude": 13.4050
+                },
+                "transport_method": "Train"
+            },
+            "product_rating": 4.7,
+            "weight": 0.8,
+            "weight_unit": "kg",
+            "available_colors": [
+                "Dark Blue",
+                "Light Blue"
+            ],
+            "available_sizes": [
+                "30",
+                "32",
+                "34",
+                "36",
+                "38"
+            ],
+            "materials": [
+                "Recycled Denim",
+                "Natural Indigo Dye"
+            ],
+            "image": "https://static.zara.net/assets/public/df72/643f/a92d477a9a41/241fdb600b70/1691592012750/1691592012750.jpg?ts=1726764216143&w=375",
+            "description": "Classic jeans made from recycled denim, designed for style and sustainability.",
+            "stock": 85,
+            "date_added": "2024-11-15T10:00:00Z",
+            "promotions": [
+                {
+                    "discount": 15,
+                    "description": "Black Friday Deal",
+                    "start_date": "2024-11-24T00:00:00Z",
+                    "end_date": "2024-11-30T23:59:59Z"
+                }
+            ],
+            "reviews": [
+                {
+                    "user": "Jonas R.",
+                    "comment": "Great fit and very durable.",
+                    "rating": 5,
+                    "date": "2024-11-20T15:30:00Z"
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "name": "Biodegradable Running Shoes",
+            "price": 89.99,
+            "type": "Shoes",
+            "category": "Sportswear",
+            "tags": [
+                "Biodegradable",
+                "Eco-Friendly",
+                "Lightweight"
+            ],
+            "style": "Sporty",
+            "store": {
+                "name": "SustainRun",
+                "location": {
+                    "city_name": "Paris",
+                    "country": "France",
+                    "latitude": 48.8566,
+                    "longitude": 2.3522
+                },
+                "transport_method": "Ship"
+            },
+            "product_rating": 4.8,
+            "weight": 1.0,
+            "weight_unit": "kg",
+            "available_colors": [
+                "White",
+                "Gray",
+                "Navy Blue"
+            ],
+            "available_sizes": [
+                "40",
+                "41",
+                "42",
+                "43",
+                "44",
+                "45"
+            ],
+            "materials": [
+                "Biodegradable Polymer",
+                "Natural Rubber"
+            ],
+            "image": "https://static.zara.net/assets/public/57ed/9c47/8361466ca651/35f1ed8d4426/1610958185421/1610958185421.jpg?ts=1693681919103&w=375",
+            "description": "High-performance running shoes designed for sustainability and comfort.",
+            "stock": 60,
+            "date_added": "2024-10-30T09:00:00Z",
+            "promotions": [
+                {
+                    "discount": 20,
+                    "description": "Holiday Sale",
+                    "start_date": "2024-12-10T00:00:00Z",
+                    "end_date": "2024-12-25T23:59:59Z"
+                }
+            ],
+            "reviews": [
+                {
+                    "user": "Emma L.",
+                    "comment": "Perfect balance of comfort and eco-conscious design.",
+                    "rating": 5,
+                    "date": "2024-11-15T08:45:00Z"
+                }
+            ]
+        },
+        {
+            "id": 4,
+            "name": "Organic Hemp Backpack",
+            "price": 39.99,
+            "type": "Backpack",
+            "category": "Accessories",
+            "tags": [
+                "Organic",
+                "Eco-Friendly",
+                "Vegan"
+            ],
+            "style": "Casual",
+            "store": {
+                "name": "NatureCarry",
+                "location": {
+                    "city_name": "London",
+                    "country": "UK",
+                    "latitude": 51.5074,
+                    "longitude": -0.1278
+                },
+                "transport_method": "Plane"
+            },
+            "product_rating": 4.6,
+            "weight": 0.5,
+            "weight_unit": "kg",
+            "available_colors": [
+                "Earth Brown",
+                "Forest Green",
+                "Charcoal"
+            ],
+            "available_sizes": [
+                "One Size"
+            ],
+            "materials": [
+                "Organic Hemp",
+                "Recycled Polyester"
+            ],
+            "image": "https://static.zara.net/assets/public/17ae/12c3/a0cc49da97c8/389ba4b247d9/1521628773032/1521628773032.jpg?ts=1693109632625&w=375",
+            "description": "A spacious and eco-friendly backpack made from organic hemp, ideal for daily use.",
+            "stock": 150,
+            "date_added": "2024-12-05T11:00:00Z",
+            "promotions": [
+                {
+                    "discount": 10,
+                    "description": "10% off first purchase",
+                    "start_date": "2024-12-05T00:00:00Z",
+                    "end_date": "2024-12-15T23:59:59Z"
+                }
+            ],
+            "reviews": [
+                {
+                    "user": "Anna W.",
+                    "comment": "Great quality and very spacious. Perfect for everyday carry.",
+                    "rating": 5,
+                    "date": "2024-12-06T14:30:00Z"
+                }
+            ]
+        }
+    ]
+}
