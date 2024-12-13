@@ -6,7 +6,6 @@ function CartPage () {
     return (
         <PageLayout>
             <NavBar />
-            <h3 className="fs-2">List Cart</h3>
             <CartList />
         </PageLayout>
     )

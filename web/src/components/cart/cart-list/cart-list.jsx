@@ -16,7 +16,12 @@ function CartList({ className = " " }) {
   useEffect(() => {
     if (cart.length >= 0) {
       Promise.all(
-        cart.map((product) => ProductsApi.getProduct(product.idProduct))
+        cart.map((cartItem) => 
+          ProductsApi.getProduct(cartItem.idProduct).then((productDetails) => ({
+            ...productDetails,
+            "quantity": cartItem.quantity
+          }))
+        )
       )
         .then((response) => {
           setProductsCart(response);
@@ -33,13 +38,36 @@ function CartList({ className = " " }) {
       .catch((error) => console.log(error))
   };
 
+  const handleIncrementCart = (product) => {
+    const cartItem = cart.find((item) => item.idProduct === product.id);
+
+    ProductsApi.incrementCart(cartItem)
+      .then(() => setReload(!reload))
+      .catch((error) => console.log(error))
+  };
+
+  const handleDecrementCart = (product) => {
+    const cartItem = cart.find((item) => item.idProduct === product.id);
+
+    ProductsApi.decrementCart(cartItem)
+      .then(() => setReload(!reload))
+      .catch((error) => console.log(error))
+  };
+
+
   return (
     <div className={`d-flex flex-wrap gap-3 ${className}`}>
+      <div>
+      <h3 className="fs-2">List Cart</h3>
+      <p>{productsCart.length} items</p>
+      </div>
       {productsCart.map((productCart) => (
         <CartItem
           key={productCart.id}
           product={productCart}
           onDeleteCart={handleDeleteCart}
+          onIncrement={handleIncrementCart}
+          onDecrement= {handleDecrementCart}
         />
       ))}
     </div>

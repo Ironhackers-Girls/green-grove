@@ -18,6 +18,18 @@ const listCart = () => http.get('/cart');
 
 const deleteCart = (id) => http.delete(`/cart/${id}`)
 
+const incrementCart = (cartProduct) => {
+    return http.patch(`/cart/${cartProduct.id}`, {
+        "quantity" : cartProduct.quantity + 1 
+    });
+}
+
+const decrementCart = (cartProduct) => {
+    return http.patch(`/cart/${cartProduct.id}`, {
+        "quantity" : cartProduct.quantity - 1 
+    });
+}
+
 
 const addCart = (idProduct) => {
     return listCart()
@@ -43,5 +55,7 @@ export {
     getProduct,
     addCart,
     listCart,
-    deleteCart
+    deleteCart,
+    incrementCart,
+    decrementCart
 }
