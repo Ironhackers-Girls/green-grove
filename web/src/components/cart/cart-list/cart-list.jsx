@@ -1,36 +1,37 @@
 import { useEffect, useState } from "react";
 import * as ProductsApi from "../../../services/products-services";
-import CartItem from "../cart-item/cart-item.jsx"
+import CartItem from "../cart-item/cart-item.jsx";
 
-function CartList({className=' '}) {
+function CartList({ className = " " }) {
   const [cart, setCart] = useState([]);
   const [productsCart, setProductsCart] = useState([]);
+  const [reload, setReload] = useState(false);
 
   useEffect(() => {
     ProductsApi.listCart()
       .then((cart) => setCart(cart))
       .catch((error) => console.log(error));
-  }, []);
+  }, [reload]);
 
   useEffect(() => {
-    if (cart.length > 0) {
+    if (cart.length >= 0) {
       Promise.all(
-        cart.map((product) =>
-          ProductsApi.getProduct(product.idProduct)
-            .then((productData) => {
-                setProductsCart(prevState => [...prevState, productData]);
-            })
-            .catch((error) => console.log(error))
-        )
-      );
+        cart.map((product) => ProductsApi.getProduct(product.idProduct))
+      )
+        .then((response) => {
+          setProductsCart(response);
+        })
+        .catch((error) => console.log(error));
     }
   }, [cart]);
 
-  //const handleProductDeleteCart = (product) => {
-    //ProductsApi.deleteCart(product.id)
-      //.then(() => console.log("product delete"))
-      //.catch((error) => console.log(error));
-  //};
+  const handleDeleteCart = (product) => {
+    const cartItem = cart.find((item) => item.idProduct === product.id);
+
+    ProductsApi.deleteCart(cartItem.id)
+      .then(() => setReload(!reload))
+      .catch((error) => console.log(error))
+  };
 
   return (
     <div className={`d-flex flex-wrap gap-3 ${className}`}>
@@ -38,7 +39,7 @@ function CartList({className=' '}) {
         <CartItem
           key={productCart.id}
           product={productCart}
-
+          onDeleteCart={handleDeleteCart}
         />
       ))}
     </div>

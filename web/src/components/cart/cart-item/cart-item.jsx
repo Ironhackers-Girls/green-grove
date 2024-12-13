@@ -1,4 +1,4 @@
-function CartItem({ product, handleDelete }) {
+function CartItem({ product, onDeleteCart }) {
   return (
     <div className="card mb-3">
       <div className="row g-0">
@@ -25,7 +25,7 @@ function CartItem({ product, handleDelete }) {
         <button  className="btn btn-secondary">
           fav
         </button>
-        <button  className="btn btn-danger">
+        <button  className="btn btn-danger" onClick={() => onDeleteCart(product)}>
           delete
         </button>
       </div>

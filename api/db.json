@@ -1,22 +1,5 @@
 {
-  "cart": [
-    {
-      "id": "bd40",
-      "idProduct": "1"
-    },
-    {
-      "id": "d666",
-      "idProduct": "4"
-    },
-    {
-      "id": "a255",
-      "idProduct": "2"
-    },
-    {
-      "id": "7def",
-      "idProduct": "3"
-    }
-  ],
+  "cart": [],
   "products": [
     {
       "id": "1",
