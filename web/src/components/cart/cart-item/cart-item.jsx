@@ -21,8 +21,8 @@ function CartItem({ product, onDeleteCart, onIncrement, onDecrement }) {
             <div className="d-flex align-items-center gap-2">
               <button
                 className="btn btn-outline-primary"
-                onClick={() => onDecrement(product)} 
-                disabled={product.quantity <= 1} 
+                onClick={() => onDecrement(product)}
+                disabled={product.quantity <= 1}
               >
                 -
               </button>

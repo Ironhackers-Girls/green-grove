@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import * as ProductsApi from "../../../services/products-services";
 import CartItem from "../cart-item/cart-item.jsx";
 
-function CartList({ className = " " }) {
+function CartList({ className = " ", onProductsCartToCarbon }) {
   const [cart, setCart] = useState([]);
   const [productsCart, setProductsCart] = useState([]);
   const [reload, setReload] = useState(false);
@@ -29,6 +29,10 @@ function CartList({ className = " " }) {
         .catch((error) => console.log(error));
     }
   }, [cart]);
+
+  useEffect(() => {
+    onProductsCartToCarbon(productsCart)
+  }, [productsCart])
 
   const handleDeleteCart = (product) => {
     const cartItem = cart.find((item) => item.idProduct === product.id);

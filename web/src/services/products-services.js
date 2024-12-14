@@ -1,5 +1,4 @@
 import axios from 'axios';
-import CartItem from '../components/cart/cart-item/cart-item';
 
 const http = axios.create({
     baseURL: 'http://localhost:3000'
@@ -29,7 +28,6 @@ const decrementCart = (cartProduct) => {
         "quantity" : cartProduct.quantity - 1 
     });
 }
-
 
 const addCart = (idProduct) => {
     return listCart()

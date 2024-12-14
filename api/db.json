@@ -1,9 +1,9 @@
 {
   "cart": [
     {
-      "id": "de0f",
-      "idProduct": "2",
-      "quantity": 5
+      "id": "2572",
+      "idProduct": "4",
+      "quantity": 1
     }
   ],
   "products": [
@@ -25,18 +25,15 @@
           "city_name": "Madrid",
           "country": "Spain",
           "latitude": 40.4168,
-          "longitude": -3.7038
+          "longitude": -3.7038,
+          "distance_to_madrid": 15,
+          "distance_unit": "km"
         },
         "transport_method": "Truck"
       },
       "product_rating": 4.5,
-      "weight": 0.2,
-      "weight_unit": "kg",
-      "available_colors": [
-        "White",
-        "Black",
-        "Olive Green"
-      ],
+      "weight": 200,
+      "weight_unit": "g",
       "available_sizes": [
         "S",
         "M",
@@ -91,17 +88,15 @@
           "city_name": "Berlin",
           "country": "Germany",
           "latitude": 52.52,
-          "longitude": 13.405
+          "longitude": 13.405,
+          "distance_to_madrid": 1850,
+          "distance_unit": "km"
         },
         "transport_method": "Train"
       },
       "product_rating": 4.7,
-      "weight": 0.8,
-      "weight_unit": "kg",
-      "available_colors": [
-        "Dark Blue",
-        "Light Blue"
-      ],
+      "weight": 800,
+      "weight_unit": "g",
       "available_sizes": [
         "30",
         "32",
@@ -152,18 +147,15 @@
           "city_name": "Paris",
           "country": "France",
           "latitude": 48.8566,
-          "longitude": 2.3522
+          "longitude": 2.3522,
+          "distance_to_madrid": 1050,
+          "distance_unit": "km"
         },
         "transport_method": "Ship"
       },
       "product_rating": 4.8,
       "weight": 1,
-      "weight_unit": "kg",
-      "available_colors": [
-        "White",
-        "Gray",
-        "Navy Blue"
-      ],
+      "weight_unit": "g",
       "available_sizes": [
         "40",
         "41",
@@ -215,18 +207,15 @@
           "city_name": "London",
           "country": "UK",
           "latitude": 51.5074,
-          "longitude": -0.1278
+          "longitude": -0.1278,
+          "distance_to_madrid": 1260,
+          "distance_unit": "km"
         },
         "transport_method": "Plane"
       },
       "product_rating": 4.6,
-      "weight": 0.5,
-      "weight_unit": "kg",
-      "available_colors": [
-        "Earth Brown",
-        "Forest Green",
-        "Charcoal"
-      ],
+      "weight": 500,
+      "weight_unit": "g",
       "available_sizes": [
         "One Size"
       ],
