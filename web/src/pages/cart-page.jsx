@@ -1,5 +1,5 @@
 import { useState } from "react";
-import CartList from "../components/cart/cart-list/cart-list";
+import { CartList, CartCheckout } from "../components/cart/index";
 import { PageLayout } from "../components/layouts";
 import NavBar from "../components/ui/navbar/navbar";
 import CarbonInterface from "../components/carbon-interface/carbon-interface";
@@ -13,8 +13,8 @@ function CartPage() {
 
   return (
     <PageLayout>
-      <NavBar />
       <CartList onProductsCartToCarbon={handleProductsCartToCarbon} />
+      <CartCheckout productsCart={productsCartToCarbon} /> 
       <CarbonInterface productsCartToCarbon={productsCartToCarbon} />
     </PageLayout>
   );

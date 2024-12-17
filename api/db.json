@@ -4,6 +4,11 @@
       "id": "2572",
       "idProduct": "4",
       "quantity": 1
+    },
+    {
+      "id": "8438",
+      "idProduct": "2",
+      "quantity": 1
     }
   ],
   "products": [
@@ -168,7 +173,7 @@
         "Biodegradable Polymer",
         "Natural Rubber"
       ],
-      "image": "https://static.zara.net/assets/public/57ed/9c47/8361466ca651/35f1ed8d4426/1610958185421/1610958185421.jpg?ts=1693681919103&w=375",
+      "image": "https://static.zara.net/assets/public/5d89/5037/ed1b4cdc9f29/fef7a9b6a6e1/1680794304515/1680794304515.jpg?ts=1694024447766&w=375",
       "description": "High-performance running shoes designed for sustainability and comfort.",
       "stock": 60,
       "date_added": "2024-10-30T09:00:00Z",

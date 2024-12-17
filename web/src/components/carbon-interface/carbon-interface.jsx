@@ -3,11 +3,11 @@ import * as CarbonApi from "../../services/carbon-services";
 
 function CarbonInterface({ productsCartToCarbon }) {
   const [estimate, setEstimate] = useState([]);
-  const [storesArray, setStoresArray] = useState([]);  // Usamos el estado para storesArray
+  const [storesArray, setStoresArray] = useState([]);
+  const [totalEstimate, setTotalEstimate] = useState(0); 
 
-  // Este useEffect se ejecutará cuando productsCartToCarbon cambie
+
   useEffect(() => {
-    // Creación del array storesArray con la información agrupada por tienda
     const newStoresArray = [];
 
     productsCartToCarbon.forEach((product) => {
@@ -48,34 +48,46 @@ function CarbonInterface({ productsCartToCarbon }) {
         });
       }
     });
-
-    // Actualiza el estado de storesArray
     setStoresArray(newStoresArray);
-  }, [productsCartToCarbon]); // Se ejecuta cada vez que productsCartToCarbon cambie
+  }, [productsCartToCarbon]); 
 
-  // Obtener las estimaciones de carbono de la API
+  // useEffect(() => {
+  //   if (storesArray.length > 0) {
+  //     Promise.all(
+  //       storesArray.map((store) =>
+  //         CarbonApi.getEstimate(store)
+  //           .then((response) => ({
+  //             storeName: store.name,
+  //             estimateData: response.data,
+  //           }))
+  //       )
+  //     )
+  //       .then((responses) => {
+  //         setEstimate(responses); 
+  //       })
+  //       .catch((error) => {
+  //         console.error("Error al obtener las estimaciones:", error);
+  //       });
+  //   }
+  // }, [storesArray]); 
+
   useEffect(() => {
-    if (storesArray.length > 0) {
-      Promise.all(
-        storesArray.map((store) =>
-          CarbonApi.getEstimate(store)
-            .then((response) => ({
-              storeName: store.name,
-              estimateData: response.data,
-            }))
-        )
-      )
-        .then((responses) => {
-          setEstimate(responses); 
-        })
-        .catch((error) => {
-          console.error("Error al obtener las estimaciones:", error);
-        });
-    }
-  }, [storesArray]); 
+    let totalEstimates = 0;
+
+    estimate.forEach((estimate) => {
+      totalEstimates += estimate.estimateData.data.attributes.carbon_g
+    });
+
+    setTotalEstimate(totalEstimates);
+
+  }, [estimate])
+  
+
+
   return (
     <div>
       <h2>Estimaciones de Carbono</h2>
+      <p>estimaciones en g {totalEstimate}</p>
       <pre>{JSON.stringify(estimate, null, 2)}</pre> 
     </div>
   );
