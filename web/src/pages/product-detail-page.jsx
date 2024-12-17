@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import * as ProductsApi from "../services/products-services";
 import { useParams } from "react-router-dom";
 
-function ProductPage({ onAddCart }) {
+function ProductDetailPage({ onAddCart }) {
   const { id } = useParams();
   const [product, setProduct] = useState(null);
 
@@ -40,4 +40,4 @@ function ProductPage({ onAddCart }) {
   );
 }
 
-export default ProductPage;
+export default ProductDetailPage;

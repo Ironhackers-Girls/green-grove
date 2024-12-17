@@ -1,14 +1,14 @@
-import { PageLayout } from "../components/layouts";
-import ProductList from "../components/products/product-list/product-list";
-import NavBar from "../components/ui/navbar/navbar";
+import { Link } from "react-router-dom";
 
-function HomePage () {
-    return (
-        <PageLayout>
-            <h3 className="fs-1">List Products</h3>
-            <ProductList />
-        </PageLayout>
-    )
+function HomePage() {
+  return (
+    <>
+      <h3 className="fs-1">Hoome</h3>
+      <Link to="/products">
+        <h1>Products</h1>
+      </Link>
+    </>
+  );
 }
 
 export default HomePage;
