@@ -9,7 +9,7 @@ http.interceptors.response.use(
     (error) => Promise.reject(error)
 )
 
-const listProducts = () => http.get('/products');
+const listProducts = () => http.get(`/products/`)
 
 const getProduct = (id) => http.get(`/products/${id}`)
 
@@ -19,13 +19,13 @@ const deleteCart = (id) => http.delete(`/cart/${id}`)
 
 const incrementCart = (cartProduct) => {
     return http.patch(`/cart/${cartProduct.id}`, {
-        "quantity" : cartProduct.quantity + 1 
+        "quantity": cartProduct.quantity + 1
     });
 }
 
 const decrementCart = (cartProduct) => {
     return http.patch(`/cart/${cartProduct.id}`, {
-        "quantity" : cartProduct.quantity - 1 
+        "quantity": cartProduct.quantity - 1
     });
 }
 
@@ -36,12 +36,12 @@ const addCart = (idProduct) => {
 
             if (existingProduct) {
                 return http.patch(`/cart/${existingProduct.id}`, {
-                    "quantity" : existingProduct.quantity + 1
-                });                
+                    "quantity": existingProduct.quantity + 1
+                });
             } else {
                 return http.post('/cart', {
                     idProduct: idProduct,
-                    quantity:1
+                    quantity: 1
                 });
             }
         })

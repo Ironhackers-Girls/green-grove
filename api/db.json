@@ -8,7 +8,7 @@
     {
       "id": "8438",
       "idProduct": "2",
-      "quantity": 1
+      "quantity": 2
     },
     {
       "id": "735f",
@@ -21,8 +21,8 @@
       "id": "1",
       "name": "Organic Cotton T-Shirt",
       "price": 29.99,
-      "type": "T-Shirt",
-      "category": "Women's Clothing",
+      "type": "T-shirt",
+      "category": "T-shirt",
       "tags": [
         "Sustainable",
         "Organic",
@@ -86,7 +86,7 @@
       "name": "Recycled Denim Jeans",
       "price": 49.99,
       "type": "Jeans",
-      "category": "Men's Clothing",
+      "category": "Pants",
       "tags": [
         "Recycled",
         "Eco-Friendly"
@@ -143,8 +143,8 @@
       "id": "3",
       "name": "Biodegradable Running Shoes",
       "price": 89.99,
-      "type": "Shoes",
-      "category": "Sportswear",
+      "type": "Shoe",
+      "category": "Shoes",
       "tags": [
         "Biodegradable",
         "Eco-Friendly",
@@ -167,7 +167,7 @@
       "weight": 1,
       "weight_unit": "g",
       "available_sizes": [
-        "40",
+        "XS",
         "41",
         "42",
         "43",
@@ -212,7 +212,7 @@
       ],
       "style": "Casual",
       "store": {
-        "name": "NatureCarry",
+        "name": "EcoChic Boutique",
         "location": {
           "city_name": "London",
           "country": "UK",
