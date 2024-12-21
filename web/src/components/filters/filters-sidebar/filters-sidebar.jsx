@@ -1,14 +1,17 @@
 import { useEffect, useState } from "react";
 import CheckBoxFilter from "../checkbox-filter";
+import StockFilter from "../stock-filter";
+import PriceFilter from "../price-filter";
+import RatingFilter from "../rating-filter"
 
 function FiltersSideBar({ onFilters }) {
   const [category, setCategory] = useState([]);
-  const [price, setPrice] = useState({ min: null, max: null });
+  const [price, setPrice] = useState([0,100]);
   const [size, setSize] = useState([]);
   const [style, setStyle] = useState([]);
   const [store, setStore] = useState([]);
   const [material, setMaterial] = useState([]);
-  const [stock, setStock] = useState(true);
+  const [stock, setStock] = useState(false);
   const [rating, setRating] = useState(null);
 
   useEffect(() => {
@@ -26,26 +29,13 @@ function FiltersSideBar({ onFilters }) {
     onFilters(filters);
   }, [category, price, size, style, store, material, stock, rating]);
 
-  const handleCategoryFilter = (category) => {
-    setCategory(category);
-  };
-
-  const handleMaterialFilter = (material) => {
-    setMaterial(material);
-  };
-
-  const handleSizeFilter = (size) => {
-    setSize(size);
-  };
-
-  const handleStoreFilter = (store) => {
-    setStore(store);
-  };
-
-  const handleStyleFilter = (style) => {
-    setStyle(style);
-  };
-
+  const handleCategoryFilter = (category) => setCategory(category);
+  const handleMaterialFilter = (material) => setMaterial(material);
+  const handleSizeFilter = (size) => setSize(size);
+  const handleStoreFilter = (store) => setStore(store);
+  const handleStyleFilter = (style) => setStyle(style);
+  const handleStockFilter = (stock) => setStock(stock);
+  const handlePriceFilter = (price) => setPrice(price);
 
   const handleResetFilters = () => {
     setCategory([]);
@@ -53,6 +43,8 @@ function FiltersSideBar({ onFilters }) {
     setMaterial([]);
     setSize([]);
     setStyle([]);
+    setStock(false);
+    setPrice([0,100]);
   };
 
   return (
@@ -126,7 +118,21 @@ function FiltersSideBar({ onFilters }) {
         </CheckBoxFilter>
       </div>
       <div className="p-2">
-        <button className="btn btn-primary" onClick={handleResetFilters}>
+          <StockFilter onFilter={handleStockFilter} reset={stock}>
+            Fuera de Stock
+          </StockFilter>
+      </div>
+      <div className="p-2">
+          <PriceFilter onFilter={handlePriceFilter} reset={price[0] == 0 | price[1] == 100} >
+            Fuera de Stock
+          </PriceFilter>
+      </div>
+      <div className="p-2">
+        <RatingFilter />
+      </div>
+
+      <div className="p-2">
+        <button className="btn btn-primary" onClick={handleResetFilters} >
           Reset
         </button>
       </div>

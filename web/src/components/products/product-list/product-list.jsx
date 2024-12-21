@@ -16,6 +16,12 @@ function ProductList({ className = "", filters }) {
           );
         }
 
+        if (filters.price && (filters.price[0] !== 0 | filters.price[1] !== 100)) {
+          filteredProducts = filteredProducts.filter((product) =>
+            product.price >= filters.price[0] && product.price <= filters.price[1]
+          );
+        }
+
         if (filters.size && filters.size.length > 0) {
           filteredProducts = filteredProducts.filter((product) =>
             product.available_sizes.some((size) => filters.size.includes(size))
@@ -42,21 +48,9 @@ function ProductList({ className = "", filters }) {
           );
         }
 
-        if (
-          filters.price &&
-          filters.price.min !== null &&
-          filters.price.max !== null
-        ) {
-          filteredProducts = filteredProducts.filter(
-            (product) =>
-              product.price >= filters.price.min &&
-              product.price <= filters.price.max
-          );
-        }
-
         if (filters.stock !== undefined) {
           filteredProducts = filteredProducts.filter((product) =>
-            filters.stock ? product.stock > 0 : product.stock === 0
+            filters.stock ? product.stock === 0 : product.stock > 0
           );
         }
 
