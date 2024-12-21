@@ -41,7 +41,7 @@
         },
         "transport_method": "Truck"
       },
-      "product_rating": 4.5,
+      "rating": 4,
       "weight": 200,
       "weight_unit": "g",
       "available_sizes": [
@@ -104,7 +104,7 @@
         },
         "transport_method": "Train"
       },
-      "product_rating": 4.7,
+      "rating": 5,
       "weight": 800,
       "weight_unit": "g",
       "available_sizes": [
@@ -163,7 +163,7 @@
         },
         "transport_method": "Ship"
       },
-      "product_rating": 4.8,
+      "rating": 3,
       "weight": 1,
       "weight_unit": "g",
       "available_sizes": [

@@ -55,8 +55,8 @@ function ProductList({ className = "", filters }) {
         }
 
         if (filters.rating !== null) {
-          filteredProducts = filteredProducts.filter(
-            (product) => product.rating >= filters.rating
+          filteredProducts = filteredProducts.filter((product) => 
+            product.rating <= filters.rating
           );
         }
 

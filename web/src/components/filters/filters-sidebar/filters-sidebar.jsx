@@ -36,6 +36,7 @@ function FiltersSideBar({ onFilters }) {
   const handleStyleFilter = (style) => setStyle(style);
   const handleStockFilter = (stock) => setStock(stock);
   const handlePriceFilter = (price) => setPrice(price);
+  const handleRatingFilter = (rating) => setRating(rating);
 
   const handleResetFilters = () => {
     setCategory([]);
@@ -45,6 +46,7 @@ function FiltersSideBar({ onFilters }) {
     setStyle([]);
     setStock(false);
     setPrice([0,100]);
+    setRating(null)
   };
 
   return (
@@ -128,7 +130,7 @@ function FiltersSideBar({ onFilters }) {
           </PriceFilter>
       </div>
       <div className="p-2">
-        <RatingFilter />
+        <RatingFilter onFilter={handleRatingFilter} reset={rating} />
       </div>
 
       <div className="p-2">
