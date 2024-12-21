@@ -1,6 +1,14 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+import { useState } from "react";
 
 function NavBar() {
+  const [searchTerm, setSearchTerm]= useState("");
+  const navigate = useNavigate()
+
+  const handleSearchSubmit = (event) => {
+    event.preventDefault();
+    navigate(`/search?query=${searchTerm}`)
+  }
   return (
     <nav className="navbar bg-body-tertiary">
       <div className="container-fluid">
@@ -13,8 +21,10 @@ function NavBar() {
             type="search"
             placeholder="Search"
             aria-label="Search"
+            value={searchTerm}
+            onChange={(e) => setSearchTerm(e.target.value)}
           />
-          <button className="btn btn-outline-success" type="submit">
+          <button className="btn btn-outline-success" type="submit" onClick={handleSearchSubmit}>
             Search
           </button>
         </form>

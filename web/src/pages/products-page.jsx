@@ -1,6 +1,6 @@
 import FiltersSideBar from "../components/filters/filters-sidebar/filters-sidebar";
 import ProductList from "../components/products/product-list/product-list";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 function ProductsPage() {
   const [filters, setFilters] = useState({});

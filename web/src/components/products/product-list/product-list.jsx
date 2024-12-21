@@ -10,36 +10,49 @@ function ProductList({ className = "", filters }) {
       .then((allProducts) => {
         let filteredProducts = allProducts;
 
+        // Filtrado por categoría
         if (filters.category && filters.category.length > 0) {
           filteredProducts = filteredProducts.filter((product) =>
-            filters.category.includes(product.category)
+            filters.category.some((category) =>
+              product.category.includes(category)
+            )
           );
         }
 
-        if (filters.price && (filters.price[0] !== 0 | filters.price[1] !== 100)) {
+        // Filtrado por estilo
+        if (filters.style && filters.style.length > 0) {
           filteredProducts = filteredProducts.filter((product) =>
-            product.price >= filters.price[0] && product.price <= filters.price[1]
+            filters.style.some((style) => product.style.includes(style))
           );
         }
 
+        // Filtrado por precio (si los filtros de precio están definidos)
+        if (
+          filters.price &&
+          (filters.price[0] !== 0 || filters.price[1] !== 100)
+        ) {
+          filteredProducts = filteredProducts.filter(
+            (product) =>
+              product.price >= filters.price[0] &&
+              product.price <= filters.price[1]
+          );
+        }
+
+        // Filtrado por tamaños disponibles
         if (filters.size && filters.size.length > 0) {
           filteredProducts = filteredProducts.filter((product) =>
             product.available_sizes.some((size) => filters.size.includes(size))
           );
         }
 
-        if (filters.style && filters.style.length > 0) {
-          filteredProducts = filteredProducts.filter((product) =>
-            filters.style.includes(product.style)
-          );
-        }
-
+        // Filtrado por tienda
         if (filters.store && filters.store.length > 0) {
           filteredProducts = filteredProducts.filter((product) =>
             filters.store.includes(product.store.name)
           );
         }
 
+        // Filtrado por materiales
         if (filters.material && filters.material.length > 0) {
           filteredProducts = filteredProducts.filter((product) =>
             product.materials.some((material) =>
@@ -48,18 +61,21 @@ function ProductList({ className = "", filters }) {
           );
         }
 
+        // Filtrado por disponibilidad (stock)
         if (filters.stock !== undefined) {
           filteredProducts = filteredProducts.filter((product) =>
             filters.stock ? product.stock === 0 : product.stock > 0
           );
         }
 
+        // Filtrado por clasificación (rating)
         if (filters.rating !== null) {
-          filteredProducts = filteredProducts.filter((product) => 
-            product.rating <= filters.rating
+          filteredProducts = filteredProducts.filter(
+            (product) => product.rating <= filters.rating
           );
         }
 
+        // Establecer los productos filtrados en el estado
         setProducts(filteredProducts);
       })
       .catch((error) => console.log(error));
@@ -67,7 +83,7 @@ function ProductList({ className = "", filters }) {
 
   const handleProductAddCart = (product) => {
     ProductsApi.addCart(product.id)
-      .then(() => console.log("product add to cart"))
+      .then(() => console.log("Producto añadido al carrito"))
       .catch((error) => console.log(error));
   };
 
