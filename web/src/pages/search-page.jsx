@@ -1,6 +1,6 @@
 import { useLocation } from "react-router-dom";
-import ProductList from "../components/products/product-list/product-list";
 import { useEffect, useState } from "react";
+import SearchList from "../components/search/search-list";
 
 function SearchPage() {
   const location = useLocation();
@@ -10,9 +10,9 @@ function SearchPage() {
 
 useEffect(() => {
     const filters = {
-      name: query,
-      style: query,
-      category: query
+      name: [query],
+      style: [query],
+      category: [query],
     };
 
     onSearch(filters);
@@ -24,7 +24,7 @@ useEffect(() => {
       <div className="container text-center">
         <div className="row">
           <div className="col-12">
-            <ProductList />
+            <SearchList filters={search} />
           </div>
         </div>
       </div>

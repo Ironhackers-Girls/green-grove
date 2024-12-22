@@ -7,7 +7,8 @@ function NavBar() {
 
   const handleSearchSubmit = (event) => {
     event.preventDefault();
-    navigate(`/search?query=${searchTerm}`)
+    navigate(`/search?query=${searchTerm}`);
+    setSearchTerm("")
   }
   return (
     <nav className="navbar bg-body-tertiary">

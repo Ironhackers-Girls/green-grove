@@ -10,14 +10,19 @@ function ProductList({ className = "", filters }) {
       .then((allProducts) => {
         let filteredProducts = allProducts;
 
+        if (filters.name && filters.name.length > 0) {
+          filteredProducts = filteredProducts.filter((product) =>
+            filters.name.some((category) => product.name.includes(category))
+          );
+        }
+
         // Filtrado por categoría
         if (filters.category && filters.category.length > 0) {
           filteredProducts = filteredProducts.filter((product) =>
-            filters.category.some((category) =>
-              product.category.includes(category)
-            )
+            filters.category.some((category) => product.category.includes(category))
           );
         }
+
 
         // Filtrado por estilo
         if (filters.style && filters.style.length > 0) {
@@ -74,6 +79,10 @@ function ProductList({ className = "", filters }) {
             (product) => product.rating <= filters.rating
           );
         }
+
+        console.log("Filtros aplicados:", filters);
+        console.log("Productos filtrados:", filteredProducts);
+
 
         // Establecer los productos filtrados en el estado
         setProducts(filteredProducts);
