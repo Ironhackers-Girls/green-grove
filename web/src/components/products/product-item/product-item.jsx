@@ -11,7 +11,9 @@ function ProductItem({ product, onAddCart, onAddWishList }) {
             alt="product image"
             style={{ maxWidth: "250px" }}
           />
-          <div className="p-4">
+        </div>
+      </Link>
+      <div className="p-4">
             <h5 className="text-xl font-semibold text-gray-800">
               {product.name}
             </h5>
@@ -19,8 +21,6 @@ function ProductItem({ product, onAddCart, onAddWishList }) {
               {product.price}
             </p>
           </div>
-        </div>
-      </Link>
       <div className="mt-4 flex space-x-2">
         <button
           className="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600 transition duration-300"
