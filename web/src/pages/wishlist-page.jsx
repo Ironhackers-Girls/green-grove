@@ -1,6 +1,11 @@
+import { PageLayout } from "../components/layouts";
+import WishList from "../components/wishlist/wish-list/wish-list";
+
 function WishlistPage () {
     return (
-        <> Wishlist</>
+        <PageLayout>
+            <WishList />
+        </PageLayout>
     )
 }
 

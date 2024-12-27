@@ -96,16 +96,25 @@ function ProductList({ className = "", filters }) {
       .catch((error) => console.log(error));
   };
 
+  const handleAddToWishlist = (product) => {
+    ProductsApi.addWish(product.id)
+    .then(() => console.log("Producto añadido al wishlist"))
+    .catch((error) => console.log(error));
+
+  }
+
   return (
-    <div className={`d-flex flex-wrap gap-3 ${className}`}>
+    <div className={`flex flex-wrap gap-3 ${className}`}>
       {products.map((product) => (
         <ProductItem
           key={product.id}
           product={product}
           onAddCart={handleProductAddCart}
+          onAddWishList= {handleAddToWishlist}
         />
       ))}
     </div>
+
   );
 }
 

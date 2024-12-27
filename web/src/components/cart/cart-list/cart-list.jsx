@@ -60,22 +60,23 @@ function CartList({ className = " ", onProductsCartToCarbon }) {
 
 
   return (
-    <div className={`d-flex flex-wrap gap-3 ${className}`}>
-      <div>
-      <h3 className="fs-2">List Cart</h3>
-      <p>{productsCart.length} items</p>
-      </div>
-      {productsCart.map((productCart) => (
-        <CartItem
-          key={productCart.id}
-          product={productCart}
-          onDeleteCart={handleDeleteCart}
-          onIncrement={handleIncrementCart}
-          onDecrement= {handleDecrementCart}
-        />
-      ))}
+    <div className={`flex flex-wrap gap-3 ${className}`}>
+        <div>
+            <h3 className="text-2xl font-semibold">List Cart</h3>
+            <p>{productsCart.length} items</p>
+        </div>
+        {productsCart.map((productCart) => (
+            <CartItem
+                key={productCart.id}
+                product={productCart}
+                onDeleteCart={handleDeleteCart}
+                onIncrement={handleIncrementCart}
+                onDecrement={handleDecrementCart}
+            />
+        ))}
     </div>
-  );
+);
+
 }
 
 export default CartList;

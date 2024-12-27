@@ -4,26 +4,24 @@ function CartItem({ product, onDeleteCart, onIncrement, onDecrement }) {
   return (
     <Link key={product.id} to={`/products/${product.id}`}>
       <div className="card mb-3">
-        <div className="row g-0">
-          <div className="col-md-4">
+        <div className="flex flex-col md:flex-row gap-4">
+          <div className="md:w-1/3">
             <img
               src={product.image}
-              className="img-fluid rounded-start"
+              className="w-full h-auto rounded-l-lg"
               alt="cart image"
             />
           </div>
-          <div className="col-md-8">
-            <div className="card-body">
-              <h5 className="card-title">{product.name}</h5>
-              <p className="card-text">{product.description}.</p>
-              <p className="card-text">
-                <small className="text-body-secondary">
-                  Quantity: {product.quantity}
-                </small>
+          <div className="md:w-2/3">
+            <div className="p-4">
+              <h5 className="text-xl font-semibold">{product.name}</h5>
+              <p className="text-gray-700">{product.description}.</p>
+              <p className="text-sm text-gray-500">
+                Quantity: {product.quantity}
               </p>
-              <div className="d-flex align-items-center gap-2">
+              <div className="flex items-center gap-4 mt-3">
                 <button
-                  className="btn btn-outline-primary"
+                  className="px-3 py-1 border border-blue-500 text-blue-500 rounded hover:bg-blue-500 hover:text-white"
                   onClick={() => onDecrement(product)}
                   disabled={product.quantity <= 1}
                 >
@@ -31,24 +29,28 @@ function CartItem({ product, onDeleteCart, onIncrement, onDecrement }) {
                 </button>
                 <p>{product.quantity}</p>
                 <button
-                  className="btn btn-outline-primary"
+                  className="px-3 py-1 border border-blue-500 text-blue-500 rounded hover:bg-blue-500 hover:text-white"
                   onClick={() => onIncrement(product)}
                 >
                   +
                 </button>
-                <p>Price: ${product.price}</p>
-                <p>Total: ${(product.price * product.quantity).toFixed(2)}</p>
+                <p className="text-gray-700">Price: ${product.price}</p>
+                <p className="text-gray-700">
+                  Total: ${(product.price * product.quantity).toFixed(2)}
+                </p>
               </div>
             </div>
-
-            <button className="btn btn-secondary">fav</button>
-
-            <button
-              className="btn btn-danger"
-              onClick={() => onDeleteCart(product)}
-            >
-              delete
-            </button>
+            <div className="flex gap-4 p-4">
+              <button className="px-4 py-2 bg-gray-500 text-white rounded hover:bg-gray-600">
+                fav
+              </button>
+              <button
+                className="px-4 py-2 bg-red-500 text-white rounded hover:bg-red-600"
+                onClick={() => onDeleteCart(product)}
+              >
+                delete
+              </button>
+            </div>
           </div>
         </div>
       </div>

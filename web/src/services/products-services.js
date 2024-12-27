@@ -15,7 +15,11 @@ const getProduct = (id) => http.get(`/products/${id}`)
 
 const listCart = () => http.get('/cart');
 
-const deleteCart = (id) => http.delete(`/cart/${id}`)
+const listWish = () => http.get('wishlist');
+
+const deleteWish = (id) => http.delete(`/wishlist/${id}`);
+
+const deleteCart = (id) => http.delete(`/cart/${id}`);
 
 const incrementCart = (cartProduct) => {
     return http.patch(`/cart/${cartProduct.id}`, {
@@ -29,6 +33,23 @@ const decrementCart = (cartProduct) => {
     });
 }
 
+const addWish = (idProduct) => {
+    return listWish()
+        .then(wishItems => {
+            const existingProduct = wishItems.find(item => item.idProduct === idProduct);
+
+            if (existingProduct) {
+                return console.log("ya está en la lista")
+            } else {
+                return http.post('/wishlist', {
+                    idProduct: idProduct
+                });
+            }
+        })
+        .catch(error => console.log(error));
+ 
+    }
+    
 const addCart = (idProduct) => {
     return listCart()
         .then(cartItems => {
@@ -55,5 +76,8 @@ export {
     listCart,
     deleteCart,
     incrementCart,
-    decrementCart
+    decrementCart,
+    listWish,
+    deleteWish,
+    addWish
 }

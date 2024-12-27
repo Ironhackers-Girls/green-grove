@@ -1,83 +1,92 @@
 {
-  "cart": [
-    {
-      "id": "2572",
-      "idProduct": "4",
-      "quantity": 1
-    },
-    {
-      "id": "8438",
-      "idProduct": "2",
-      "quantity": 2
-    },
-    {
-      "id": "735f",
-      "idProduct": "1",
-      "quantity": 1
-    }
-  ],
+  "wishlist": [],
   "products": [
     {
       "id": "1",
-      "name": "Organic Cotton T-Shirt",
-      "price": 29.99,
-      "type": "T-shirt",
-      "category": "T-shirt",
-      "tags": [
-        "Sustainable",
-        "Organic",
-        "Vegan"
+      "name": "Bouclé knit cardigan",
+      "price": 37.99,
+      "category": [
+        "T-shirt"
       ],
-      "style": "Casual",
+      "style": [
+        "Casual"
+      ],
       "store": {
-        "name": "EcoModa",
+        "id": 1,
+        "name": "EcoDesign",
         "location": {
-          "city_name": "Madrid",
+          "city_name": "Barcelona",
           "country": "Spain",
-          "latitude": 40.4168,
-          "longitude": -3.7038,
-          "distance_to_madrid": 15,
-          "distance_unit": "km"
-        },
-        "transport_method": "Truck"
+          "latitude": 41.3784,
+          "longitude": 2.1923,
+          "distance_to_madrid": 600,
+          "distance_unit": "km",
+          "transport_method": "truck"
+        }
       },
-      "rating": 4,
-      "weight": 200,
+      "rating": 3,
+      "weight": 399,
       "weight_unit": "g",
       "available_sizes": [
+        "Random entre estas tallas, puede haber una o solo varias.",
+        "XS",
         "S",
-        "M",
         "L",
-        "XL"
+        "M",
+        "X",
+        "XXL"
       ],
       "materials": [
-        "Organic Cotton",
-        "Plant-Based Dyes"
+        "materiales"
       ],
-      "image": "https://static.zara.net/assets/public/5648/1331/59e94deeb986/6e8e8baac4d6/1589276899126/1589276899126.jpg?ts=1726765018132&w=375",
-      "description": "100% organic cotton t-shirt, perfect for daily wear. Ethically and environmentally made.",
-      "stock": 120,
-      "date_added": "2024-12-01T14:00:00Z",
-      "promotions": [
+      "modelImage": "https://image.hm.com/assets/hm/8f/e4/8fe4f38526cb85f916e7803db44b8f4abb936483.jpg",
+      "image": "https://image.hm.com/assets/hm/52/6b/526beefb51e3f277a790db96f66de4d6bfb5b461.jpg",
+      "swatches": [
         {
-          "discount": 10,
-          "description": "10% off purchases over 50€",
-          "start_date": "2024-12-01T00:00:00Z",
-          "end_date": "2024-12-31T23:59:59Z"
-        }
-      ],
-      "reviews": [
-        {
-          "user": "Carlos M.",
-          "comment": "Very comfortable and excellent quality.",
-          "rating": 5,
-          "date": "2024-12-05T12:00:00Z"
+          "colorName": "White",
+          "colorCode": "ECE9E2",
+          "productImage": "https://image.hm.com/assets/hm/52/6b/526beefb51e3f277a790db96f66de4d6bfb5b461.jpg"
         },
         {
-          "user": "Laura P.",
-          "comment": "The color is perfect, but it could be a bit more fitted.",
+          "colorName": "Black",
+          "colorCode": "272628",
+          "productImage": "https://image.hm.com/assets/hm/fd/e0/fde058e43257cd4dfc87b955dab613d555f4fbfd.jpg"
+        },
+        {
+          "colorName": "Navy blue",
+          "colorCode": "272836",
+          "productImage": "https://image.hm.com/assets/hm/d9/9d/d99d82f1ade036f50538167912ac5b920a17ed8d.jpg"
+        }
+      ],
+      "images": [
+        {
+          "url": "https://image.hm.com/assets/hm/4e/7f/4e7f9bbde7ae2a3dcb128afd272362dd5883ea0f.jpg"
+        },
+        {
+          "url": "https://image.hm.com/assets/hm/e9/c2/e9c2713cb0890f774d761574b2700cefd8ac0c08.jpg"
+        },
+        {
+          "url": "https://image.hm.com/assets/hm/2b/5d/2b5d8563d99cc6a75808b1b4a8ae1269adefc3d3.jpg"
+        },
+        {
+          "url": "https://image.hm.com/assets/hm/d8/b9/d8b901249faa9626f99402bcb85ebeb5cbad031f.jpg"
+        }
+      ],
+      "description": "a def",
+      "stock": 52,
+      "date_added": "2024-12-23T01:09:14.973Z",
+      "reviews": [
+        {
+          "user": "a def",
+          "comment": "a def",
           "rating": 4,
-          "date": "2024-12-06T10:30:00Z"
+          "date": "2024-12-23T01:09:14.974Z"
+        },
+        {
+          "user": "a definir",
+          "comment": "a definir",
+          "rating": 7,
+          "date": "2024-12-23T01:09:14.974Z"
         }
       ]
     },
@@ -251,6 +260,84 @@
           "comment": "Great quality and very spacious. Perfect for everyday carry.",
           "rating": 5,
           "date": "2024-12-06T14:30:00Z"
+        }
+      ]
+    },
+    {
+      "id": "5",
+      "name": "Straight pants with decorative details",
+      "price": 59.99,
+      "category": "Pants",
+      "tags": [
+        "Sustainable Materials",
+        "Eco-friendly Fashion",
+        "Evening Wear"
+      ],
+      "style": "Night",
+      "store": 1,
+      "rating": 4,
+      "weight": 800,
+      "weight_unit": "g",
+      "available_sizes": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "materials": [
+        "Recycled Polyester",
+        "Sequins"
+      ],
+      "modelImage": "https://image.hm.com/assets/hm/19/21/19218c2c0bdc83844d4f2af33a5d1f53dedec2f3.jpg",
+      "image": "https://image.hm.com/assets/hm/f2/de/f2dec9d93c6fca9c22ff746b84af2db12cca2d3c.jpg",
+      "swatches": [
+        {
+          "colorName": "Black/Sequins",
+          "colorCode": "232327",
+          "productImage": "https://image.hm.com/assets/hm/f2/de/f2dec9d93c6fca9c22ff746b84af2db12cca2d3c.jpg"
+        }
+      ],
+      "images": [
+        {
+          "url": "https://image.hm.com/assets/hm/f2/de/f2dec9d93c6fca9c22ff746b84af2db12cca2d3c.jpg",
+          "description": "Main product view"
+        },
+        {
+          "url": "https://image.hm.com/assets/hm/46/f9/46f94df5a35d7298ded547fe8b2703c65ffbbcba.jpg",
+          "description": "Model wearing the pants"
+        },
+        {
+          "url": "https://image.hm.com/assets/hm/c9/89/c9895c350842e6d0cdddbf997d441ff97e1e00da.jpg",
+          "description": "Rear view of the pants"
+        },
+        {
+          "url": "https://image.hm.com/assets/hm/b6/7f/b67f1c497e36727f689aab4cf9a074543ef209bf.jpg",
+          "description": "Close-up of the sequins"
+        },
+        {
+          "url": "https://image.hm.com/assets/hm/3b/5d/3b5db355b28f799fb9d58da0411fe96f1cc8c471.jpg",
+          "description": "Model showcasing the pants"
+        },
+        {
+          "url": "https://image.hm.com/assets/hm/f6/2f/f62f4f6c4c95ba076563c2e2553f3f55a79c6b1b.jpg",
+          "description": "Side view of the pants"
+        }
+      ],
+      "description": "Straight pants with decorative sequin details, perfect for night events and parties.",
+      "stock": 50,
+      "date_added": "2024-12-20T14:00:00Z",
+      "reviews": [
+        {
+          "user": "Elena G.",
+          "comment": "Elegant and perfect for night events.",
+          "rating": 5,
+          "date": "2024-12-22T12:00:00Z"
+        },
+        {
+          "user": "Javier L.",
+          "comment": "Good quality but a bit heavy.",
+          "rating": 4,
+          "date": "2024-12-21T10:30:00Z"
         }
       ]
     }

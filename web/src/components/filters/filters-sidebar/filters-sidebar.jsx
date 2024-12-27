@@ -2,11 +2,11 @@ import { useEffect, useState } from "react";
 import CheckBoxFilter from "../checkbox-filter";
 import StockFilter from "../stock-filter";
 import PriceFilter from "../price-filter";
-import RatingFilter from "../rating-filter"
+import RatingFilter from "../rating-filter";
 
 function FiltersSideBar({ onFilters }) {
   const [category, setCategory] = useState([]);
-  const [price, setPrice] = useState([0,100]);
+  const [price, setPrice] = useState([0, 100]);
   const [size, setSize] = useState([]);
   const [style, setStyle] = useState([]);
   const [store, setStore] = useState([]);
@@ -45,12 +45,12 @@ function FiltersSideBar({ onFilters }) {
     setSize([]);
     setStyle([]);
     setStock(false);
-    setPrice([0,100]);
-    setRating(null)
+    setPrice([0, 100]);
+    setRating(null);
   };
 
   return (
-    <div className="d-flex flex-column">
+    <div className="flex flex-col">
       <div className="p-2">Filters side bar</div>
       <div className="p-2">
         <CheckBoxFilter
@@ -84,12 +84,11 @@ function FiltersSideBar({ onFilters }) {
           Category
         </CheckBoxFilter>
       </div>
-
       <div className="p-2">
         <CheckBoxFilter
           onFilter={handleSizeFilter}
           reset={size.length === 0}
-          filters={["XS", "S", "L", "M", "X", "XXL","One Size"]}
+          filters={["XS", "S", "L", "M", "X", "XXL", "One Size"]}
         >
           Sizes
         </CheckBoxFilter>
@@ -120,21 +119,26 @@ function FiltersSideBar({ onFilters }) {
         </CheckBoxFilter>
       </div>
       <div className="p-2">
-          <StockFilter onFilter={handleStockFilter} reset={stock}>
-            Fuera de Stock
-          </StockFilter>
+        <StockFilter onFilter={handleStockFilter} reset={stock}>
+          Fuera de Stock
+        </StockFilter>
       </div>
       <div className="p-2">
-          <PriceFilter onFilter={handlePriceFilter} reset={price[0] == 0 | price[1] == 100} >
-            Fuera de Stock
-          </PriceFilter>
+        <PriceFilter
+          onFilter={handlePriceFilter}
+          reset={price[0] === 0 || price[1] === 100}
+        >
+          Price
+        </PriceFilter>
       </div>
       <div className="p-2">
         <RatingFilter onFilter={handleRatingFilter} reset={rating} />
       </div>
-
       <div className="p-2">
-        <button className="btn btn-primary" onClick={handleResetFilters} >
+        <button
+          className="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600"
+          onClick={handleResetFilters}
+        >
           Reset
         </button>
       </div>
