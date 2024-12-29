@@ -7,6 +7,7 @@ function ProductsPage() {
 
   const handleFilters = (filters) => {
     setFilters(filters);
+    //comentario2
   };
 
   return (
