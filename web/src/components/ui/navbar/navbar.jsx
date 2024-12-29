@@ -3,6 +3,7 @@ import { useState } from "react";
 import SearchIcon from '@mui/icons-material/Search';
 import ShoppingBagOutlinedIcon from '@mui/icons-material/ShoppingBagOutlined';
 import FavoriteBorderOutlinedIcon from '@mui/icons-material/FavoriteBorderOutlined';
+import FavoriteIcon from '@mui/icons-material/Favorite';
 
 function NavBar() {
   const [searchTerm, setSearchTerm] = useState("");
@@ -42,10 +43,11 @@ function NavBar() {
           </div>
           <div className="flex space-x-4">
             <Link to="/wishlist">
-              <FavoriteBorderOutlinedIcon className="text-gray-900 hover:text-primary" />
+              <FavoriteBorderOutlinedIcon
+                className="text-gray-900 hover:text-primary hover:scale-110 transition-all duration-300" />
             </Link>
             <Link to="/cart">
-              <ShoppingBagOutlinedIcon className="text-gray-900 hover:text-primary" />
+              <ShoppingBagOutlinedIcon className="text-gray-900 hover:text-primary hover:scale-110 transition-all duration-300" />
             </Link>
           </div>
         </div>
@@ -54,7 +56,7 @@ function NavBar() {
             <li>
               <Link
                 to="/products"
-                className="block text-gray-900 md:hover:bg-transparent md:hover:text-primary md:p-0"
+                className="block text-gray-900 md:hover:bg-transparent md:hover:text-primary md:p-0 hover:scale-110 transition-all duration-300"
                 aria-current="page"
               >
                 PRODUCTS
@@ -64,7 +66,7 @@ function NavBar() {
             <li>
               <Link
                 to="/products"
-                className="block text-gray-900 md:hover:bg-transparent md:hover:text-primary md:p-0"
+                className="block text-gray-900 md:hover:bg-transparent md:hover:text-primary md:p-0 hover:scale-110 transition-all duration-300"
                 aria-current="page"
               >
                 ABOUT US
@@ -74,7 +76,7 @@ function NavBar() {
             <li>
               <Link
                 to="/products"
-                className="block text-gray-900 md:hover:bg-transparent md:hover:text-primary md:p-0"
+                className="block text-gray-900 md:hover:bg-transparent md:hover:text-primary md:p-0 hover:scale-110 transition-all duration-300"
                 aria-current="page"
               >
                 CONTACT
