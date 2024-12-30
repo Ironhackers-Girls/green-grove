@@ -1,9 +1,13 @@
 import { useEffect, useState } from "react";
 import * as ProductsApi from "../../../services/products-services.js";
 import ProductItem from "../product-item/product-item.jsx";
+import { Snackbar, Alert } from "@mui/material";
 
 function ProductList({ className = "", filters }) {
   const [products, setProducts] = useState([]);
+  const [openSnackbar, setOpenSnackbar] = useState(false);
+  const [snackbarMessage, setSnackbarMessage] = useState("");
+  const [snackbarSeverity, setSnackbarSeverity] = useState("success");
 
   useEffect(() => {
     ProductsApi.listProducts()
@@ -94,13 +98,21 @@ function ProductList({ className = "", filters }) {
 
   const handleProductAddCart = (product) => {
     ProductsApi.addCart(product.id)
-      .then(() => console.log("Producto añadido al carrito"))
+      .then(() => {
+        setSnackbarMessage("Producto añadido al carrito");
+        setSnackbarSeverity("success");
+        setOpenSnackbar(true); 
+      })
       .catch((error) => console.log(error));
   };
 
   const handleAddToWishlist = (product) => {
     ProductsApi.addWish(product.id)
-      .then(() => console.log("Producto añadido al wishlist"))
+      .then(() => {
+        setSnackbarMessage("Producto añadido al wishlist");
+        setSnackbarSeverity("info");
+        setOpenSnackbar(true);
+      })
       .catch((error) => console.log(error));
   };
 
@@ -118,6 +130,20 @@ function ProductList({ className = "", filters }) {
       ) : (
         <p>No products found</p> // Mensaje si no hay productos que coincidan
       )}
+      <Snackbar
+      open={openSnackbar}
+      autoHideDuration={6000}
+      anchorOrigin={{ vertical: 'top', horizontal: 'right' }}
+      onClose={() => setOpenSnackbar(false)}
+    >
+      <Alert
+        onClose={() => setOpenSnackbar(false)}
+        severity={snackbarSeverity}
+        sx={{ width: "100%" }}
+      >
+        {snackbarMessage}
+      </Alert>
+    </Snackbar>
     </div>
   );
 }
