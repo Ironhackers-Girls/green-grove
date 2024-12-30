@@ -36,8 +36,8 @@ function ProductsPage() {
           </DialogActions>
         </Dialog>
 
-        <main className="mx-auto sm:px-4 lg:px-7">
-          <div className="flex items-baseline justify-between border-b border-gray-200 pb-6 pt-6">
+        <main className="mx-auto">
+          <div className="flex sm:px-4 lg:px-7 items-baseline justify-between pt-6">
             <h1 className="text-4xl font-bold font-montserrat tracking-tight text-gray-900">PRODUCTS</h1>
 
             <div className="flex items-center">
