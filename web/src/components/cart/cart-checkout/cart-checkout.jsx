@@ -17,20 +17,20 @@ function CartCheckout({ productsCart }) {
   }, [productsCart]);
 
   return (
-    <div
-      className="p-4 bg-green-500 text-white rounded-lg shadow-sm border-0"
-      style={{ maxWidth: "700px", margin: "0 auto" }}
-    >
-      <h5 className="mb-4 text-center text-lg font-semibold">Order Summary</h5>
+    <div className="p-6 bg-dark-green text-white rounded-lg shadow-md w-full">
+      {/* Header */}
+      <h5 className="mb-6 text-lg font-semibold text-left">Order Summary</h5>
 
-      <div className="flex justify-between mb-3">
+      {/* Delivery Fee */}
+      <div className="flex justify-between mb-3 text-sm">
         <span>Delivery Fee</span>
         <span>${deliveryFee.toFixed(2)}</span>
       </div>
 
       <hr className="my-4 border-white" />
 
-      <div className="flex justify-between font-bold">
+      {/* Total */}
+      <div className="flex justify-between text-lg font-bold">
         <span>Total</span>
         <span>${(totalPrice + deliveryFee).toFixed(2)}</span>
       </div>

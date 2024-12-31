@@ -3,56 +3,69 @@ import { Link } from "react-router-dom";
 function CartItem({ product, onDeleteCart, onIncrement, onDecrement }) {
   return (
     <>
-      <Link key={product.id} to={`/products/${product.id}`}>
-        <div className="card mb-3">
-          <div className="flex flex-col md:flex-row gap-4">
-            <div className="md:w-1/3">
-              <img
-                src={product.image}
-                className="w-full h-auto rounded-l-lg"
-                alt="cart image"
-              />
-            </div>
+      <div className="flex items-center bg-white shadow-md rounded-lg p-10 mb-5">
+        <Link key={product.id} to={`/products/${product.id}`}>
+          {/* Image */}
+          <div className="w-24 h-24">
+            <img
+              src={product.image}
+              alt="cart image"
+              className="w-full h-full object-cover rounded-lg"
+            />
           </div>
+        </Link>
+
+        {/* Description */}
+        <div className="flex-1 px-6">
+          <h5 className="text-lg font-medium text-gray-800">{product.name}</h5>
+          <p className="text-sm text-gray-500">{product.store.name}</p>
+          <p className="text-xl font-semibold text-gray-800 mt-2">
+            ${product.price}
+          </p>
         </div>
-      </Link>
-      <div className="md:w-2/3">
-        <div className="p-4">
-          <h5 className="text-xl font-semibold">{product.name}</h5>
-          <p className="text-gray-700">{product.description}.</p>
-          <p className="text-sm text-gray-500">Quantity: {product.quantity}</p>
-          <div className="flex items-center gap-4 mt-3">
+
+        {/* Buttons */}
+        <div className="flex flex-col items-end space-y-3">
+          {/* Delete */}
+          <button
+            className="w-10 h-10 flex items-center justify-center text-red-500 rounded-full hover:bg-red-200"
+            onClick={() => onDeleteCart(product)}
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="h-6 w-6"
+              viewBox="0 0 24 24"
+              strokeWidth="2"
+              stroke="currentColor"
+              fill="none"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            >
+              <path d="M0 0h24v24H0z" stroke="none" />
+              <path d="M4 7h16M10 11v6M14 11v6M5 7l1 12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2l1-12M9 7V4a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v3" />
+            </svg>
+          </button>
+
+          {/* Add/Less */}
+          <div className="flex items-center space-x-3 bg-gray-100 p-2 rounded-full">
             <button
-              className="px-3 py-1 border border-blue-500 text-blue-500 rounded hover:bg-blue-500 hover:text-white"
+              className="w-10 h-10 flex items-center justify-center rounded-full text-gray-600 hover:bg-gray-200"
               onClick={() => onDecrement(product)}
               disabled={product.quantity <= 1}
             >
               -
             </button>
-            <p>{product.quantity}</p>
+            <p className="text-lg font-medium text-gray-800">
+              {product.quantity}
+            </p>
             <button
-              className="px-3 py-1 border border-blue-500 text-blue-500 rounded hover:bg-blue-500 hover:text-white"
+              className="w-10 h-10 flex items-center justify-center rounded-full text-gray-600 hover:bg-gray-200"
               onClick={() => onIncrement(product)}
             >
               +
             </button>
-            <p className="text-gray-700">Price: ${product.price}</p>
-            <p className="text-gray-700">
-              Total: ${(product.price * product.quantity).toFixed(2)}
-            </p>
           </div>
         </div>
-      </div>
-      <div className="flex gap-4 p-4">
-        <button className="px-4 py-2 bg-gray-500 text-white rounded hover:bg-gray-600">
-          fav
-        </button>
-        <button
-          className="px-4 py-2 bg-red-500 text-white rounded hover:bg-red-600"
-          onClick={() => onDeleteCart(product)}
-        >
-          delete
-        </button>
       </div>
     </>
   );

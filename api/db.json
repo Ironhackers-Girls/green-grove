@@ -2,9 +2,14 @@
   "wishlist": [],
   "cart": [
     {
-      "id": "a3cd",
-      "idProduct": "2",
-      "quantity": 2
+      "id": "8228",
+      "idProduct": "3",
+      "quantity": 1
+    },
+    {
+      "id": "720c",
+      "idProduct": "1",
+      "quantity": 3
     }
   ],
   "products": [

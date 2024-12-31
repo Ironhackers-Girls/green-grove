@@ -16,10 +16,10 @@ function CartList({ className = " ", onProductsCartToCarbon }) {
   useEffect(() => {
     if (cart.length >= 0) {
       Promise.all(
-        cart.map((cartItem) => 
+        cart.map((cartItem) =>
           ProductsApi.getProduct(cartItem.idProduct).then((productDetails) => ({
             ...productDetails,
-            "quantity": cartItem.quantity
+            quantity: cartItem.quantity,
           }))
         )
       )
@@ -31,15 +31,15 @@ function CartList({ className = " ", onProductsCartToCarbon }) {
   }, [cart]);
 
   useEffect(() => {
-    onProductsCartToCarbon(productsCart)
-  }, [productsCart])
+    onProductsCartToCarbon(productsCart);
+  }, [productsCart]);
 
   const handleDeleteCart = (product) => {
     const cartItem = cart.find((item) => item.idProduct === product.id);
 
     ProductsApi.deleteCart(cartItem.id)
       .then(() => setReload(!reload))
-      .catch((error) => console.log(error))
+      .catch((error) => console.log(error));
   };
 
   const handleIncrementCart = (product) => {
@@ -47,7 +47,7 @@ function CartList({ className = " ", onProductsCartToCarbon }) {
 
     ProductsApi.incrementCart(cartItem)
       .then(() => setReload(!reload))
-      .catch((error) => console.log(error))
+      .catch((error) => console.log(error));
   };
 
   const handleDecrementCart = (product) => {
@@ -55,28 +55,24 @@ function CartList({ className = " ", onProductsCartToCarbon }) {
 
     ProductsApi.decrementCart(cartItem)
       .then(() => setReload(!reload))
-      .catch((error) => console.log(error))
+      .catch((error) => console.log(error));
   };
 
-
   return (
-    <div className={`flex flex-wrap gap-3 ${className}`}>
-        <div>
-            <h3 className="text-2xl font-semibold">List Cart</h3>
-            <p>{productsCart.length} items</p>
-        </div>
-        {productsCart.map((productCart) => (
-            <CartItem
-                key={productCart.id}
-                product={productCart}
-                onDeleteCart={handleDeleteCart}
-                onIncrement={handleIncrementCart}
-                onDecrement={handleDecrementCart}
-            />
-        ))}
+    <div className={`flex flex-col gap-3 ${className} w-full`}>
+      
+      {productsCart.map((productCart) => (
+        <CartItem
+          key={productCart.id}
+          product={productCart}
+          onDeleteCart={handleDeleteCart}
+          onIncrement={handleIncrementCart}
+          onDecrement={handleDecrementCart}
+        />
+      ))}
     </div>
-);
-
+  );
+  
 }
 
 export default CartList;
