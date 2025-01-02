@@ -17,18 +17,18 @@ function CartCheckout({ productsCart }) {
   }, [productsCart]);
 
   return (
-    <div className="p-6 bg-dark-green text-white rounded-lg shadow-md w-full">
+    <div className="p-7 bg-dark-green text-my-white rounded-3xl shadow-md w-full">
       {/* Header */}
       <h5 className="mb-6 text-lg font-semibold text-left">Order Summary</h5>
-
+  
       {/* Delivery Fee */}
       <div className="flex justify-between mb-3 text-sm">
         <span>Delivery Fee</span>
         <span>${deliveryFee.toFixed(2)}</span>
       </div>
-
-      <hr className="my-4 border-white" />
-
+  
+      <hr className="my-4 border-my-white" />
+  
       {/* Total */}
       <div className="flex justify-between text-lg font-bold">
         <span>Total</span>
@@ -36,6 +36,7 @@ function CartCheckout({ productsCart }) {
       </div>
     </div>
   );
+  
 }
 
 export default CartCheckout;

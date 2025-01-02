@@ -134,160 +134,173 @@ function CarbonInterface({ productsCartToCarbon }) {
   }, [estimate]);
 
   return (
-    <div className="container carbon-interface bg-light-green">
+    <div className="container carbon-interface">
       {/* Header */}
-      <div className="flex justify-between items-center p-10 rounded bg-lime-green  mb-4">
-        <div className="text-left">
-          <h2 className="text-dark font-bold text-xl ">Carbon Interface</h2>
-          <p className="text-dark">Calcula las emisiones de tu compra</p>
+      <div className="flex flex-col sm:flex-row justify-between items-center p-6 sm:p-10 rounded-3xl bg-lime-green mb-4 overflow-hidden">
+        <div className="text-left mb-4 sm:mb-0">
+          <h2 className="text-my-black font-semibold text-2xl sm:text-4xl lg:text-5xl mb-7">
+            Carbon Interface
+          </h2>
+          <p className="text-my-black font-bold text-sm sm:text-base lg:text-lg">
+            Calculate the emissions of your purchase
+          </p>
+          <p className="text-my-black text-sm">
+            The Carbon Interface calculates and visualizes carbon<br></br>{" "}
+            emissions, helping users make more sustainable choices.
+          </p>
         </div>
         <div className="text-right flex items-center">
           <img
             src={carbonLogo}
-            alt="Tren"
+            alt="carbonLogo"
             className="mb-2"
-            style={{ width: "80px" }}
+            style={{ width: "80px", maxWidth: "80px" }}
           />
-          <h2 className="text-dark font-bold text-4xl">{totalEstimate}g</h2>
+          <h2 className="text-my-black font-semibold text-3xl sm:text-5xl lg:text-7xl">
+            {totalEstimate}g
+          </h2>
         </div>
       </div>
 
       {/* Description */}
-      <div className="grid grid-cols-sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-4 mb-4">
-        <div className="p-4 rounded  bg-lime-green flex justify-between items-center overflow-hidden">
-          <h5 className="text-dark font-medium text-sm sm:text-base">
-            Paquetes a Enviar
+      <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-6 mb-4">
+        <div className="p-6 sm:p-8 lg:p-9 rounded-3xl bg-lime-green flex justify-between items-center overflow-hidden sm:flex-wrap">
+          <h5 className="text-dark-green font-semibold text-sm sm:text-base truncate">
+            PACKAGES KILOS
           </h5>
           <div className="flex items-center space-x-2">
-            <p className="text-2xl font-bold text-dark">
+            <p className="text-dark-green sm:text-2xl font-semibold truncate">
               {productsCartToCarbon.length}
             </p>
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              className="icon icon-tabler icon-tabler-package text-success"
-              width="24"
-              height="24"
+              className="icon icon-tabler icon-tabler-package text-dark-green"
               viewBox="0 0 24 24"
-              strokeWidth="2"
-              stroke="currentColor"
               fill="none"
+              stroke="currentColor"
               strokeLinecap="round"
               strokeLinejoin="round"
+              width="40"
+              height="40"
+              strokeWidth="1"
             >
-              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-              <path d="M12 3l8 4l-8 4l-8 -4z" />
-              <path d="M4 7v10l8 4l8 -4v-10" />
-              <line x1="12" y1="7" x2="12" y2="21" />
+              <path d="M12 3l8 4.5l0 9l-8 4.5l-8 -4.5l0 -9l8 -4.5"></path>
+              <path d="M12 12l8 -4.5"></path> <path d="M12 12l0 9"></path>
+              <path d="M12 12l-8 -4.5"></path> <path d="M16 5.25l-8 4.5"></path>
             </svg>
           </div>
         </div>
 
-        <div className="p-4 rounded  bg-lime-green flex justify-between items-center overflow-hidden">
-          <h5 className="text-dark font-medium text-sm sm:text-base">
-            Tiendas
+        <div className="p-6 sm:p-8 lg:p-9 rounded-3xl bg-lime-green flex justify-between items-center overflow-hidden sm:flex-wrap">
+          <h5 className="text-dark-green font-semibold text-sm sm:text-base truncate">
+            STORES
           </h5>
           <div className="flex items-center space-x-2">
-            <p className="text-2xl font-bold text-dark">{storesArray.length}</p>
+            <p className="text-xl sm:text-2xl font-semibold text-dark-green truncate">
+              {storesArray.length}
+            </p>
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              className="icon icon-tabler icon-tabler-building-store text-success"
-              width="24"
-              height="24"
+              className="icon icon-tabler icon-tabler-building-store text-dark-green"
               viewBox="0 0 24 24"
-              strokeWidth="2"
-              stroke="currentColor"
               fill="none"
+              stroke="currentColor"
               strokeLinecap="round"
               strokeLinejoin="round"
+              width="40"
+              height="40"
+              strokeWidth="1"
             >
-              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-              <path d="M3 21l18 0" />
-              <path d="M4 21v-10l-1 -2v-1a1 1 0 0 1 1 -1h16a1 1 0 0 1 1 1v1l-1 2v10h-4v-6a1 1 0 0 0 -1 -1h-6a1 1 0 0 0 -1 1v6h-4z" />
-              <path d="M10 21l0 -9h4l0 9" />
+              <path d="M3 21l18 0"></path>
+              <path d="M3 7v1a3 3 0 0 0 6 0v-1m0 1a3 3 0 0 0 6 0v-1m0 1a3 3 0 0 0 6 0v-1h-18l2 -4h14l2 4"></path>
+              <path d="M5 21l0 -10.15"></path> <path d="M19 21l0 -10.15"></path>
+              <path d="M9 21v-4a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v4"></path>
             </svg>
           </div>
         </div>
 
-        <div className="p-4 rounded  bg-lime-green flex justify-between items-center overflow-hidden">
-          <h5 className="text-dark font-medium text-sm sm:text-base">
-            Media de Kilómetros a Realizar
+        <div className="p-6 sm:p-8 lg:p-9 rounded-3xl bg-lime-green flex justify-between items-center overflow-hidden sm:flex-wrap">
+          <h5 className="text-dark-green text-sm font-semibold truncate">
+            AVERAGE KM
           </h5>
           <div className="flex items-center space-x-2">
-            <p className="text-2xl font-bold text-dark">
-              {(
+            <p className="text-xl sm:text-2xl font-semibold text-dark-green truncate">
+              {Math.round(
                 storesArray.reduce(
                   (acc, store) => acc + store.distanceToMadrid,
                   0
                 ) / storesArray.length || 0
-              ).toFixed(2)}{" "}
-              Km
+              )}
             </p>
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              className="icon icon-tabler icon-tabler-ruler-2 text-success"
-              width="24"
-              height="24"
+              className="icon icon-tabler icon-tabler-ruler-2 text-dark-green"
+              width="40"
+              height="40"
               viewBox="0 0 24 24"
-              strokeWidth="2"
-              stroke="currentColor"
               fill="none"
+              stroke="currentColor"
+              strokeWidth="1"
               strokeLinecap="round"
               strokeLinejoin="round"
             >
-              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-              <path d="M3 21l18 -18" />
-              <path d="M12 10l-2 -2" />
-              <path d="M10 12l-2 -2" />
-              <path d="M16 6l-2 -2" />
-              <path d="M14 8l-2 -2" />
-              <path d="M20 4l-2 -2" />
-              <path d="M18 6l-2 -2" />
+              <path d="M19.875 12c.621 0 1.125 .512 1.125 1.143v5.714c0 .631 -.504 1.143 -1.125 1.143h-15.875a1 1 0 0 1 -1 -1v-5.857c0 -.631 .504 -1.143 1.125 -1.143h15.75z" />
+              <path d="M9 12v2" />
+              <path d="M6 12v3" />
+              <path d="M12 12v3" />
+              <path d="M18 12v3" />
+              <path d="M15 12v2" />
+              <path d="M3 3v4" />
+              <path d="M3 5h18" />
+              <path d="M21 3v4" />
             </svg>
           </div>
         </div>
       </div>
 
       {/* Transport */}
-      <div className="grid grid-cols-4 gap-4">
-        <div className="p-4 rounded  bg-lime-green flex flex-col items-center">
+      <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-4 gap-4">
+        <div className="p-6 sm:p-8 rounded-3xl bg-lime-green flex flex-col items-center">
           <img
             src={trainCarbon}
-            alt="Tren"
-            className="mb-2"
-            style={{ width: "200px" }}
+            alt="Train"
+            className="mb-5 w-[150px] h-[150px] object-contain"
+            style={{ flexShrink: 0 }}
           />
-          <h6 className="text-dark">Tren</h6>
-          <p className="text-dark">00 Km | 00 G</p>
+          <p className="text-my-black font-semibold">
+            {transportData.train.km} Km | {transportData.train.g}
+          </p>
         </div>
-        <div className="p-4 rounded bg-lime-green flex flex-col items-center">
+        <div className="p-6 sm:p-8 rounded-3xl bg-lime-green flex flex-col items-center">
           <img
             src={planeCarbon}
-            alt="Avión"
-            className="mb-2"
-            style={{ width: "200px" }}
+            alt="Plane"
+            className="mb-5 w-[150px] h-[150px] object-contain"
+            style={{ flexShrink: 0 }}
           />
-          <h6 className="text-dark">Avión</h6>
-          <p className="text-dark">00 Km | 00 G</p>
+          <p className="text-my-black font-semibold">
+            {transportData.plane.km} Km | {transportData.plane.g}
+          </p>
         </div>
-        <div className="p-4 rounded  bg-lime-green flex flex-col items-center">
+        <div className="p-6 sm:p-8 rounded-3xl bg-lime-green flex flex-col items-center">
           <img
             src={shipCarbon}
-            alt="Barco"
-            className="mb-2"
-            style={{ width: "200px" }}
+            alt="Ship"
+            className="mb-5 w-[150px] h-[150px] object-contain"
+            style={{ flexShrink: 0 }}
           />
-          <h6 className="text-dark">Barco</h6>
-          <p className="text-dark">00 Km | 00 G</p>
+          <p className="text-my-black font-semibold">
+            {transportData.ship.km} Km | {transportData.ship.g}
+          </p>
         </div>
-        <div className="p-4 rounded  bg-lime-green flex flex-col items-center">
+        <div className="p-6 sm:p-8 rounded-3xl bg-lime-green flex flex-col items-center">
           <img
             src={truckCarbon}
-            alt="Camión"
-            className="mb-2"
-            style={{ width: "200px" }}
+            alt="Truck"
+            className="mb-5 w-[150px] h-[150px] object-contain"
+            style={{ flexShrink: 0 }}
           />
-          <h6 className="text-dark">Camión</h6>
-          <p className="text-dark">
+          <p className="text-my-black font-semibold">
             {transportData.truck.km} Km | {transportData.truck.g}
           </p>
         </div>

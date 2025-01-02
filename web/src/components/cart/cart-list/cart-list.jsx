@@ -59,7 +59,7 @@ function CartList({ className = " ", onProductsCartToCarbon }) {
   };
 
   return (
-    <div className={`flex flex-col gap-3 ${className} w-full`}>
+    <div className={`flex flex-col gap-4 ${className} w-full`}>
       
       {productsCart.map((productCart) => (
         <CartItem
