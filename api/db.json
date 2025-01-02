@@ -1,10 +1,52 @@
 {
-  "wishlist": [],
+  "wishlist": [
+    {
+      "id": "5ad7",
+      "idProduct": "2"
+    },
+    {
+      "id": "327d",
+      "idProduct": "9"
+    },
+    {
+      "id": "bea8",
+      "idProduct": "5"
+    },
+    {
+      "id": "a129",
+      "idProduct": "1"
+    }
+  ],
   "cart": [
     {
-      "id": "a3cd",
-      "idProduct": "2",
+      "id": "cab5",
+      "idProduct": "3",
+      "quantity": 8
+    },
+    {
+      "id": "f127",
+      "idProduct": "10",
+      "quantity": 5
+    },
+    {
+      "id": "74c1",
+      "idProduct": "9",
+      "quantity": 5
+    },
+    {
+      "id": "5ee4",
+      "idProduct": "5",
       "quantity": 2
+    },
+    {
+      "id": "90f2",
+      "idProduct": "7",
+      "quantity": 2
+    },
+    {
+      "id": "a7e5",
+      "idProduct": "6",
+      "quantity": 1
     }
   ],
   "products": [
@@ -13,10 +55,21 @@
       "name": "Bouclé knit cardigan",
       "price": 37.99,
       "category": [
-        "T-shirt"
+        "Una de estas",
+        "T-shirt",
+        "Shirt",
+        "Pants",
+        "Shoes",
+        "Dress",
+        "Accessories"
       ],
       "style": [
-        "Casual"
+        "Uno de estos",
+        "Night",
+        "Office",
+        "Casual",
+        "Gym",
+        "Formal"
       ],
       "store": {
         "id": 1,
@@ -99,252 +152,882 @@
     },
     {
       "id": "2",
-      "name": "Recycled Denim Jeans",
-      "price": 49.99,
-      "type": "Jeans",
-      "category": "Pants",
-      "tags": [
-        "Recycled",
-        "Eco-Friendly"
+      "name": "Ribbed T-shirt",
+      "price": 9.99,
+      "category": [
+        "Una de estas",
+        "T-shirt",
+        "Shirt",
+        "Pants",
+        "Shoes",
+        "Dress",
+        "Accessories"
       ],
-      "style": "Classic",
+      "style": [
+        "Uno de estos",
+        "Night",
+        "Office",
+        "Casual",
+        "Gym",
+        "Formal"
+      ],
       "store": {
-        "name": "GreenStyle",
+        "id": 3,
+        "name": "Nature Creations",
         "location": {
-          "city_name": "Berlin",
-          "country": "Germany",
-          "latitude": 52.52,
-          "longitude": 13.405,
-          "distance_to_madrid": 1850,
-          "distance_unit": "km"
-        },
-        "transport_method": "Train"
+          "city_name": "Lisbon",
+          "country": "Portugal",
+          "latitude": 38.7169,
+          "longitude": -9.1395,
+          "distance_to_madrid": 640,
+          "distance_unit": "km",
+          "transport_method": "truck"
+        }
       },
-      "rating": 5,
-      "weight": 800,
+      "rating": 4,
+      "weight": 564,
       "weight_unit": "g",
       "available_sizes": [
-        "30",
-        "32",
-        "34",
-        "36",
-        "38"
+        "Random entre estas tallas, puede haber una o solo varias.",
+        "XS",
+        "S",
+        "L",
+        "M",
+        "X",
+        "XXL"
       ],
       "materials": [
-        "Recycled Denim",
-        "Natural Indigo Dye"
+        "materiales"
       ],
-      "image": "https://static.zara.net/assets/public/df72/643f/a92d477a9a41/241fdb600b70/1691592012750/1691592012750.jpg?ts=1726764216143&w=375",
-      "description": "Classic jeans made from recycled denim, designed for style and sustainability.",
-      "stock": 85,
-      "date_added": "2024-11-15T10:00:00Z",
-      "promotions": [
+      "modelImage": "https://image.hm.com/assets/hm/d7/16/d716dec68208f89420dbb8d18ecc7a738165f4df.jpg",
+      "image": "https://image.hm.com/assets/hm/cb/28/cb2827fea76216ef4f2b0039412a81e2f437bc70.jpg",
+      "swatches": [
         {
-          "discount": 15,
-          "description": "Black Friday Deal",
-          "start_date": "2024-11-24T00:00:00Z",
-          "end_date": "2024-11-30T23:59:59Z"
+          "colorName": "Navy/Stripes",
+          "colorCode": "272836",
+          "productImage": "https://image.hm.com/assets/hm/cb/28/cb2827fea76216ef4f2b0039412a81e2f437bc70.jpg"
+        },
+        {
+          "colorName": "Cannes",
+          "colorCode": "F0F1F0",
+          "productImage": "https://image.hm.com/assets/hm/12/8d/128dd5e5b01c077c61a8fce92dc90e92f3940dcb.jpg"
+        },
+        {
+          "colorName": "L'amour",
+          "colorCode": "AEBACE",
+          "productImage": "https://image.hm.com/assets/hm/b6/31/b631d52935a3ea0e8e1a900bdafe983adc7910a2.jpg"
         }
       ],
+      "images": [
+        {
+          "url": "https://image.hm.com/assets/hm/cd/99/cd993861fcbfc40986bfe40b56ac8360cb021a8a.jpg"
+        },
+        {
+          "url": "https://image.hm.com/assets/hm/e9/72/e9723c0b827683aa45bd05cd11adb01fc996642a.jpg"
+        },
+        {
+          "url": "https://image.hm.com/assets/hm/20/ad/20ad4625cd388bdc4a94c78f651a12f99e062215.jpg"
+        },
+        {
+          "url": "https://image.hm.com/assets/hm/d8/a6/d8a6f990be2024192deac3a7cb55ce0c3a215b8f.jpg"
+        },
+        {
+          "url": "https://image.hm.com/assets/hm/2d/60/2d60d5f190daf0abd17d9180ce7c533c236f8440.jpg"
+        }
+      ],
+      "description": "a def",
+      "stock": 75,
+      "date_added": "2024-12-23T01:09:14.974Z",
       "reviews": [
         {
-          "user": "Jonas R.",
-          "comment": "Great fit and very durable.",
-          "rating": 5,
-          "date": "2024-11-20T15:30:00Z"
+          "user": "a def",
+          "comment": "a def",
+          "rating": 8,
+          "date": "2024-12-23T01:09:14.974Z"
+        },
+        {
+          "user": "a definir",
+          "comment": "a definir",
+          "rating": 6,
+          "date": "2024-12-23T01:09:14.974Z"
         }
       ]
     },
     {
       "id": "3",
-      "name": "Biodegradable Running Shoes",
-      "price": 89.99,
-      "type": "Shoe",
-      "category": "Shoes",
-      "tags": [
-        "Biodegradable",
-        "Eco-Friendly",
-        "Lightweight"
+      "name": "Fluffy tie-belt coat",
+      "price": 74.99,
+      "category": [
+        "Una de estas",
+        "T-shirt",
+        "Shirt",
+        "Pants",
+        "Shoes",
+        "Dress",
+        "Accessories"
       ],
-      "style": "Sporty",
+      "style": [
+        "Uno de estos",
+        "Night",
+        "Office",
+        "Casual",
+        "Gym",
+        "Formal"
+      ],
       "store": {
-        "name": "SustainRun",
+        "id": 4,
+        "name": "Chic Design",
         "location": {
           "city_name": "Paris",
           "country": "France",
           "latitude": 48.8566,
           "longitude": 2.3522,
-          "distance_to_madrid": 1050,
-          "distance_unit": "km"
-        },
-        "transport_method": "Ship"
+          "distance_to_madrid": 1300,
+          "distance_unit": "km",
+          "transport_method": "train"
+        }
       },
-      "rating": 3,
-      "weight": 1,
+      "rating": 1,
+      "weight": 881,
       "weight_unit": "g",
       "available_sizes": [
+        "Random entre estas tallas, puede haber una o solo varias.",
         "XS",
-        "41",
-        "42",
-        "43",
-        "44",
-        "45"
+        "S",
+        "L",
+        "M",
+        "X",
+        "XXL"
       ],
       "materials": [
-        "Biodegradable Polymer",
-        "Natural Rubber"
+        "materiales"
       ],
-      "image": "https://static.zara.net/assets/public/5d89/5037/ed1b4cdc9f29/fef7a9b6a6e1/1680794304515/1680794304515.jpg?ts=1694024447766&w=375",
-      "description": "High-performance running shoes designed for sustainability and comfort.",
-      "stock": 60,
-      "date_added": "2024-10-30T09:00:00Z",
-      "promotions": [
+      "modelImage": "https://image.hm.com/assets/hm/cd/59/cd5962f6e62f56c10131a013a7e1275900184ce0.jpg",
+      "image": "https://image.hm.com/assets/hm/b1/b3/b1b3909fc540e09d245c89b3f624b91940a502cf.jpg",
+      "swatches": [
         {
-          "discount": 20,
-          "description": "Holiday Sale",
-          "start_date": "2024-12-10T00:00:00Z",
-          "end_date": "2024-12-25T23:59:59Z"
+          "colorName": "Mole",
+          "colorCode": "7B7164",
+          "productImage": "https://image.hm.com/assets/hm/b1/b3/b1b3909fc540e09d245c89b3f624b91940a502cf.jpg"
+        },
+        {
+          "colorName": "Dark brown",
+          "colorCode": "3A3539",
+          "productImage": "https://image.hm.com/assets/hm/76/e9/76e9538f8b124740c74dbfbf67fb6de80b433695.jpg"
         }
       ],
+      "images": [
+        {
+          "url": "https://image.hm.com/assets/hm/ec/1b/ec1baeec91560fa4426ec8f208f733711df280f4.jpg"
+        },
+        {
+          "url": "https://image.hm.com/assets/hm/93/90/93906f2c4d0a893571b7d17619f54c10898c8130.jpg"
+        },
+        {
+          "url": "https://image.hm.com/assets/hm/4a/30/4a30926cf2cb992b8b0b1447b8d7148f48a284cb.jpg"
+        },
+        {
+          "url": "https://image.hm.com/assets/hm/ec/fd/ecfdaecd685f99923b00fde953869c80f31c4fbf.jpg"
+        }
+      ],
+      "description": "a def",
+      "stock": 70,
+      "date_added": "2024-12-23T01:09:14.974Z",
       "reviews": [
         {
-          "user": "Emma L.",
-          "comment": "Perfect balance of comfort and eco-conscious design.",
-          "rating": 5,
-          "date": "2024-11-15T08:45:00Z"
+          "user": "a def",
+          "comment": "a def",
+          "rating": 6,
+          "date": "2024-12-23T01:09:14.974Z"
+        },
+        {
+          "user": "a definir",
+          "comment": "a definir",
+          "rating": 4,
+          "date": "2024-12-23T01:09:14.974Z"
         }
       ]
     },
     {
       "id": "4",
-      "name": "Organic Hemp Backpack",
-      "price": 39.99,
-      "type": "Backpack",
-      "category": "Accessories",
-      "tags": [
-        "Organic",
-        "Eco-Friendly",
-        "Vegan"
+      "name": "Fringed jacket",
+      "price": 74.99,
+      "category": [
+        "Una de estas",
+        "T-shirt",
+        "Shirt",
+        "Pants",
+        "Shoes",
+        "Dress",
+        "Accessories"
       ],
-      "style": "Casual",
+      "style": [
+        "Uno de estos",
+        "Night",
+        "Office",
+        "Casual",
+        "Gym",
+        "Formal"
+      ],
       "store": {
-        "name": "EcoChic Boutique",
+        "id": 3,
+        "name": "Nature Creations",
         "location": {
-          "city_name": "London",
-          "country": "UK",
-          "latitude": 51.5074,
-          "longitude": -0.1278,
-          "distance_to_madrid": 1260,
-          "distance_unit": "km"
-        },
-        "transport_method": "Plane"
+          "city_name": "Lisbon",
+          "country": "Portugal",
+          "latitude": 38.7169,
+          "longitude": -9.1395,
+          "distance_to_madrid": 640,
+          "distance_unit": "km",
+          "transport_method": "truck"
+        }
       },
-      "product_rating": 4.6,
-      "weight": 500,
+      "rating": 2,
+      "weight": 432,
       "weight_unit": "g",
       "available_sizes": [
-        "One Size"
+        "Random entre estas tallas, puede haber una o solo varias.",
+        "XS",
+        "S",
+        "L",
+        "M",
+        "X",
+        "XXL"
       ],
       "materials": [
-        "Organic Hemp",
-        "Recycled Polyester"
+        "materiales"
       ],
-      "image": "https://static.zara.net/assets/public/17ae/12c3/a0cc49da97c8/389ba4b247d9/1521628773032/1521628773032.jpg?ts=1693109632625&w=375",
-      "description": "A spacious and eco-friendly backpack made from organic hemp, ideal for daily use.",
-      "stock": 0,
-      "date_added": "2024-12-05T11:00:00Z",
-      "promotions": [
+      "modelImage": "https://image.hm.com/assets/hm/fc/92/fc923746b2ab6af71bc4e8f6ed0fd1706570a510.jpg",
+      "image": "https://image.hm.com/assets/hm/1f/d0/1fd0a29d20d503bf802c7d2e83acfdb52efaf36b.jpg",
+      "swatches": [
         {
-          "discount": 10,
-          "description": "10% off first purchase",
-          "start_date": "2024-12-05T00:00:00Z",
-          "end_date": "2024-12-15T23:59:59Z"
+          "colorName": "Black",
+          "colorCode": "272628",
+          "productImage": "https://image.hm.com/assets/hm/1f/d0/1fd0a29d20d503bf802c7d2e83acfdb52efaf36b.jpg"
         }
       ],
+      "images": [
+        {
+          "url": "https://image.hm.com/assets/hm/12/6d/126d0f88e07a7019e8195e19b498a86c672b3679.jpg"
+        },
+        {
+          "url": "https://image.hm.com/assets/hm/03/a8/03a8d6a15e72a903ad06c9a6b579d93136f0a03b.jpg"
+        },
+        {
+          "url": "https://image.hm.com/assets/hm/5a/9d/5a9dbcd03ba70f1a775f1f2faf8b0d488277cdd3.jpg"
+        },
+        {
+          "url": "https://image.hm.com/assets/hm/89/60/8960cfa8ce36db343013d6ec823ef6a6ab41e768.jpg"
+        }
+      ],
+      "description": "a def",
+      "stock": 90,
+      "date_added": "2024-12-23T01:09:14.974Z",
       "reviews": [
         {
-          "user": "Anna W.",
-          "comment": "Great quality and very spacious. Perfect for everyday carry.",
-          "rating": 5,
-          "date": "2024-12-06T14:30:00Z"
+          "user": "a def",
+          "comment": "a def",
+          "rating": 4,
+          "date": "2024-12-23T01:09:14.974Z"
+        },
+        {
+          "user": "a definir",
+          "comment": "a definir",
+          "rating": 7,
+          "date": "2024-12-23T01:09:14.974Z"
         }
       ]
     },
     {
       "id": "5",
-      "name": "Straight pants with decorative details",
-      "price": 59.99,
-      "category": "Pants",
-      "tags": [
-        "Sustainable Materials",
-        "Eco-friendly Fashion",
-        "Evening Wear"
+      "name": "Asymmetric Wool Cape",
+      "price": 275,
+      "category": [
+        "Una de estas",
+        "T-shirt",
+        "Shirt",
+        "Pants",
+        "Shoes",
+        "Dress",
+        "Accessories"
       ],
-      "style": "Night",
-      "store": 1,
-      "rating": 4,
-      "weight": 800,
+      "style": [
+        "Uno de estos",
+        "Night",
+        "Office",
+        "Casual",
+        "Gym",
+        "Formal"
+      ],
+      "store": {
+        "id": 6,
+        "name": "Creative Eco",
+        "location": {
+          "city_name": "Brussels",
+          "country": "Belgium",
+          "latitude": 50.8503,
+          "longitude": 4.3517,
+          "distance_to_madrid": 1300,
+          "distance_unit": "km",
+          "transport_method": "train"
+        }
+      },
+      "rating": 2,
+      "weight": 826,
       "weight_unit": "g",
       "available_sizes": [
+        "Random entre estas tallas, puede haber una o solo varias.",
+        "XS",
         "S",
-        "M",
         "L",
-        "XL"
+        "M",
+        "X",
+        "XXL"
       ],
       "materials": [
-        "Recycled Polyester",
-        "Sequins"
+        "materiales"
       ],
-      "modelImage": "https://image.hm.com/assets/hm/19/21/19218c2c0bdc83844d4f2af33a5d1f53dedec2f3.jpg",
-      "image": "https://image.hm.com/assets/hm/f2/de/f2dec9d93c6fca9c22ff746b84af2db12cca2d3c.jpg",
+      "modelImage": "https://image.hm.com/assets/005/1b/23/1b2318dd0beaf68a8a7de9ddb17ad1bda08b654d.jpg",
+      "image": "https://image.hm.com/assets/005/ce/83/ce83c3ef002bea0cef16bf824ff4875ffb64fca0.jpg",
       "swatches": [
         {
-          "colorName": "Black/Sequins",
-          "colorCode": "232327",
-          "productImage": "https://image.hm.com/assets/hm/f2/de/f2dec9d93c6fca9c22ff746b84af2db12cca2d3c.jpg"
+          "colorName": "Beige",
+          "colorCode": "D4D0C8",
+          "productImage": "https://image.hm.com/assets/005/ce/83/ce83c3ef002bea0cef16bf824ff4875ffb64fca0.jpg"
+        },
+        {
+          "colorName": "Black",
+          "colorCode": "272628",
+          "productImage": "https://image.hm.com/assets/005/c6/ed/c6ed93a992a17dfcf2ff6f2c549dd5971c588d71.jpg"
         }
       ],
       "images": [
         {
-          "url": "https://image.hm.com/assets/hm/f2/de/f2dec9d93c6fca9c22ff746b84af2db12cca2d3c.jpg",
-          "description": "Main product view"
+          "url": "https://image.hm.com/assets/005/ee/90/ee90db6d122cd9731c19dc71aab924c1528dbab0.jpg"
         },
         {
-          "url": "https://image.hm.com/assets/hm/46/f9/46f94df5a35d7298ded547fe8b2703c65ffbbcba.jpg",
-          "description": "Model wearing the pants"
+          "url": "https://image.hm.com/assets/005/7f/77/7f77db344f21f5365d20a665601722de89a25c58.jpg"
         },
         {
-          "url": "https://image.hm.com/assets/hm/c9/89/c9895c350842e6d0cdddbf997d441ff97e1e00da.jpg",
-          "description": "Rear view of the pants"
+          "url": "https://image.hm.com/assets/005/b5/f7/b5f77477b3b27211d7e2aa708a9b2257c7be6cd6.jpg"
         },
         {
-          "url": "https://image.hm.com/assets/hm/b6/7f/b67f1c497e36727f689aab4cf9a074543ef209bf.jpg",
-          "description": "Close-up of the sequins"
+          "url": "https://image.hm.com/assets/005/6b/22/6b22a1a2d46bf1c17a3838eca77765e345227b72_xxl-1.jpg"
         },
         {
-          "url": "https://image.hm.com/assets/hm/3b/5d/3b5db355b28f799fb9d58da0411fe96f1cc8c471.jpg",
-          "description": "Model showcasing the pants"
+          "url": "https://image.hm.com/assets/005/7e/58/7e5811358ce3a34211b55355c9a923298b6cea5d.jpg"
         },
         {
-          "url": "https://image.hm.com/assets/hm/f6/2f/f62f4f6c4c95ba076563c2e2553f3f55a79c6b1b.jpg",
-          "description": "Side view of the pants"
+          "url": "https://image.hm.com/assets/005/cc/f5/ccf5b98198b46971606fc440a5edd60cf1d43517.jpg"
+        },
+        {
+          "url": "https://image.hm.com/assets/005/a0/3a/a03a01212533aa04cdd3219c11e91d1f5edd22bc.jpg"
+        },
+        {
+          "url": "https://image.hm.com/assets/005/6a/21/6a2163d06c38269bc4d8c16c43ae4d6592fea709.jpg"
         }
       ],
-      "description": "Straight pants with decorative sequin details, perfect for night events and parties.",
-      "stock": 50,
-      "date_added": "2024-12-20T14:00:00Z",
+      "description": "a def",
+      "stock": 93,
+      "date_added": "2024-12-23T01:09:14.974Z",
       "reviews": [
         {
-          "user": "Elena G.",
-          "comment": "Elegant and perfect for night events.",
-          "rating": 5,
-          "date": "2024-12-22T12:00:00Z"
+          "user": "a def",
+          "comment": "a def",
+          "rating": 6,
+          "date": "2024-12-23T01:09:14.974Z"
         },
         {
-          "user": "Javier L.",
-          "comment": "Good quality but a bit heavy.",
+          "user": "a definir",
+          "comment": "a definir",
           "rating": 4,
-          "date": "2024-12-21T10:30:00Z"
+          "date": "2024-12-23T01:09:14.974Z"
+        }
+      ]
+    },
+    {
+      "id": "6",
+      "name": "Twill trench coat",
+      "price": 74.99,
+      "category": [
+        "Una de estas",
+        "T-shirt",
+        "Shirt",
+        "Pants",
+        "Shoes",
+        "Dress",
+        "Accessories"
+      ],
+      "style": [
+        "Uno de estos",
+        "Night",
+        "Office",
+        "Casual",
+        "Gym",
+        "Formal"
+      ],
+      "store": {
+        "id": 8,
+        "name": "Green Craft",
+        "location": {
+          "city_name": "Prague",
+          "country": "Czech Republic",
+          "latitude": 50.0755,
+          "longitude": 14.4378,
+          "distance_to_madrid": 1500,
+          "distance_unit": "km",
+          "transport_method": "train"
+        }
+      },
+      "rating": 2,
+      "weight": 692,
+      "weight_unit": "g",
+      "available_sizes": [
+        "Random entre estas tallas, puede haber una o solo varias.",
+        "XS",
+        "S",
+        "L",
+        "M",
+        "X",
+        "XXL"
+      ],
+      "materials": [
+        "materiales"
+      ],
+      "modelImage": "https://image.hm.com/assets/hm/c6/27/c62799de784a5253085847fca4f2fbcfc8433c8f.jpg",
+      "image": "https://image.hm.com/assets/hm/ce/a4/cea4e42368079b1cee72b9550f1eaf12183a1b9f.jpg",
+      "swatches": [
+        {
+          "colorName": "Black",
+          "colorCode": "272628",
+          "productImage": "https://image.hm.com/assets/hm/ce/a4/cea4e42368079b1cee72b9550f1eaf12183a1b9f.jpg"
+        },
+        {
+          "colorName": "Dark beige",
+          "colorCode": "A28053",
+          "productImage": "https://image.hm.com/assets/hm/98/64/9864699598b45e8bbe64578868f4cf2e4d58b3a3.jpg"
+        }
+      ],
+      "images": [
+        {
+          "url": "https://image.hm.com/assets/hm/d9/95/d995c7630a5e2bcab852e7114d6eb93e16289eca.jpg"
+        },
+        {
+          "url": "https://image.hm.com/assets/hm/ad/af/adaf66aa9f845e1c0c0d8daed631acc3e68738cf.jpg"
+        },
+        {
+          "url": "https://image.hm.com/assets/hm/41/61/4161ee799a5b89cdb3a30090d0ce7f2afd9b4468.jpg"
+        },
+        {
+          "url": "https://image.hm.com/assets/hm/53/54/5354c425053f6e3cd11865c4819b92760f8f470d.jpg"
+        },
+        {
+          "url": "https://image.hm.com/assets/hm/f4/79/f47998066fa11452221d6a9b1cc81a52eb920fdd.jpg"
+        },
+        {
+          "url": "https://image.hm.com/assets/hm/97/ab/97ab68897e0a63800e33675cfbe98ae08e170b1a.jpg"
+        }
+      ],
+      "description": "a def",
+      "stock": 75,
+      "date_added": "2024-12-23T01:09:14.974Z",
+      "reviews": [
+        {
+          "user": "a def",
+          "comment": "a def",
+          "rating": 6,
+          "date": "2024-12-23T01:09:14.974Z"
+        },
+        {
+          "user": "a definir",
+          "comment": "a definir",
+          "rating": 4,
+          "date": "2024-12-23T01:09:14.974Z"
+        }
+      ]
+    },
+    {
+      "id": "7",
+      "name": "Brushed-finish tie-belt coat",
+      "price": 49.99,
+      "category": [
+        "Una de estas",
+        "T-shirt",
+        "Shirt",
+        "Pants",
+        "Shoes",
+        "Dress",
+        "Accessories"
+      ],
+      "style": [
+        "Uno de estos",
+        "Night",
+        "Office",
+        "Casual",
+        "Gym",
+        "Formal"
+      ],
+      "store": {
+        "id": 1,
+        "name": "EcoDesign",
+        "location": {
+          "city_name": "Barcelona",
+          "country": "Spain",
+          "latitude": 41.3784,
+          "longitude": 2.1923,
+          "distance_to_madrid": 600,
+          "distance_unit": "km",
+          "transport_method": "truck"
+        }
+      },
+      "rating": 2,
+      "weight": 810,
+      "weight_unit": "g",
+      "available_sizes": [
+        "Random entre estas tallas, puede haber una o solo varias.",
+        "XS",
+        "S",
+        "L",
+        "M",
+        "X",
+        "XXL"
+      ],
+      "materials": [
+        "materiales"
+      ],
+      "modelImage": "https://image.hm.com/assets/hm/58/94/5894d106b2867081e89ea8b04f8a46370f2fdee4.jpg",
+      "image": "https://image.hm.com/assets/hm/68/9f/689ff6aac5e62cc95ca9c1b38552e74407640c6f.jpg",
+      "swatches": [
+        {
+          "colorName": "Beige",
+          "colorCode": "9E886B",
+          "productImage": "https://image.hm.com/assets/hm/68/9f/689ff6aac5e62cc95ca9c1b38552e74407640c6f.jpg"
+        },
+        {
+          "colorName": "Black",
+          "colorCode": "272628",
+          "productImage": "https://image.hm.com/assets/hm/cd/f0/cdf0c6fdc02ae6dd17abe3402e38e053e01f1703.jpg"
+        },
+        {
+          "colorName": "Light beige",
+          "colorCode": "D4D0C8",
+          "productImage": "https://image.hm.com/assets/hm/79/f3/79f31e8ec6cac5cf18f1d88daf1a6234a8a91e7d.jpg"
+        },
+        {
+          "colorName": "Dark grey marl",
+          "colorCode": "494A4F",
+          "productImage": "https://image.hm.com/assets/hm/c3/59/c35953c86f991618d8694bd4a5b018718f586a7a.jpg"
+        },
+        {
+          "colorName": "Brown/Herringbone-patterned",
+          "colorCode": "554938",
+          "productImage": "https://image.hm.com/assets/hm/ea/03/ea035005f30852ad6e27bad1c3101e1103bf2f95.jpg"
+        }
+      ],
+      "images": [
+        {
+          "url": "https://image.hm.com/assets/hm/92/2a/922a4fa9871f9b2dab976efaad101cffccebab9a.jpg"
+        },
+        {
+          "url": "https://image.hm.com/assets/hm/ac/35/ac35443cde6e7995f6eedfd9c074064372ed3161.jpg"
+        },
+        {
+          "url": "https://image.hm.com/assets/hm/45/a8/45a8b6a6180a2b46dc8bb2ca36387b25bfbe0813.jpg"
+        },
+        {
+          "url": "https://image.hm.com/assets/hm/42/fb/42fb25d150659c366aa9a63b2d9bb33b541d7dc5.jpg"
+        }
+      ],
+      "description": "a def",
+      "stock": 24,
+      "date_added": "2024-12-23T01:09:14.974Z",
+      "reviews": [
+        {
+          "user": "a def",
+          "comment": "a def",
+          "rating": 8,
+          "date": "2024-12-23T01:09:14.974Z"
+        },
+        {
+          "user": "a definir",
+          "comment": "a definir",
+          "rating": 6,
+          "date": "2024-12-23T01:09:14.974Z"
+        }
+      ]
+    },
+    {
+      "id": "8",
+      "name": "Sports fleece jacket in DryMove™",
+      "price": 37.99,
+      "category": [
+        "Una de estas",
+        "T-shirt",
+        "Shirt",
+        "Pants",
+        "Shoes",
+        "Dress",
+        "Accessories"
+      ],
+      "style": [
+        "Uno de estos",
+        "Night",
+        "Office",
+        "Casual",
+        "Gym",
+        "Formal"
+      ],
+      "store": {
+        "id": 3,
+        "name": "Nature Creations",
+        "location": {
+          "city_name": "Lisbon",
+          "country": "Portugal",
+          "latitude": 38.7169,
+          "longitude": -9.1395,
+          "distance_to_madrid": 640,
+          "distance_unit": "km",
+          "transport_method": "truck"
+        }
+      },
+      "rating": 5,
+      "weight": 660,
+      "weight_unit": "g",
+      "available_sizes": [
+        "Random entre estas tallas, puede haber una o solo varias.",
+        "XS",
+        "S",
+        "L",
+        "M",
+        "X",
+        "XXL"
+      ],
+      "materials": [
+        "materiales"
+      ],
+      "modelImage": "https://image.hm.com/assets/hm/ff/54/ff5468d37d42edfc04342ebbd93f0026a9a8b95d.jpg",
+      "image": "https://image.hm.com/assets/hm/76/4b/764be8c2759596697d630333e847ebaeefdb4ad4.jpg",
+      "swatches": [
+        {
+          "colorName": "Light beige",
+          "colorCode": "C3BFB5",
+          "productImage": "https://image.hm.com/assets/hm/76/4b/764be8c2759596697d630333e847ebaeefdb4ad4.jpg"
+        }
+      ],
+      "images": [
+        {
+          "url": "https://image.hm.com/assets/hm/b2/48/b24858fb6f951659a34a2eefea4b30415bd2e419.jpg"
+        },
+        {
+          "url": "https://image.hm.com/assets/hm/4b/f5/4bf5dd959a0e22226bdf9088f33acefdca003e4c.jpg"
+        },
+        {
+          "url": "https://image.hm.com/assets/hm/dc/78/dc78a1dabadd7bcd58bfa94dd44232f4e5f45134.jpg"
+        },
+        {
+          "url": "https://image.hm.com/assets/hm/1e/89/1e89b5bced02c4679593e5e1e2a8ffaa29818185.jpg"
+        },
+        {
+          "url": "https://image.hm.com/assets/hm/d4/44/d44496a798bca72c2f2e9a5e561f73708975b696.jpg"
+        }
+      ],
+      "description": "a def",
+      "stock": 76,
+      "date_added": "2024-12-23T01:09:14.974Z",
+      "reviews": [
+        {
+          "user": "a def",
+          "comment": "a def",
+          "rating": 3,
+          "date": "2024-12-23T01:09:14.974Z"
+        },
+        {
+          "user": "a definir",
+          "comment": "a definir",
+          "rating": 8,
+          "date": "2024-12-23T01:09:14.974Z"
+        }
+      ]
+    },
+    {
+      "id": "9",
+      "name": "Bouclé-weave jacket",
+      "price": 34.99,
+      "category": [
+        "Una de estas",
+        "T-shirt",
+        "Shirt",
+        "Pants",
+        "Shoes",
+        "Dress",
+        "Accessories"
+      ],
+      "style": [
+        "Uno de estos",
+        "Night",
+        "Office",
+        "Casual",
+        "Gym",
+        "Formal"
+      ],
+      "store": {
+        "id": 2,
+        "name": "Green Style",
+        "location": {
+          "city_name": "Rome",
+          "country": "Italy",
+          "latitude": 41.9028,
+          "longitude": 12.4964,
+          "distance_to_madrid": 1300,
+          "distance_unit": "km",
+          "transport_method": "ship"
+        }
+      },
+      "rating": 2,
+      "weight": 156,
+      "weight_unit": "g",
+      "available_sizes": [
+        "Random entre estas tallas, puede haber una o solo varias.",
+        "XS",
+        "S",
+        "L",
+        "M",
+        "X",
+        "XXL"
+      ],
+      "materials": [
+        "materiales"
+      ],
+      "modelImage": "https://image.hm.com/assets/hm/09/02/09024f2c84828641c234ce7479925332d3ccea8f.jpg",
+      "image": "https://image.hm.com/assets/hm/90/c4/90c4831467c551fe9a41b6796b35ef8950da4d4b.jpg",
+      "swatches": [
+        {
+          "colorName": "Cream",
+          "colorCode": "ECE9E2",
+          "productImage": "https://image.hm.com/assets/hm/90/c4/90c4831467c551fe9a41b6796b35ef8950da4d4b.jpg"
+        },
+        {
+          "colorName": "Black/Glittery",
+          "colorCode": "272628",
+          "productImage": "https://image.hm.com/assets/hm/95/43/95430de193832d491d08bbb4ff4ef591f2931f51.jpg"
+        }
+      ],
+      "images": [
+        {
+          "url": "https://image.hm.com/assets/hm/42/cc/42cce6f7f4a01e9f7b995888a50dae8ced518d63.jpg"
+        },
+        {
+          "url": "https://image.hm.com/assets/hm/a0/03/a0034db10e6f5eaa50fbb6b157a4e9426950e820.jpg"
+        },
+        {
+          "url": "https://image.hm.com/assets/hm/db/2c/db2cfb3160f1db0f2f1b6a84fd4cf75de6d291c7.jpg"
+        },
+        {
+          "url": "https://image.hm.com/assets/hm/a8/99/a89957a277343eb0b50909882d05deafa68e03ee.jpg"
+        }
+      ],
+      "description": "a def",
+      "stock": 67,
+      "date_added": "2024-12-23T01:09:14.974Z",
+      "reviews": [
+        {
+          "user": "a def",
+          "comment": "a def",
+          "rating": 1,
+          "date": "2024-12-23T01:09:14.974Z"
+        },
+        {
+          "user": "a definir",
+          "comment": "a definir",
+          "rating": 2,
+          "date": "2024-12-23T01:09:14.974Z"
+        }
+      ]
+    },
+    {
+      "id": "10",
+      "name": "Tie-belt teddy coat",
+      "price": 79.99,
+      "category": [
+        "Una de estas",
+        "T-shirt",
+        "Shirt",
+        "Pants",
+        "Shoes",
+        "Dress",
+        "Accessories"
+      ],
+      "style": [
+        "Uno de estos",
+        "Night",
+        "Office",
+        "Casual",
+        "Gym",
+        "Formal"
+      ],
+      "store": {
+        "id": 1,
+        "name": "EcoDesign",
+        "location": {
+          "city_name": "Barcelona",
+          "country": "Spain",
+          "latitude": 41.3784,
+          "longitude": 2.1923,
+          "distance_to_madrid": 600,
+          "distance_unit": "km",
+          "transport_method": "truck"
+        }
+      },
+      "rating": 1,
+      "weight": 650,
+      "weight_unit": "g",
+      "available_sizes": [
+        "Random entre estas tallas, puede haber una o solo varias.",
+        "XS",
+        "S",
+        "L",
+        "M",
+        "X",
+        "XXL"
+      ],
+      "materials": [
+        "materiales"
+      ],
+      "modelImage": "https://image.hm.com/assets/hm/87/fa/87faa124a49967028c89de9727392c21bbe6021b.jpg",
+      "image": "https://image.hm.com/assets/hm/f2/b6/f2b6a736f1212f22c2e8ea08e7c1bbe609c64919.jpg",
+      "swatches": [
+        {
+          "colorName": "Light beige",
+          "colorCode": "DFD8C9",
+          "productImage": "https://image.hm.com/assets/hm/f2/b6/f2b6a736f1212f22c2e8ea08e7c1bbe609c64919.jpg"
+        }
+      ],
+      "images": [
+        {
+          "url": "https://image.hm.com/assets/hm/90/ed/90edd3d0b8470493315447e24f16348136c1f853.jpg"
+        },
+        {
+          "url": "https://image.hm.com/assets/hm/1e/5e/1e5eef8be2e05d21f28b3ac3c5886fb0b2ced3b3.jpg"
+        },
+        {
+          "url": "https://image.hm.com/assets/hm/7c/bd/7cbd17f3c8fe0b6800b3195e7b1b31da9e41789d.jpg"
+        }
+      ],
+      "description": "a def",
+      "stock": 72,
+      "date_added": "2024-12-23T01:09:14.974Z",
+      "reviews": [
+        {
+          "user": "a def",
+          "comment": "a def",
+          "rating": 6,
+          "date": "2024-12-23T01:09:14.974Z"
+        },
+        {
+          "user": "a definir",
+          "comment": "a definir",
+          "rating": 6,
+          "date": "2024-12-23T01:09:14.974Z"
         }
       ]
     }
