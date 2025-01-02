@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 function CartItem({ product, onDeleteCart, onIncrement, onDecrement }) {
   return (
-    <div className="flex items-center bg-my-white rounded-3xl p-8 w-full lg:w-full xl:w-full">
+    <div className="flex items-center bg-my-white rounded-3xl p-8 w-full lg:w-full xl:w-full shadow-md">
       <Link
         key={product.id}
         to={`/products/${product.id}`}

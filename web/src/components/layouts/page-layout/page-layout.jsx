@@ -1,6 +1,6 @@
 function PageLayout({ children }) {
     return (
-        <div className="mx-auto py-4 bg-my-gray">
+        <div className="mx-auto py-4">
             {children}
         </div>
     );
