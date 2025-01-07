@@ -1,12 +1,12 @@
-import { PageLayout } from "../components/layouts";
 import WishList from "../components/wishlist/wish-list/wish-list";
 
-function WishlistPage () {
-    return (
-        <PageLayout>
-            <WishList />
-        </PageLayout>
-    )
+function WishlistPage() {
+  return (
+    <div className="p-5 font-montserrat">
+      <h3 className="text-4xl font-bold mb-4 text-dark-green">WishList</h3>
+      <WishList />
+    </div>
+  );
 }
 
 export default WishlistPage;
