@@ -1,10 +1,20 @@
 {
-  "wishlist": [],
+  "wishlist": [
+    {
+      "id": "8a2c",
+      "idProduct": "1"
+    }
+  ],
   "cart": [
     {
       "id": "a3cd",
       "idProduct": "2",
-      "quantity": 2
+      "quantity": 3
+    },
+    {
+      "id": "a4cd",
+      "idProduct": "3",
+      "quantity": 1
     }
   ],
   "products": [
