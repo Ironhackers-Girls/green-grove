@@ -1,54 +1,7 @@
 {
   "wishlist": [
-    {
-      "id": "5ad7",
-      "idProduct": "2"
-    },
-    {
-      "id": "327d",
-      "idProduct": "9"
-    },
-    {
-      "id": "bea8",
-      "idProduct": "5"
-    },
-    {
-      "id": "a129",
-      "idProduct": "1"
-    }
   ],
-  "cart": [
-    {
-      "id": "cab5",
-      "idProduct": "3",
-      "quantity": 8
-    },
-    {
-      "id": "f127",
-      "idProduct": "10",
-      "quantity": 5
-    },
-    {
-      "id": "74c1",
-      "idProduct": "9",
-      "quantity": 5
-    },
-    {
-      "id": "5ee4",
-      "idProduct": "5",
-      "quantity": 2
-    },
-    {
-      "id": "90f2",
-      "idProduct": "7",
-      "quantity": 2
-    },
-    {
-      "id": "a7e5",
-      "idProduct": "6",
-      "quantity": 1
-    }
-  ],
+  "cart": [],
   "products": [
     {
       "id": "1",
