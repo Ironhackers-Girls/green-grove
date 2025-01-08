@@ -6,6 +6,8 @@ import aboutHome from "../assets/home-about.png";
 import ProductItem from "../components/products/product-item/product-item";
 import { listProducts, addCart, addWish } from "../services/products-services";
 import { Snackbar, Alert } from "@mui/material";
+import Lottie from "react-lottie"; 
+import loadingAnimation from "../assets/loadingAnimation.json";  
 
 function Homepage() {
   const [latestProducts, setLatestProducts] = useState([]);
@@ -50,6 +52,15 @@ function Homepage() {
       .catch((error) => console.log(error));
   };
 
+  const lottieOptions = {
+    loop: true,
+    autoplay: true, 
+    animationData: loadingAnimation, 
+    rendererSettings: {
+      preserveAspectRatio: "xMidYMid slice",
+    },
+  };
+
   return (
     <div className="px-7 font-montserrat">
       {/* Top Section */}
@@ -91,10 +102,10 @@ function Homepage() {
                 className="absolute inset-0 h-full w-full object-cover opacity-60 group-hover:opacity-80 transition-opacity"
               />
               <div className="absolute bottom-0 left-0 right-0 flex items-center justify-between p-4">
-                <h2 className="text-white text-2xl font-bold uppercase">
+                <h2 className="text-my-white text-2xl font-bold uppercase">
                   PRODUCTS
                 </h2>
-                <span className="text-white text-2xl transition-transform duration-300 group-hover:translate-x-2">
+                <span className="text-my-white text-2xl transition-transform duration-300 group-hover:translate-x-2">
                   →
                 </span>
               </div>
@@ -123,14 +134,18 @@ function Homepage() {
       </div>
 
       {/* Bottom Products Section */}
-      <div className="latest-products">
+      <div className="latest-products mb-10">
         <h2 className="text-2xl font-bold mb-4">LATEST PRODUCTS</h2>
 
-        {loading && <p>Loading...</p>}
+        {loading && (
+          <div className="flex justify-center items-center">
+            <Lottie options={lottieOptions} height={100} width={100} />
+          </div>
+        )}
         {error && <p>{error}</p>}
 
         {!loading && !error && (
-          <div className="grid grid-cols-4 gap-0">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
             {latestProducts.map((product) => (
               <div
                 key={product.id}

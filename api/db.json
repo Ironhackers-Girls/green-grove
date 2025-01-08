@@ -3,12 +3,21 @@
     {
       "id": "e707",
       "idProduct": "5"
+    },
+    {
+      "id": "90c5",
+      "idProduct": "6"
     }
   ],
   "cart": [
     {
       "id": "0b75",
       "idProduct": "7",
+      "quantity": 1
+    },
+    {
+      "id": "7938",
+      "idProduct": "2",
       "quantity": 1
     }
   ],
