@@ -66,7 +66,7 @@ function NavBar() {
             <li><span className="font-bold text-gray-900">·</span></li>
             <li>
               <Link
-                to="/products"
+                to="/about"
                 className="block text-gray-900 md:hover:bg-transparent md:hover:text-primary md:p-0 hover:scale-110 transition-all duration-300"
                 aria-current="page"
               >
@@ -76,7 +76,7 @@ function NavBar() {
             <li><span className="font-bold text-gray-900">·</span></li>
             <li>
               <Link
-                to="/products"
+                to="/contact"
                 className="block text-gray-900 md:hover:bg-transparent md:hover:text-primary md:p-0 hover:scale-110 transition-all duration-300"
                 aria-current="page"
               >
