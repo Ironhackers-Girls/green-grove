@@ -18,7 +18,7 @@ function NavBar() {
   };
 
   return (
-    <nav className="sticky mx-4 my-4 rounded-md top-4 z-10 bg-my-gray backdrop-filter backdrop-blur-lg bg-opacity-30 border-b border-gray-100">
+    <nav className="sticky rounded-md top-4 z-10 bg-my-gray backdrop-filter backdrop-blur-lg bg-opacity-30 border-b border-gray-100">
       <div className="flex flex-wrap items-center justify-between mx-auto p-4">
         <Link to="/">
           <img src="/green-groove-logo.svg" alt="Logo" width="160" />

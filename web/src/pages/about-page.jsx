@@ -58,7 +58,7 @@ function AboutPage() {
 
         {/* Right Column */}
         <div className="flex justify-center items-center min-h-full">
-          <Lottie options={lottieOptions} height={400} width={400} />
+          <Lottie options={lottieOptions} height={400} width={400} style={{ cursor: 'default' }}/>
         </div>
       </div>
 

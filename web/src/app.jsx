@@ -3,12 +3,14 @@ import { CartPage, HomePage, ProductDetailPage, ProductsPage, SearchPage, Wishli
 import { PageLayout } from './components/layouts';
 import NavBar from './components/ui/navbar/navbar';
 import Footer from './components/ui/footer/footer';
+import { ScrollToTop } from './components/layouts'
 
 function App() {
 
   return (
     <>
       <PageLayout>
+        <ScrollToTop/>
         <NavBar />
         <Routes>
           <Route path='/' element={<HomePage />} />

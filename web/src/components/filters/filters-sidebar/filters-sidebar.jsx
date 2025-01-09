@@ -27,8 +27,14 @@ function FiltersSideBar({ onFilters }) {
     };
 
     onFilters(filters);
-  }, [category, price, size, style, store, material, stock, rating]);
 
+      console.log("En filter side bar:", filters)
+
+  }, [category, price, size, style, store, material, stock, rating]);
+  
+
+
+  
   const handleCategoryFilter = (category) => setCategory(category);
   const handleMaterialFilter = (material) => setMaterial(material);
   const handleSizeFilter = (size) => setSize(size);
