@@ -3,26 +3,11 @@
   "cart": [],
   "products": [
     {
-      "id": "1",
+      "id": 1,
       "name": "Bouclé knit cardigan",
       "price": 37.99,
-      "category": [
-        "Una de estas",
-        "T-shirt",
-        "Shirt",
-        "Pants",
-        "Shoes",
-        "Dress",
-        "Accessories"
-      ],
-      "style": [
-        "Uno de estos",
-        "Night",
-        "Office",
-        "Casual",
-        "Gym",
-        "Formal"
-      ],
+      "category": "Jacket",
+      "style": "Office",
       "store": {
         "id": 1,
         "name": "EcoDesign",
@@ -39,18 +24,8 @@
       "rating": 3,
       "weight": 399,
       "weight_unit": "g",
-      "available_sizes": [
-        "Random entre estas tallas, puede haber una o solo varias.",
-        "XS",
-        "S",
-        "L",
-        "M",
-        "X",
-        "XXL"
-      ],
-      "materials": [
-        "materiales"
-      ],
+      "available_sizes": ["M", "L", "XL"],
+      "materials": ["Organic Cotton", "Recycled Polyester"],
       "modelImage": "https://image.hm.com/assets/hm/8f/e4/8fe4f38526cb85f916e7803db44b8f4abb936483.jpg",
       "image": "https://image.hm.com/assets/hm/52/6b/526beefb51e3f277a790db96f66de4d6bfb5b461.jpg",
       "swatches": [
@@ -84,45 +59,30 @@
           "url": "https://image.hm.com/assets/hm/d8/b9/d8b901249faa9626f99402bcb85ebeb5cbad031f.jpg"
         }
       ],
-      "description": "a def",
+      "description": "A stylish and warm bouclé knit cardigan perfect for office wear, made with sustainable materials.",
       "stock": 52,
       "date_added": "2024-12-23T01:09:14.973Z",
       "reviews": [
         {
-          "user": "a def",
-          "comment": "a def",
+          "user": "Sophia",
+          "comment": "Elegant and comfortable, ideal for cold office environments.",
           "rating": 4,
           "date": "2024-12-23T01:09:14.974Z"
         },
         {
-          "user": "a definir",
-          "comment": "a definir",
-          "rating": 7,
+          "user": "Liam",
+          "comment": "Great quality, but the fit was slightly larger than expected.",
+          "rating": 3,
           "date": "2024-12-23T01:09:14.974Z"
         }
       ]
     },
     {
-      "id": "2",
+      "id": 2,
       "name": "Ribbed T-shirt",
       "price": 9.99,
-      "category": [
-        "Una de estas",
-        "T-shirt",
-        "Shirt",
-        "Pants",
-        "Shoes",
-        "Dress",
-        "Accessories"
-      ],
-      "style": [
-        "Uno de estos",
-        "Night",
-        "Office",
-        "Casual",
-        "Gym",
-        "Formal"
-      ],
+      "category": "T-shirt",
+      "style": "Casual",
       "store": {
         "id": 3,
         "name": "Nature Creations",
@@ -139,60 +99,215 @@
       "rating": 4,
       "weight": 564,
       "weight_unit": "g",
-      "available_sizes": [
-        "Random entre estas tallas, puede haber una o solo varias.",
-        "XS",
-        "S",
-        "L",
-        "M",
-        "X",
-        "XXL"
-      ],
-      "materials": [
-        "materiales"
-      ],
+      "available_sizes": ["S", "M", "L"],
+      "materials": ["Organic Cotton", "Natural Indigo Dye"],
       "modelImage": "https://image.hm.com/assets/hm/d7/16/d716dec68208f89420dbb8d18ecc7a738165f4df.jpg",
       "image": "https://image.hm.com/assets/hm/cb/28/cb2827fea76216ef4f2b0039412a81e2f437bc70.jpg",
-      "swatches": [],
-      "description": "a def",
+      "swatches": [
+        {
+          "colorName": "Navy/Stripes",
+          "colorCode": "272836",
+          "productImage": "https://image.hm.com/assets/hm/cb/28/cb2827fea76216ef4f2b0039412a81e2f437bc70.jpg"
+        },
+        {
+          "colorName": "Cannes",
+          "colorCode": "F0F1F0",
+          "productImage": "https://image.hm.com/assets/hm/12/8d/128dd5e5b01c077c61a8fce92dc90e92f3940dcb.jpg"
+        },
+        {
+          "colorName": "L'amour",
+          "colorCode": "AEBACE",
+          "productImage": "https://image.hm.com/assets/hm/b6/31/b631d52935a3ea0e8e1a900bdafe983adc7910a2.jpg"
+        }
+      ],
+      "images": [
+        {
+          "url": "https://image.hm.com/assets/hm/cd/99/cd993861fcbfc40986bfe40b56ac8360cb021a8a.jpg"
+        },
+        {
+          "url": "https://image.hm.com/assets/hm/e9/72/e9723c0b827683aa45bd05cd11adb01fc996642a.jpg"
+        },
+        {
+          "url": "https://image.hm.com/assets/hm/20/ad/20ad4625cd388bdc4a94c78f651a12f99e062215.jpg"
+        },
+        {
+          "url": "https://image.hm.com/assets/hm/d8/a6/d8a6f990be2024192deac3a7cb55ce0c3a215b8f.jpg"
+        },
+        {
+          "url": "https://image.hm.com/assets/hm/2d/60/2d60d5f190daf0abd17d9180ce7c533c236f8440.jpg"
+        }
+      ],
+      "description": "A versatile ribbed T-shirt, perfect for casual outings and everyday wear.",
       "stock": 75,
       "date_added": "2024-12-23T01:09:14.974Z",
       "reviews": [
         {
-          "user": "a def",
-          "comment": "a def",
-          "rating": 8,
+          "user": "Emma",
+          "comment": "Soft fabric and a great fit, highly recommend!",
+          "rating": 4,
           "date": "2024-12-23T01:09:14.974Z"
         },
         {
-          "user": "a definir",
-          "comment": "a definir",
-          "rating": 6,
+          "user": "Noah",
+          "comment": "Good quality for the price, but the color faded slightly after washing.",
+          "rating": 3,
           "date": "2024-12-23T01:09:14.974Z"
         }
       ]
     },
     {
-      "id": "5",
+      "id": 3,
+      "name": "Fluffy tie-belt coat",
+      "price": 74.99,
+      "category": "Dress",
+      "style": "Casual",
+      "store": {
+        "id": 4,
+        "name": "Chic Design",
+        "location": {
+          "city_name": "Paris",
+          "country": "France",
+          "latitude": 48.8566,
+          "longitude": 2.3522,
+          "distance_to_madrid": 1300,
+          "distance_unit": "km",
+          "transport_method": "train"
+        }
+      },
+      "rating": 4,
+      "weight": 881,
+      "weight_unit": "g",
+      "available_sizes": ["S", "M", "L"],
+      "materials": ["Organic Cotton", "Recycled Polyester"],
+      "modelImage": "https://image.hm.com/assets/hm/cd/59/cd5962f6e62f56c10131a013a7e1275900184ce0.jpg",
+      "image": "https://image.hm.com/assets/hm/b1/b3/b1b3909fc540e09d245c89b3f624b91940a502cf.jpg",
+      "swatches": [
+        {
+          "colorName": "Mole",
+          "colorCode": "7B7164",
+          "productImage": "https://image.hm.com/assets/hm/b1/b3/b1b3909fc540e09d245c89b3f624b91940a502cf.jpg"
+        },
+        {
+          "colorName": "Dark brown",
+          "colorCode": "3A3539",
+          "productImage": "https://image.hm.com/assets/hm/76/e9/76e9538f8b124740c74dbfbf67fb6de80b433695.jpg"
+        }
+      ],
+      "images": [
+        {
+          "url": "https://image.hm.com/assets/hm/ec/1b/ec1baeec91560fa4426ec8f208f733711df280f4.jpg"
+        },
+        {
+          "url": "https://image.hm.com/assets/hm/93/90/93906f2c4d0a893571b7d17619f54c10898c8130.jpg"
+        },
+        {
+          "url": "https://image.hm.com/assets/hm/4a/30/4a30926cf2cb992b8b0b1447b8d7148f48a284cb.jpg"
+        },
+        {
+          "url": "https://image.hm.com/assets/hm/ec/fd/ecfdaecd685f99923b00fde953869c80f31c4fbf.jpg"
+        }
+      ],
+      "description": "This fluffy tie-belt coat is the perfect combination of comfort and style. Made from sustainable materials, it offers a cozy feel and a fashionable look for any casual outing. The neutral tones make it versatile for multiple occasions.",
+      "stock": 70,
+      "date_added": "2024-12-23T01:09:14.974Z",
+      "reviews": [
+        {
+          "user": "Sophia",
+          "comment": "Absolutely love this coat! It's warm, stylish, and eco-friendly.",
+          "rating": 4,
+          "date": "2024-12-23T01:09:14.974Z"
+        },
+        {
+          "user": "Liam",
+          "comment": "Good quality, but the fit was a bit larger than expected.",
+          "rating": 3,
+          "date": "2024-12-22T12:30:45.000Z"
+        },
+        {
+          "user": "Emma",
+          "comment": "The material feels amazing, and I adore the tie-belt design.",
+          "rating": 4,
+          "date": "2024-12-21T09:15:30.000Z"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Fringed jacket",
+      "price": 74.99,
+      "category": "Jacket",
+      "style":"Casual",
+      "store": {
+        "id": 3,
+        "name": "Nature Creations",
+        "location": {
+          "city_name": "Lisbon",
+          "country": "Portugal",
+          "latitude": 38.7169,
+          "longitude": -9.1395,
+          "distance_to_madrid": 640,
+          "distance_unit": "km",
+          "transport_method": "truck"
+        }
+      },
+      "rating": 3,
+      "weight": 432,
+      "weight_unit": "g",
+      "available_sizes": ["M", "L", "XL"],
+      "materials": ["Organic Hemp", "Natural Indigo Dye"],
+      "modelImage": "https://image.hm.com/assets/hm/fc/92/fc923746b2ab6af71bc4e8f6ed0fd1706570a510.jpg",
+      "image": "https://image.hm.com/assets/hm/1f/d0/1fd0a29d20d503bf802c7d2e83acfdb52efaf36b.jpg",
+      "swatches": [
+        {
+          "colorName": "Black",
+          "colorCode": "272628",
+          "productImage": "https://image.hm.com/assets/hm/1f/d0/1fd0a29d20d503bf802c7d2e83acfdb52efaf36b.jpg"
+        }
+      ],
+      "images": [
+        {
+          "url": "https://image.hm.com/assets/hm/12/6d/126d0f88e07a7019e8195e19b498a86c672b3679.jpg"
+        },
+        {
+          "url": "https://image.hm.com/assets/hm/03/a8/03a8d6a15e72a903ad06c9a6b579d93136f0a03b.jpg"
+        },
+        {
+          "url": "https://image.hm.com/assets/hm/5a/9d/5a9dbcd03ba70f1a775f1f2faf8b0d488277cdd3.jpg"
+        },
+        {
+          "url": "https://image.hm.com/assets/hm/89/60/8960cfa8ce36db343013d6ec823ef6a6ab41e768.jpg"
+        }
+      ],
+      "description": "This fringed jacket adds a bold touch to any outfit. Crafted with sustainable materials, it features a unique design perfect for casual occasions or statement looks.",
+      "stock": 90,
+      "date_added": "2024-12-23T01:09:14.974Z",
+      "reviews": [
+        {
+          "user": "Oliver",
+          "comment": "Stylish and well-made! The fringes add a unique flair.",
+          "rating": 4,
+          "date": "2024-12-22T10:15:00.000Z"
+        },
+        {
+          "user": "Mia",
+          "comment": "The jacket is nice, but the fit wasn't quite what I expected.",
+          "rating": 3,
+          "date": "2024-12-21T14:45:00.000Z"
+        },
+        {
+          "user": "Lucas",
+          "comment": "Good quality, but the fringes are not to my taste.",
+          "rating": 2,
+          "date": "2024-12-20T08:30:00.000Z"
+        }
+      ]
+    },
+    {
+      "id": 5,
       "name": "Asymmetric Wool Cape",
       "price": 275,
-      "category": [
-        "Una de estas",
-        "T-shirt",
-        "Shirt",
-        "Pants",
-        "Shoes",
-        "Dress",
-        "Accessories"
-      ],
-      "style": [
-        "Uno de estos",
-        "Night",
-        "Office",
-        "Casual",
-        "Gym",
-        "Formal"
-      ],
+      "category": "Jacket",
+      "style": "Formal",
       "store": {
         "id": 6,
         "name": "Creative Eco",
@@ -206,21 +321,11 @@
           "transport_method": "train"
         }
       },
-      "rating": 2,
+      "rating": 4,
       "weight": 826,
       "weight_unit": "g",
-      "available_sizes": [
-        "Random entre estas tallas, puede haber una o solo varias.",
-        "XS",
-        "S",
-        "L",
-        "M",
-        "X",
-        "XXL"
-      ],
-      "materials": [
-        "materiales"
-      ],
+      "available_sizes": ["S", "M", "L"],
+      "materials": ["Organic Hemp", "Plant-Based Dyes"],
       "modelImage": "https://image.hm.com/assets/005/1b/23/1b2318dd0beaf68a8a7de9ddb17ad1bda08b654d.jpg",
       "image": "https://image.hm.com/assets/005/ce/83/ce83c3ef002bea0cef16bf824ff4875ffb64fca0.jpg",
       "swatches": [
@@ -261,45 +366,36 @@
           "url": "https://image.hm.com/assets/005/6a/21/6a2163d06c38269bc4d8c16c43ae4d6592fea709.jpg"
         }
       ],
-      "description": "a def",
+      "description": "This asymmetric wool cape redefines elegance with its sophisticated cut and premium sustainable materials. Perfect for formal events or chic evenings, it offers both warmth and style.",
       "stock": 93,
       "date_added": "2024-12-23T01:09:14.974Z",
       "reviews": [
         {
-          "user": "a def",
-          "comment": "a def",
-          "rating": 6,
-          "date": "2024-12-23T01:09:14.974Z"
+          "user": "Sophia",
+          "comment": "Beautifully designed and feels luxurious. A must-have!",
+          "rating": 4,
+          "date": "2024-12-20T12:45:00.000Z"
         },
         {
-          "user": "a definir",
-          "comment": "a definir",
+          "user": "Liam",
+          "comment": "Stylish and warm, but slightly heavier than expected.",
+          "rating": 3,
+          "date": "2024-12-18T15:30:00.000Z"
+        },
+        {
+          "user": "Emma",
+          "comment": "Absolutely perfect for formal wear. Loved the eco-friendly materials!",
           "rating": 4,
-          "date": "2024-12-23T01:09:14.974Z"
+          "date": "2024-12-17T08:20:00.000Z"
         }
       ]
     },
     {
-      "id": "6",
-      "name": "Twill trench coat",
+      "id": 6,
+      "name": "Twill Trench Coat",
       "price": 74.99,
-      "category": [
-        "Una de estas",
-        "T-shirt",
-        "Shirt",
-        "Pants",
-        "Shoes",
-        "Dress",
-        "Accessories"
-      ],
-      "style": [
-        "Uno de estos",
-        "Night",
-        "Office",
-        "Casual",
-        "Gym",
-        "Formal"
-      ],
+      "category": "Jacket",
+      "style": "Casual",
       "store": {
         "id": 8,
         "name": "Green Craft",
@@ -313,21 +409,11 @@
           "transport_method": "train"
         }
       },
-      "rating": 2,
+      "rating": 4,
       "weight": 692,
       "weight_unit": "g",
-      "available_sizes": [
-        "Random entre estas tallas, puede haber una o solo varias.",
-        "XS",
-        "S",
-        "L",
-        "M",
-        "X",
-        "XXL"
-      ],
-      "materials": [
-        "materiales"
-      ],
+      "available_sizes": ["XS", "S", "M", "L"],
+      "materials": ["Organic Cotton", "Recycled Polyester"],
       "modelImage": "https://image.hm.com/assets/hm/c6/27/c62799de784a5253085847fca4f2fbcfc8433c8f.jpg",
       "image": "https://image.hm.com/assets/hm/ce/a4/cea4e42368079b1cee72b9550f1eaf12183a1b9f.jpg",
       "swatches": [
@@ -337,7 +423,7 @@
           "productImage": "https://image.hm.com/assets/hm/ce/a4/cea4e42368079b1cee72b9550f1eaf12183a1b9f.jpg"
         },
         {
-          "colorName": "Dark beige",
+          "colorName": "Dark Beige",
           "colorCode": "A28053",
           "productImage": "https://image.hm.com/assets/hm/98/64/9864699598b45e8bbe64578868f4cf2e4d58b3a3.jpg"
         }
@@ -362,45 +448,36 @@
           "url": "https://image.hm.com/assets/hm/97/ab/97ab68897e0a63800e33675cfbe98ae08e170b1a.jpg"
         }
       ],
-      "description": "a def",
+      "description": "This classic twill trench coat offers timeless style and versatility. Ideal for office wear or casual outings, it combines functionality with eco-conscious materials.",
       "stock": 75,
       "date_added": "2024-12-23T01:09:14.974Z",
       "reviews": [
         {
-          "user": "a def",
-          "comment": "a def",
-          "rating": 6,
-          "date": "2024-12-23T01:09:14.974Z"
+          "user": "Oliver",
+          "comment": "Lightweight and stylish. Great for layering.",
+          "rating": 5,
+          "date": "2024-12-20T10:30:00.000Z"
         },
         {
-          "user": "a definir",
-          "comment": "a definir",
+          "user": "Mia",
+          "comment": "Good value for money, but runs a bit large.",
+          "rating": 3,
+          "date": "2024-12-18T14:00:00.000Z"
+        },
+        {
+          "user": "Noah",
+          "comment": "Perfect for transitional weather. Highly recommended!",
           "rating": 4,
-          "date": "2024-12-23T01:09:14.974Z"
+          "date": "2024-12-17T09:15:00.000Z"
         }
       ]
     },
     {
-      "id": "7",
-      "name": "Brushed-finish tie-belt coat",
+      "id": 7,
+      "name": "Brushed-Finish Tie-Belt Coat",
       "price": 49.99,
-      "category": [
-        "Una de estas",
-        "T-shirt",
-        "Shirt",
-        "Pants",
-        "Shoes",
-        "Dress",
-        "Accessories"
-      ],
-      "style": [
-        "Uno de estos",
-        "Night",
-        "Office",
-        "Casual",
-        "Gym",
-        "Formal"
-      ],
+      "category": "Coat",
+      "style":  "Office",
       "store": {
         "id": 1,
         "name": "EcoDesign",
@@ -414,21 +491,11 @@
           "transport_method": "truck"
         }
       },
-      "rating": 2,
+      "rating": 5,
       "weight": 810,
       "weight_unit": "g",
-      "available_sizes": [
-        "Random entre estas tallas, puede haber una o solo varias.",
-        "XS",
-        "S",
-        "L",
-        "M",
-        "X",
-        "XXL"
-      ],
-      "materials": [
-        "materiales"
-      ],
+      "available_sizes": ["XS", "S", "M", "L"],
+      "materials": ["Recycled Cotton", "Recycled Polyester"],
       "modelImage": "https://image.hm.com/assets/hm/58/94/5894d106b2867081e89ea8b04f8a46370f2fdee4.jpg",
       "image": "https://image.hm.com/assets/hm/68/9f/689ff6aac5e62cc95ca9c1b38552e74407640c6f.jpg",
       "swatches": [
@@ -443,17 +510,17 @@
           "productImage": "https://image.hm.com/assets/hm/cd/f0/cdf0c6fdc02ae6dd17abe3402e38e053e01f1703.jpg"
         },
         {
-          "colorName": "Light beige",
+          "colorName": "Light Beige",
           "colorCode": "D4D0C8",
           "productImage": "https://image.hm.com/assets/hm/79/f3/79f31e8ec6cac5cf18f1d88daf1a6234a8a91e7d.jpg"
         },
         {
-          "colorName": "Dark grey marl",
+          "colorName": "Dark Grey Marl",
           "colorCode": "494A4F",
           "productImage": "https://image.hm.com/assets/hm/c3/59/c35953c86f991618d8694bd4a5b018718f586a7a.jpg"
         },
         {
-          "colorName": "Brown/Herringbone-patterned",
+          "colorName": "Brown/Herringbone-Patterned",
           "colorCode": "554938",
           "productImage": "https://image.hm.com/assets/hm/ea/03/ea035005f30852ad6e27bad1c3101e1103bf2f95.jpg"
         }
@@ -472,45 +539,30 @@
           "url": "https://image.hm.com/assets/hm/42/fb/42fb25d150659c366aa9a63b2d9bb33b541d7dc5.jpg"
         }
       ],
-      "description": "a def",
+      "description": "A chic brushed-finish coat with a tie-belt, designed for a relaxed yet sophisticated look. Perfect for both casual and office settings.",
       "stock": 24,
       "date_added": "2024-12-23T01:09:14.974Z",
       "reviews": [
         {
-          "user": "a def",
-          "comment": "a def",
-          "rating": 8,
-          "date": "2024-12-23T01:09:14.974Z"
+          "user": "Oliver",
+          "comment": "Light and comfortable. Great for fall!",
+          "rating": 5,
+          "date": "2024-12-20T10:00:00.000Z"
         },
         {
-          "user": "a definir",
-          "comment": "a definir",
-          "rating": 6,
-          "date": "2024-12-23T01:09:14.974Z"
+          "user": "Liam",
+          "comment": "The material feels good, but the sizing was off.",
+          "rating": 4,
+          "date": "2024-12-22T14:45:00.000Z"
         }
       ]
     },
     {
-      "id": "8",
+      "id": 8,
       "name": "Sports fleece jacket in DryMove™",
       "price": 37.99,
-      "category": [
-        "Una de estas",
-        "T-shirt",
-        "Shirt",
-        "Pants",
-        "Shoes",
-        "Dress",
-        "Accessories"
-      ],
-      "style": [
-        "Uno de estos",
-        "Night",
-        "Office",
-        "Casual",
-        "Gym",
-        "Formal"
-      ],
+      "category": "Jacket",
+      "style": "Gym",
       "store": {
         "id": 3,
         "name": "Nature Creations",
@@ -527,18 +579,8 @@
       "rating": 5,
       "weight": 660,
       "weight_unit": "g",
-      "available_sizes": [
-        "Random entre estas tallas, puede haber una o solo varias.",
-        "XS",
-        "S",
-        "L",
-        "M",
-        "X",
-        "XXL"
-      ],
-      "materials": [
-        "materiales"
-      ],
+      "available_sizes": ["S", "M", "L"],
+      "materials": ["Recycled Polyester"],
       "modelImage": "https://image.hm.com/assets/hm/ff/54/ff5468d37d42edfc04342ebbd93f0026a9a8b95d.jpg",
       "image": "https://image.hm.com/assets/hm/76/4b/764be8c2759596697d630333e847ebaeefdb4ad4.jpg",
       "swatches": [
@@ -565,45 +607,36 @@
           "url": "https://image.hm.com/assets/hm/d4/44/d44496a798bca72c2f2e9a5e561f73708975b696.jpg"
         }
       ],
-      "description": "a def",
+      "description": "A lightweight and breathable fleece jacket, designed for active performance. Featuring DryMove™ technology, this jacket keeps you dry and comfortable during workouts and outdoor activities.",
       "stock": 76,
       "date_added": "2024-12-23T01:09:14.974Z",
       "reviews": [
         {
-          "user": "a def",
-          "comment": "a def",
-          "rating": 3,
+          "user": "John Doe",
+          "comment": "Great fit and really comfortable for workouts! The material is soft, and it keeps me dry during intense exercises.",
+          "rating": 4,
           "date": "2024-12-23T01:09:14.974Z"
         },
         {
-          "user": "a definir",
-          "comment": "a definir",
-          "rating": 8,
+          "user": "Jane Smith",
+          "comment": "Love this jacket! It’s perfect for the gym and looks good too. Would definitely recommend it.",
+          "rating": 5,
+          "date": "2024-12-23T01:09:14.974Z"
+        },
+        {
+          "user": "Mark Johnson",
+          "comment": "Nice jacket, but a bit too warm for outdoor running. Otherwise, it's great for indoor exercises.",
+          "rating": 3,
           "date": "2024-12-23T01:09:14.974Z"
         }
       ]
     },
     {
-      "id": "9",
+      "id": 9,
       "name": "Bouclé-weave jacket",
       "price": 34.99,
-      "category": [
-        "Una de estas",
-        "T-shirt",
-        "Shirt",
-        "Pants",
-        "Shoes",
-        "Dress",
-        "Accessories"
-      ],
-      "style": [
-        "Uno de estos",
-        "Night",
-        "Office",
-        "Casual",
-        "Gym",
-        "Formal"
-      ],
+      "category": "Jacket",
+      "style":"Casual",
       "store": {
         "id": 2,
         "name": "Green Style",
@@ -620,18 +653,8 @@
       "rating": 2,
       "weight": 156,
       "weight_unit": "g",
-      "available_sizes": [
-        "Random entre estas tallas, puede haber una o solo varias.",
-        "XS",
-        "S",
-        "L",
-        "M",
-        "X",
-        "XXL"
-      ],
-      "materials": [
-        "materiales"
-      ],
+      "available_sizes": ["S", "M", "L"],
+      "materials": ["Organic Cotton"],
       "modelImage": "https://image.hm.com/assets/hm/09/02/09024f2c84828641c234ce7479925332d3ccea8f.jpg",
       "image": "https://image.hm.com/assets/hm/90/c4/90c4831467c551fe9a41b6796b35ef8950da4d4b.jpg",
       "swatches": [
@@ -660,45 +683,30 @@
           "url": "https://image.hm.com/assets/hm/a8/99/a89957a277343eb0b50909882d05deafa68e03ee.jpg"
         }
       ],
-      "description": "a def",
+      "description": "A stylish bouclé-weave jacket that combines comfort with fashion. Perfect for casual outings, this jacket features a unique texture and comes in two elegant colors: Cream and Black/Glittery.",
       "stock": 67,
       "date_added": "2024-12-23T01:09:14.974Z",
       "reviews": [
         {
-          "user": "a def",
-          "comment": "a def",
-          "rating": 1,
+          "user": "Alice Green",
+          "comment": "I loved the look of this jacket, but the fabric feels a bit too rough for my liking. It does have a nice fit though.",
+          "rating": 2,
           "date": "2024-12-23T01:09:14.974Z"
         },
         {
-          "user": "a definir",
-          "comment": "a definir",
-          "rating": 2,
+          "user": "David Brown",
+          "comment": "Not what I expected, the jacket was a bit too tight and uncomfortable. Wouldn't buy again.",
+          "rating": 1,
           "date": "2024-12-23T01:09:14.974Z"
         }
       ]
     },
     {
-      "id": "10",
+      "id": 10,
       "name": "Tie-belt teddy coat",
       "price": 79.99,
-      "category": [
-        "Una de estas",
-        "T-shirt",
-        "Shirt",
-        "Pants",
-        "Shoes",
-        "Dress",
-        "Accessories"
-      ],
-      "style": [
-        "Uno de estos",
-        "Night",
-        "Office",
-        "Casual",
-        "Gym",
-        "Formal"
-      ],
+      "category": "Dress",
+      "style": "Casual",
       "store": {
         "id": 1,
         "name": "EcoDesign",
@@ -715,18 +723,8 @@
       "rating": 1,
       "weight": 650,
       "weight_unit": "g",
-      "available_sizes": [
-        "Random entre estas tallas, puede haber una o solo varias.",
-        "XS",
-        "S",
-        "L",
-        "M",
-        "X",
-        "XXL"
-      ],
-      "materials": [
-        "materiales"
-      ],
+      "available_sizes": ["M", "L", "XL"],
+      "materials": ["Organic Hemp"],
       "modelImage": "https://image.hm.com/assets/hm/87/fa/87faa124a49967028c89de9727392c21bbe6021b.jpg",
       "image": "https://image.hm.com/assets/hm/f2/b6/f2b6a736f1212f22c2e8ea08e7c1bbe609c64919.jpg",
       "swatches": [
@@ -747,20 +745,3161 @@
           "url": "https://image.hm.com/assets/hm/7c/bd/7cbd17f3c8fe0b6800b3195e7b1b31da9e41789d.jpg"
         }
       ],
-      "description": "a def",
+      "description": "A cozy and stylish teddy coat with a tie-belt feature, perfect for casual outings on colder days. Made with eco-friendly organic hemp, it offers both comfort and a trendy look.",
       "stock": 72,
       "date_added": "2024-12-23T01:09:14.974Z",
       "reviews": [
         {
-          "user": "a def",
-          "comment": "a def",
-          "rating": 6,
+          "user": "Maria Lopez",
+          "comment": "The coat is very comfortable but the color is lighter than expected. Still, I love it for casual days out.",
+          "rating": 2,
           "date": "2024-12-23T01:09:14.974Z"
         },
         {
-          "user": "a definir",
-          "comment": "a definir",
-          "rating": 6,
+          "user": "Carlos Ruiz",
+          "comment": "I had high expectations, but the coat felt a bit too bulky for me. I had to return it.",
+          "rating": 1,
+          "date": "2024-12-23T01:09:14.974Z"
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "name": "Double-faced biker jacket",
+      "price": 59.99,
+      "category": "Jacket",
+      "style": "Casual",
+      "store": {
+        "id": 2,
+        "name": "Green Style",
+        "location": {
+          "city_name": "Rome",
+          "country": "Italy",
+          "latitude": 41.9028,
+          "longitude": 12.4964,
+          "distance_to_madrid": 1300,
+          "distance_unit": "km",
+          "transport_method": "ship"
+        }
+      },
+      "rating": 3,
+      "weight": 228,
+      "weight_unit": "g",
+      "available_sizes": ["M", "L", "XL"],
+      "materials": ["Recycled Polyester"],
+      "modelImage": "https://image.hm.com/assets/hm/a8/ff/a8ff0fe5901877cbaf610857125ebc4cd6b8b9ca.jpg",
+      "image": "https://image.hm.com/assets/hm/9c/d6/9cd6d0c69bfc46563a44a1919b056fab38b2e116.jpg",
+      "swatches": [
+        {
+          "colorName": "Black",
+          "colorCode": "272628",
+          "productImage": "https://image.hm.com/assets/hm/9c/d6/9cd6d0c69bfc46563a44a1919b056fab38b2e116.jpg"
+        },
+        {
+          "colorName": "Dark brown",
+          "colorCode": "3B312B",
+          "productImage": "https://image.hm.com/assets/hm/aa/56/aa56d80211cc824cd97d20527f63bd0efc58d3ea.jpg"
+        }
+      ],
+      "images": [
+        {
+          "url": "https://image.hm.com/assets/hm/20/f6/20f60fa0e3b264feddcc5c12f08807b03e807e8b.jpg"
+        },
+        {
+          "url": "https://image.hm.com/assets/hm/0f/d9/0fd9effd369c4053e8f0207889f77c80a5a94e36.jpg"
+        },
+        {
+          "url": "https://image.hm.com/assets/hm/6b/43/6b43dc9b393026ee1245dd3cb9bb9ebf98c92cd2.jpg"
+        },
+        {
+          "url": "https://image.hm.com/assets/hm/97/b7/97b7c2218187f4947d64ef03c64a6215de564e2a.jpg"
+        },
+        {
+          "url": "https://image.hm.com/assets/hm/14/ef/14ef847ba0d73cc4b9aa87cd0741c6cc59119693.jpg"
+        }
+      ],
+      "description": "A sleek and modern double-faced biker jacket perfect for casual outings. Made from eco-friendly recycled polyester, it offers both style and sustainability.",
+      "stock": 75,
+      "date_added": "2024-12-23T01:09:14.974Z",
+      "reviews": [
+        {
+          "user": "Giulia Ferrari",
+          "comment": "The jacket is stylish but not as warm as expected. Good for mild weather.",
+          "rating": 3,
+          "date": "2024-12-23T01:09:14.974Z"
+        },
+        {
+          "user": "Marco Rossi",
+          "comment": "Love the design, but the fit was a bit off. I had to size up.",
+          "rating": 2,
+          "date": "2024-12-23T01:09:14.974Z"
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "name": "Wool-blend tie-belt coat",
+      "price": 189.99,
+      "category": "Jacket",
+      "style": "Formal",
+      "store": {
+        "id": 6,
+        "name": "Creative Eco",
+        "location": {
+          "city_name": "Brussels",
+          "country": "Belgium",
+          "latitude": 50.8503,
+          "longitude": 4.3517,
+          "distance_to_madrid": 1300,
+          "distance_unit": "km",
+          "transport_method": "train"
+        }
+      },
+      "rating": 4,
+      "weight": 474,
+      "weight_unit": "g",
+      "available_sizes": ["M", "L", "XL"],
+      "materials": ["Organic Hemp"],
+      "modelImage": "https://image.hm.com/assets/hm/1b/96/1b961e1553f54339976514aa1a0266b6b7348540.jpg",
+      "image": "https://image.hm.com/assets/hm/84/14/841423b48700209c6373905b0b420d3e4a12db86.jpg",
+      "swatches": [
+        {
+          "colorName": "Brown",
+          "colorCode": "8C7053",
+          "productImage": "https://image.hm.com/assets/hm/84/14/841423b48700209c6373905b0b420d3e4a12db86.jpg"
+        },
+        {
+          "colorName": "Light beige marl",
+          "colorCode": "DBD4BE",
+          "productImage": "https://image.hm.com/assets/hm/58/b4/58b48cbd129e19c144f394f49411a1f767381b68.jpg"
+        }
+      ],
+      "images": [
+        {
+          "url": "https://image.hm.com/assets/hm/d6/ab/d6abbf8ba4d025640b6d5eb1b5b9574957af6a8c.jpg"
+        },
+        {
+          "url": "https://image.hm.com/assets/hm/d5/68/d568de55945fbf42dc90101a95e0eb2ba3024736.jpg"
+        },
+        {
+          "url": "https://image.hm.com/assets/hm/77/2f/772f4075d7c037bea404fa99421442147283eeea.jpg"
+        },
+        {
+          "url": "https://image.hm.com/assets/hm/91/ed/91edbe822c0e568914b933f884a9af0b0e8d5acf.jpg"
+        }
+      ],
+      "description": "A luxurious wool-blend coat designed with a tie-belt for a chic silhouette. Ideal for formal occasions, this coat combines warmth and style.",
+      "stock": 28,
+      "date_added": "2024-12-23T01:09:14.974Z",
+      "reviews": [
+        {
+          "user": "Lucie Dupont",
+          "comment": "Absolutely love the coat, it's very warm and stylish, perfect for winter.",
+          "rating": 5,
+          "date": "2024-12-23T01:09:14.974Z"
+        },
+        {
+          "user": "John Clarke",
+          "comment": "The coat is good, but a bit too heavy for my liking.",
+          "rating": 3,
+          "date": "2024-12-23T01:09:14.974Z"
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "name": "Double-breasted car coat",
+      "price": 54.99,
+      "category": "Jacket",
+      "style": "Office",
+      "store": {
+        "id": 2,
+        "name": "Green Style",
+        "location": {
+          "city_name": "Rome",
+          "country": "Italy",
+          "latitude": 41.9028,
+          "longitude": 12.4964,
+          "distance_to_madrid": 1300,
+          "distance_unit": "km",
+          "transport_method": "ship"
+        }
+      },
+      "rating": 5,
+      "weight": 154,
+      "weight_unit": "g",
+      "available_sizes": ["XS", "S", "M", "L", "XL", "XXL"],
+      "materials": ["Recycled Polyester"],
+      "modelImage": "https://image.hm.com/assets/hm/1d/91/1d91e5c30c0aeacf6f1feb85f11b1a25835d37c0.jpg",
+      "image": "https://image.hm.com/assets/hm/58/7a/587aaf38e96dff41281712b88fc8920cd26eefda.jpg",
+      "swatches": [
+        {
+          "colorName": "Grey",
+          "colorCode": "90939C",
+          "productImage": "https://image.hm.com/assets/hm/58/7a/587aaf38e96dff41281712b88fc8920cd26eefda.jpg"
+        },
+        {
+          "colorName": "Navy blue",
+          "colorCode": "272930",
+          "productImage": "https://image.hm.com/assets/hm/e1/78/e1786a06807a1090f1e59b8b692cd6c8ffa9944e.jpg"
+        }
+      ],
+      "images": [
+        {
+          "url": "https://image.hm.com/assets/hm/9f/62/9f621a665477e5ce8b21a49356c69db54317055a.jpg"
+        },
+        {
+          "url": "https://image.hm.com/assets/hm/2c/6f/2c6fb1454f62bff30b564f55d75fee1ce31de6a6.jpg"
+        },
+        {
+          "url": "https://image.hm.com/assets/hm/8e/5a/8e5a716d61e8403344d1acca76f6ea2e5792d022.jpg"
+        },
+        {
+          "url": "https://image.hm.com/assets/hm/19/0b/190b5b3beb40b78a175164368283b78dcdc458a1.jpg"
+        }
+      ],
+      "description": "This stylish double-breasted car coat offers a perfect blend of fashion and function. Ideal for casual and office wear, it’s made from a high-quality wool blend for warmth and comfort.",
+      "stock": 18,
+      "date_added": "2024-12-23T01:09:14.974Z",
+      "reviews": [
+        {
+          "user": "Alice Johnson",
+          "comment": "Great fit and material! Love the grey color.",
+          "rating": 5,
+          "date": "2024-12-23T01:09:14.974Z"
+        },
+        {
+          "user": "Marcelo Gomez",
+          "comment": "The coat is beautiful, but I wish it came in more sizes.",
+          "rating": 4,
+          "date": "2024-12-23T01:09:14.974Z"
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "name": "Double-breasted felted coat",
+      "price": 49.99,
+      "category": ["Shirt"],
+      "style": ["Casual"],
+      "store": {
+        "id": 3,
+        "name": "Nature Creations",
+        "location": {
+          "city_name": "Lisbon",
+          "country": "Portugal",
+          "latitude": 38.7169,
+          "longitude": -9.1395,
+          "distance_to_madrid": 640,
+          "distance_unit": "km",
+          "transport_method": "truck"
+        }
+      },
+      "rating": 4,
+      "weight": 112,
+      "weight_unit": "g",
+      "available_sizes": ["M", "L", "XL"],
+      "materials": ["Organic Cotton", "Recycled Polyester"],
+      "modelImage": "https://image.hm.com/assets/hm/a2/64/a2643ba5b9eaa7b98961ed4930aa2c1150883202.jpg",
+      "image": "https://image.hm.com/assets/hm/b7/e4/b7e46724a3af3428f29e6a7011192bc164fd8e2c.jpg",
+      "swatches": [
+        {
+          "colorName": "Black",
+          "colorCode": "272628",
+          "productImage": "https://image.hm.com/assets/hm/b7/e4/b7e46724a3af3428f29e6a7011192bc164fd8e2c.jpg"
+        },
+        {
+          "colorName": "Dark beige",
+          "colorCode": "9D7F63",
+          "productImage": "https://image.hm.com/assets/hm/da/f2/daf2f87549e5a252d54c95b14ed8f32c0f9c692f.jpg"
+        }
+      ],
+      "images": [
+        {
+          "url": "https://image.hm.com/assets/hm/d1/80/d18033aa1fc096366c7dbf4777769c309c4ed1fc.jpg"
+        },
+        {
+          "url": "https://image.hm.com/assets/hm/68/e9/68e9b2bf9d459d5e02adf946b65404f63a6fc98b.jpg"
+        },
+        {
+          "url": "https://image.hm.com/assets/hm/b4/2b/b42bdcf33094ae4205650ebc4592e6f1127a368b.jpg"
+        },
+        {
+          "url": "https://image.hm.com/assets/hm/ba/5a/ba5a450cb253b8c7f9a9b6b5229599f0c4ec4ae3.jpg"
+        }
+      ],
+      "description": "This double-breasted felted coat is the perfect addition to any casual wardrobe. Made with organic cotton and recycled polyester, it combines sustainability with style. Ideal for cooler days, its comfortable and versatile design ensures you can stay warm and chic.",
+      "stock": 34,
+      "date_added": "2024-12-23T01:09:14.974Z",
+      "reviews": [
+        {
+          "user": "Emma Williams",
+          "comment": "I absolutely love this coat! It fits perfectly and the fabric is so soft. Great for casual outings.",
+          "rating": 4,
+          "date": "2024-12-23T01:09:14.974Z"
+        },
+        {
+          "user": "John Smith",
+          "comment": "The coat looks good, but I found it a bit too bulky for my liking. Still, it's comfortable.",
+          "rating": 3,
+          "date": "2024-12-23T01:09:14.974Z"
+        },
+        {
+          "user": "Olivia Martinez",
+          "comment": "Very happy with my purchase. The color and quality are just as expected!",
+          "rating": 4,
+          "date": "2024-12-23T01:09:14.974Z"
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "name": "Brushed-finish jacket",
+      "price": 39.99,
+      "category": ["Shirt"],
+      "style": ["Casual"],
+      "store": {
+        "id": 8,
+        "name": "Green Craft",
+        "location": {
+          "city_name": "Prague",
+          "country": "Czech Republic",
+          "latitude": 50.0755,
+          "longitude": 14.4378,
+          "distance_to_madrid": 1500,
+          "distance_unit": "km",
+          "transport_method": "train"
+        }
+      },
+      "rating": 5,
+      "weight": 339,
+      "weight_unit": "g",
+      "available_sizes": ["M", "L", "XL"],
+      "materials": ["Recycled Polyester", "Organic Cotton"],
+      "modelImage": "https://image.hm.com/assets/hm/8c/1b/8c1b7bab5fcc59cd570274008c2e3c0d71f78191.jpg",
+      "image": "https://image.hm.com/assets/hm/91/42/9142bba1ca804c17a85b867b979df70c5c49573d.jpg",
+      "swatches": [
+        {
+          "colorName": "Black",
+          "colorCode": "272628",
+          "productImage": "https://image.hm.com/assets/hm/91/42/9142bba1ca804c17a85b867b979df70c5c49573d.jpg"
+        },
+        {
+          "colorName": "Light beige",
+          "colorCode": "D4D0C8",
+          "productImage": "https://image.hm.com/assets/hm/c6/e0/c6e0f3a58ee47ca2b348b29d75770b6d9195efb2.jpg"
+        },
+        {
+          "colorName": "Beige/Leopard print",
+          "colorCode": "706248",
+          "productImage": "https://image.hm.com/assets/hm/99/ff/99fff2364b273e9909220143eddff52a81236bb1.jpg"
+        }
+      ],
+      "images": [
+        {
+          "url": "https://image.hm.com/assets/hm/c4/03/c4035b64bdc4d945e0825fbee9d8b045e49b02c2.jpg"
+        },
+        {
+          "url": "https://image.hm.com/assets/hm/ea/2c/ea2cf38bb8e2f6fe6af400e88b2d7e2172b36643.jpg"
+        },
+        {
+          "url": "https://image.hm.com/assets/hm/f3/73/f37313fd8cfd6dc6279261654ee0f52bfb48bc2a.jpg"
+        },
+        {
+          "url": "https://image.hm.com/assets/hm/93/5a/935a5feecff15b38ebae8db108305804f1594c6e.jpg"
+        }
+      ],
+      "description": "This brushed-finish jacket offers a stylish and comfortable layer for casual outings. Made from recycled polyester and organic cotton, it provides a sustainable choice without compromising on quality or style. Perfect for cooler days, its unique texture adds an extra touch to your wardrobe.",
+      "stock": 18,
+      "date_added": "2024-12-23T01:09:14.974Z",
+      "reviews": [
+        {
+          "user": "Lena Novak",
+          "comment": "I love the soft feel and the fit of this jacket. It’s perfect for the colder weather!",
+          "rating": 5,
+          "date": "2024-12-23T01:09:14.974Z"
+        },
+        {
+          "user": "Marek Jelinek",
+          "comment": "It’s a nice jacket, but the sleeves are a little long for me. Still, I like the material.",
+          "rating": 4,
+          "date": "2024-12-23T01:09:14.974Z"
+        },
+        {
+          "user": "Tereza Vavra",
+          "comment": "Great quality, feels comfortable and the colors are just like in the picture!",
+          "rating": 5,
+          "date": "2024-12-23T01:09:14.974Z"
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "name": "Double-breasted felted coat",
+      "price": 49.99,
+      "category": ["Dress"],
+      "style": ["Formal"],
+      "store": {
+        "id": 7,
+        "name": "Sustained Innovations",
+        "location": {
+          "city_name": "Berlin",
+          "country": "Germany",
+          "latitude": 52.52,
+          "longitude": 13.405,
+          "distance_to_madrid": 1800,
+          "distance_unit": "km",
+          "transport_method": "plane"
+        }
+      },
+      "rating": 4,
+      "weight": 693,
+      "weight_unit": "g",
+      "available_sizes": ["S", "M", "L"],
+      "materials": ["Recycled Polyester", "Organic Hemp"],
+      "modelImage": "https://image.hm.com/assets/hm/bc/20/bc201fdca9ce674cf869ebe13ba5b08245472999.jpg",
+      "image": "https://image.hm.com/assets/hm/da/f2/daf2f87549e5a252d54c95b14ed8f32c0f9c692f.jpg",
+      "swatches": [
+        {
+          "colorName": "Dark beige",
+          "colorCode": "9D7F63",
+          "productImage": "https://image.hm.com/assets/hm/da/f2/daf2f87549e5a252d54c95b14ed8f32c0f9c692f.jpg"
+        },
+        {
+          "colorName": "Black",
+          "colorCode": "272628",
+          "productImage": "https://image.hm.com/assets/hm/b7/e4/b7e46724a3af3428f29e6a7011192bc164fd8e2c.jpg"
+        }
+      ],
+      "images": [
+        {
+          "url": "https://image.hm.com/assets/hm/79/97/7997dafbd9d06a903859aa24a9e243dbcfc34f11.jpg"
+        },
+        {
+          "url": "https://image.hm.com/assets/hm/1e/fe/1efe8ccff7b6ea88888e2efe4a1197b52ea2ed6a.jpg"
+        },
+        {
+          "url": "https://image.hm.com/assets/hm/b0/ee/b0ee12eba21ba40d24be32dc577fd58baf2ee498.jpg"
+        },
+        {
+          "url": "https://image.hm.com/assets/hm/f0/b4/f0b44b08f16efe642a2af8bf438aba31c8939269.jpg"
+        },
+        {
+          "url": "https://image.hm.com/assets/hm/b6/05/b605601f94c5f0f58344e761cb3a60bb800a8c3b.jpg"
+        }
+      ],
+      "description": "This double-breasted felted coat is designed to provide warmth and style during the colder months. Featuring a classic and elegant silhouette, it combines a rich texture with a versatile design, perfect for formal occasions or a refined day at the office.",
+      "stock": 84,
+      "date_added": "2024-12-23T01:09:14.974Z",
+      "reviews": [
+        {
+          "user": "Clara Müller",
+          "comment": "I love how classy this coat is! It’s warm and stylish for any formal event.",
+          "rating": 5,
+          "date": "2024-12-23T01:09:14.974Z"
+        },
+        {
+          "user": "Hans Becker",
+          "comment": "The material is great but I feel it’s a bit too heavy for everyday wear.",
+          "rating": 3,
+          "date": "2024-12-23T01:09:14.974Z"
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "name": "Warm sports jacket",
+      "price": 42.99,
+      "category": ["Jacket"],
+      "style": ["Casual"],
+      "store": {
+        "id": 4,
+        "name": "Chic Design",
+        "location": {
+          "city_name": "Paris",
+          "country": "France",
+          "latitude": 48.8566,
+          "longitude": 2.3522,
+          "distance_to_madrid": 1300,
+          "distance_unit": "km",
+          "transport_method": "train"
+        }
+      },
+      "rating": 2,
+      "weight": 265,
+      "weight_unit": "g",
+      "available_sizes": ["M", "L", "XL"],
+      "materials": ["Organic Cotton", "Recycled Polyester"],
+      "modelImage": "https://image.hm.com/assets/hm/87/c9/87c9fc9dbf9cd98d3ae8f925d1fc114dc469c6f8.jpg",
+      "image": "https://image.hm.com/assets/hm/7b/90/7b90eedfdded110a6b9e54047ba57f342ea7cbff.jpg",
+      "swatches": [
+        {
+          "colorName": "Black",
+          "colorCode": "272628",
+          "productImage": "https://image.hm.com/assets/hm/7b/90/7b90eedfdded110a6b9e54047ba57f342ea7cbff.jpg"
+        },
+        {
+          "colorName": "Light beige",
+          "colorCode": "C3BFB5",
+          "productImage": "https://image.hm.com/assets/hm/ba/07/ba0785d57d23449efd3d9f221b96ab9f24075f99.jpg"
+        }
+      ],
+      "images": [
+        {
+          "url": "https://image.hm.com/assets/hm/4c/83/4c83d7bdb5ed1cc1d92a1133353faa9060387f5a.jpg"
+        },
+        {
+          "url": "https://image.hm.com/assets/hm/a9/33/a933a7ac48efc24462db8e24f875de73efc7a783.jpg"
+        },
+        {
+          "url": "https://image.hm.com/assets/hm/98/b4/98b42705ca187f98074cfca163c7baf71d7a74d3.jpg"
+        },
+        {
+          "url": "https://image.hm.com/assets/hm/0e/c0/0ec0e66caf51a6d9a09910d658b544793c1a29fe.jpg"
+        },
+        {
+          "url": "https://image.hm.com/assets/hm/58/13/5813a8b0988a12d38505c35b87a5b8993537d232.jpg"
+        },
+        {
+          "url": "https://image.hm.com/assets/hm/d4/4c/d44c93c729dade9508c2af62b52b8c28a978aa42.jpg"
+        },
+        {
+          "url": "https://image.hm.com/assets/hm/90/3b/903b76b9b7641437b63c9e68ed354be5d276a63c.jpg"
+        }
+      ],
+      "description": "A warm and comfortable sports jacket perfect for casual outings. Crafted from a blend of organic cotton and recycled polyester, it offers both style and sustainability.",
+      "stock": 31,
+      "date_added": "2024-12-23T01:09:14.974Z",
+      "reviews": [
+        {
+          "user": "Alice",
+          "comment": "Great jacket, very comfy and stylish for casual wear!",
+          "rating": 4,
+          "date": "2024-12-23T01:09:14.974Z"
+        },
+        {
+          "user": "John",
+          "comment": "The jacket is warm but feels a bit tight on the arms. Still a good buy.",
+          "rating": 3,
+          "date": "2024-12-23T01:09:14.974Z"
+        },
+        {
+          "user": "Emma",
+          "comment": "Love the material, it feels soft and eco-friendly. Highly recommend it!",
+          "rating": 4,
+          "date": "2024-12-23T01:09:14.974Z"
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "name": "Double-faced jacket",
+      "price": 54.99,
+      "category": ["Jacket"],
+      "style": ["Formal"],
+      "store": {
+        "id": 2,
+        "name": "Green Style",
+        "location": {
+          "city_name": "Rome",
+          "country": "Italy",
+          "latitude": 41.9028,
+          "longitude": 12.4964,
+          "distance_to_madrid": 1300,
+          "distance_unit": "km",
+          "transport_method": "ship"
+        }
+      },
+      "rating": 5,
+      "weight": 497,
+      "weight_unit": "g",
+      "available_sizes": ["M", "L", "XL"],
+      "materials": ["Organic Hemp", "Recycled Denim"],
+      "modelImage": "https://image.hm.com/assets/hm/61/9b/619b9542e286f15efe45614f99bbfa8b01b1fd5a.jpg",
+      "image": "https://image.hm.com/assets/hm/7b/6f/7b6fa6106bd2bc1ff0e8462669b1286f4096e46b.jpg",
+      "swatches": [
+        {
+          "colorName": "Black",
+          "colorCode": "272628",
+          "productImage": "https://image.hm.com/assets/hm/7b/6f/7b6fa6106bd2bc1ff0e8462669b1286f4096e46b.jpg"
+        },
+        {
+          "colorName": "Dark beige",
+          "colorCode": "9E886B",
+          "productImage": "https://image.hm.com/assets/hm/67/3d/673d89c0037cd6566340f1ed7e136028f005421d.jpg"
+        }
+      ],
+      "images": [
+        {
+          "url": "https://image.hm.com/assets/hm/39/27/3927b1cec2cfd98287b726a9caee30fc9a5f8dbc.jpg"
+        },
+        {
+          "url": "https://image.hm.com/assets/hm/5b/10/5b10889f2b52aadb854b0bee026685eb2e498d86.jpg"
+        },
+        {
+          "url": "https://image.hm.com/assets/hm/a4/91/a4919082f0c1eedc36ae7469f6a89f2b89e6180b.jpg"
+        },
+        {
+          "url": "https://image.hm.com/assets/hm/d2/5d/d25d2b6e4682b42d98255cf271d91f0f06e1c0fa.jpg"
+        }
+      ],
+      "description": "A high-quality double-faced jacket that blends formal style with comfort. Perfect for both professional and elegant occasions, made from organic hemp and recycled denim.",
+      "stock": 60,
+      "date_added": "2024-12-23T01:09:14.974Z",
+      "reviews": [
+        {
+          "user": "Sophia",
+          "comment": "Love the double-faced design, perfect for layering! The material feels great and sustainable.",
+          "rating": 4,
+          "date": "2024-12-23T01:09:14.974Z"
+        },
+        {
+          "user": "Luca",
+          "comment": "The jacket fits perfectly and looks sharp for office wear. Highly recommend it!",
+          "rating": 5,
+          "date": "2024-12-23T01:09:14.974Z"
+        },
+        {
+          "user": "Giulia",
+          "comment": "The beige color is beautiful, but I was expecting it to be a bit more versatile. Still, a solid purchase.",
+          "rating": 4,
+          "date": "2024-12-23T01:09:14.974Z"
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "name": "Double-faced gilet",
+      "price": 44.99,
+      "category": ["Jacket"],
+      "style": ["Casual"],
+      "store": {
+        "id": 6,
+        "name": "Creative Eco",
+        "location": {
+          "city_name": "Brussels",
+          "country": "Belgium",
+          "latitude": 50.8503,
+          "longitude": 4.3517,
+          "distance_to_madrid": 1300,
+          "distance_unit": "km",
+          "transport_method": "train"
+        }
+      },
+      "rating": 4,
+      "weight": 320,
+      "weight_unit": "g",
+      "available_sizes": ["M", "L", "XL"],
+      "materials": ["Organic Cotton", "Recycled Polyester"],
+      "modelImage": "https://image.hm.com/assets/hm/5b/19/5b19a2c5a7369e208d932575a72d88fafa42b1a3.jpg",
+      "image": "https://image.hm.com/assets/hm/c1/ff/c1ffe0db3cb083df660685e7db0560febf5775d6.jpg",
+      "swatches": [
+        {
+          "colorName": "Black",
+          "colorCode": "272628",
+          "productImage": "https://image.hm.com/assets/hm/c1/ff/c1ffe0db3cb083df660685e7db0560febf5775d6.jpg"
+        }
+      ],
+      "images": [
+        {
+          "url": "https://image.hm.com/assets/hm/8c/d0/8cd01f774e9466d6cb27f0b6e362ef5ca6e208b3.jpg"
+        },
+        {
+          "url": "https://image.hm.com/assets/hm/da/85/da85dae687cb8e55ae56494589bc11cf95a40345.jpg"
+        },
+        {
+          "url": "https://image.hm.com/assets/hm/e6/a1/e6a10437df2e48e9964c6f014bdb8bed4c19ccea.jpg"
+        },
+        {
+          "url": "https://image.hm.com/assets/hm/34/8a/348a316438f99832d8a60517a117b9e2739b9850.jpg"
+        }
+      ],
+      "description": "A versatile and stylish double-faced gilet designed for everyday wear. Crafted from organic cotton and recycled polyester, it offers comfort and a modern look.",
+      "stock": 52,
+      "date_added": "2024-12-23T01:09:14.974Z",
+      "reviews": [
+        {
+          "user": "Emma",
+          "comment": "This gilet is perfect for layering on colder days. It feels light yet warm, and the material is very comfortable.",
+          "rating": 4,
+          "date": "2024-12-23T01:09:14.974Z"
+        },
+        {
+          "user": "Maxime",
+          "comment": "Great quality, but I expected the fit to be a bit more snug. Still, a good product overall.",
+          "rating": 3,
+          "date": "2024-12-23T01:09:14.974Z"
+        },
+        {
+          "user": "Laura",
+          "comment": "Love the black color and how versatile it is. It’s perfect for a casual day out or even a slightly dressier occasion.",
+          "rating": 5,
+          "date": "2024-12-23T01:09:14.974Z"
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "name": "Double-breasted coat",
+      "price": 54.99,
+      "category": ["Shirt"],
+      "style": ["Formal"],
+      "store": {
+        "id": 8,
+        "name": "Green Craft",
+        "location": {
+          "city_name": "Prague",
+          "country": "Czech Republic",
+          "latitude": 50.0755,
+          "longitude": 14.4378,
+          "distance_to_madrid": 1500,
+          "distance_unit": "km",
+          "transport_method": "train"
+        }
+      },
+      "rating": 2,
+      "weight": 292,
+      "weight_unit": "g",
+      "available_sizes": ["M", "L"],
+      "materials": ["Organic Cotton", "Recycled Polyester"],
+      "modelImage": "https://image.hm.com/assets/hm/76/5a/765ac940531a8b9b503143cfb0e5ee5d55585a33.jpg",
+      "image": "https://image.hm.com/assets/hm/51/e8/51e85729c0069fa37bea38605598c9a3f34d583a.jpg",
+      "swatches": [
+        {
+          "colorName": "Light beige",
+          "colorCode": "D4D0C8",
+          "productImage": "https://image.hm.com/assets/hm/51/e8/51e85729c0069fa37bea38605598c9a3f34d583a.jpg"
+        },
+        {
+          "colorName": "Grey",
+          "colorCode": "90939C",
+          "productImage": "https://image.hm.com/assets/hm/fa/fb/fafb03e16b5b1a2cc2259ff0bf241a4b6d8b758d.jpg"
+        },
+        {
+          "colorName": "Black",
+          "colorCode": "272628",
+          "productImage": "https://image.hm.com/assets/hm/6a/6f/6a6f1eed2495ad0ef7a60de6a5d0268bf7a89a13.jpg"
+        },
+        {
+          "colorName": "Dark beige",
+          "colorCode": "83786F",
+          "productImage": "https://image.hm.com/assets/hm/ae/97/ae972dc6e38b67b541c7d6fe723e262cc4a1ef84.jpg"
+        }
+      ],
+      "images": [
+        {
+          "url": "https://image.hm.com/assets/hm/a0/a1/a0a1127e4cf36473875d4b1574a9aa0c9f1554a0.jpg"
+        },
+        {
+          "url": "https://image.hm.com/assets/hm/ee/91/ee91272b9f6933f79d6c9cb300d3d9780b0f8b66.jpg"
+        },
+        {
+          "url": "https://image.hm.com/assets/hm/d8/15/d8159bc759d6ad08c21748e84c5f022d6fefb956.jpg"
+        },
+        {
+          "url": "https://image.hm.com/assets/hm/23/49/2349974be38b4e6c815e55ac404fb663c16e1a61.jpg"
+        }
+      ],
+      "description": "A stylish and versatile double-breasted coat, perfect for formal occasions. Made from organic cotton and recycled polyester for a sustainable yet elegant look.",
+      "stock": 0,
+      "date_added": "2024-12-23T01:09:14.974Z",
+      "reviews": [
+        {
+          "user": "Anna Smith",
+          "comment": "The coat is very well made and fits perfectly. Highly recommend!",
+          "rating": 4,
+          "date": "2024-12-23T01:09:14.974Z"
+        },
+        {
+          "user": "John Doe",
+          "comment": "The material feels great, but I was hoping for a slightly better fit.",
+          "rating": 3,
+          "date": "2024-12-23T01:09:14.974Z"
+        },
+        {
+          "user": "Lily Green",
+          "comment": "Lovely coat! Looks stylish and keeps me warm.",
+          "rating": 4,
+          "date": "2024-12-23T01:09:14.974Z"
+        }
+      ]
+    },
+    {
+      "id": 21,
+      "name": "Quilted gilet in ThermoMove™",
+      "price": 44.99,
+      "category": ["Shirt"],
+      "style": ["Casual"],
+      "store": {
+        "id": 2,
+        "name": "Green Style",
+        "location": {
+          "city_name": "Rome",
+          "country": "Italy",
+          "latitude": 41.9028,
+          "longitude": 12.4964,
+          "distance_to_madrid": 1300,
+          "distance_unit": "km",
+          "transport_method": "ship"
+        }
+      },
+      "rating": 4,
+      "weight": 560,
+      "weight_unit": "g",
+      "available_sizes": ["M", "L", "XL"],
+      "materials": ["Recycled Polyester", "Organic Cotton"],
+      "modelImage": "https://image.hm.com/assets/hm/1a/69/1a69c0cef2c2a7d2d656633d47b72d4680707dec.jpg",
+      "image": "https://image.hm.com/assets/hm/04/89/04891b839bf5cef119f517c9d7da9f963ffa292e.jpg",
+      "swatches": [
+        {
+          "colorName": "Black",
+          "colorCode": "272628",
+          "productImage": "https://image.hm.com/assets/hm/04/89/04891b839bf5cef119f517c9d7da9f963ffa292e.jpg"
+        },
+        {
+          "colorName": "Light beige",
+          "colorCode": "D3CFC5",
+          "productImage": "https://image.hm.com/assets/hm/3b/19/3b1914b88298a25db147e0f69129d49170a74650.jpg"
+        }
+      ],
+      "images": [
+        {
+          "url": "https://image.hm.com/assets/hm/cb/31/cb31e0b10fec0df9e0b20f49c3445ff611e076b2.jpg"
+        },
+        {
+          "url": "https://image.hm.com/assets/hm/55/2e/552e11a5cd729b171d35aff9d2308eb7d7e8a1ce.jpg"
+        },
+        {
+          "url": "https://image.hm.com/assets/hm/d7/1d/d71db90fb20613ac2948d97279c0ce349f59605d.jpg"
+        },
+        {
+          "url": "https://image.hm.com/assets/hm/b9/1f/b91f28f824a9f5dc91961867515501bf92d540f6.jpg"
+        }
+      ],
+      "description": "A warm and stylish quilted gilet made with ThermoMove™ technology to keep you comfortable. Perfect for casual wear during chilly days.",
+      "stock": 21,
+      "date_added": "2024-12-23T01:09:14.974Z",
+      "reviews": [
+        {
+          "user": "Sophia Turner",
+          "comment": "Great fit and keeps me warm! Love the fabric.",
+          "rating": 4,
+          "date": "2024-12-23T01:09:14.974Z"
+        },
+        {
+          "user": "David Brown",
+          "comment": "Nice gilet but could use a little more insulation.",
+          "rating": 3,
+          "date": "2024-12-23T01:09:14.974Z"
+        },
+        {
+          "user": "Emma White",
+          "comment": "Perfect for casual outings, very comfortable!",
+          "rating": 4,
+          "date": "2024-12-23T01:09:14.974Z"
+        }
+      ]
+    },
+    {
+      "id": 22,
+      "name": "Fluffy-collar twill jacket",
+      "price": 39.99,
+      "category": ["Jacket"],
+      "style": ["Casual"],
+      "store": {
+        "id": 6,
+        "name": "Creative Eco",
+        "location": {
+          "city_name": "Brussels",
+          "country": "Belgium",
+          "latitude": 50.8503,
+          "longitude": 4.3517,
+          "distance_to_madrid": 1300,
+          "distance_unit": "km",
+          "transport_method": "train"
+        }
+      },
+      "rating": 4,
+      "weight": 490,
+      "weight_unit": "g",
+      "available_sizes": ["M", "L", "XXL"],
+      "materials": ["Organic Cotton", "Recycled Polyester"],
+      "modelImage": "https://image.hm.com/assets/hm/46/2c/462c56a7cc1adc4273f9349076572d4aa560fe68.jpg",
+      "image": "https://image.hm.com/assets/hm/74/80/7480395e9703ef71b0ebfb4a0b5669ba3f44ad56.jpg",
+      "swatches": [
+        {
+          "colorName": "Light beige",
+          "colorCode": "D4D0C8",
+          "productImage": "https://image.hm.com/assets/hm/74/80/7480395e9703ef71b0ebfb4a0b5669ba3f44ad56.jpg"
+        },
+        {
+          "colorName": "Black",
+          "colorCode": "272628",
+          "productImage": "https://image.hm.com/assets/hm/b9/df/b9df87fdd9679c274c6f0ed176f4bad20ed3652f.jpg"
+        },
+        {
+          "colorName": "Beige marl",
+          "colorCode": "D9D1BD",
+          "productImage": "https://image.hm.com/assets/hm/ee/1d/ee1dd4f27bf0df84430e8c7e6b5676bdb0f3456a.jpg"
+        }
+      ],
+      "images": [
+        {
+          "url": "https://image.hm.com/assets/hm/bb/32/bb321fc1cf47a7bdebbf20647dd583531c16673f.jpg"
+        },
+        {
+          "url": "https://image.hm.com/assets/hm/64/73/6473d20fd56973e36e6b14401363d9532fca829e.jpg"
+        },
+        {
+          "url": "https://image.hm.com/assets/hm/ff/6a/ff6a6aca0f77d117c36bd99c3e3ce6b9de5fe0e8.jpg"
+        },
+        {
+          "url": "https://image.hm.com/assets/hm/c7/8d/c78dc78fded6c1edd930d70db3cff4434992c213.jpg"
+        },
+        {
+          "url": "https://image.hm.com/assets/hm/c0/46/c046afa1140f83cd5229f116d64c6b3dfdb314f5.jpg"
+        },
+        {
+          "url": "https://image.hm.com/assets/hm/0a/1d/0a1d1ad6e190c0ae4e775ff84967f64cfe58a4f3.jpg"
+        }
+      ],
+      "description": "A stylish twill jacket featuring a fluffy collar for extra warmth and comfort. Perfect for casual outings in colder weather.",
+      "stock": 26,
+      "date_added": "2024-12-23T01:09:14.974Z",
+      "reviews": [
+        {
+          "user": "Oliver Johnson",
+          "comment": "The fluffy collar is so soft! Love how cozy this jacket feels.",
+          "rating": 4,
+          "date": "2024-12-23T01:09:14.974Z"
+        },
+        {
+          "user": "Isabella Brown",
+          "comment": "Nice jacket, but I expected a thicker fabric. Still, good value for the price.",
+          "rating": 3,
+          "date": "2024-12-23T01:09:14.974Z"
+        },
+        {
+          "user": "James Davis",
+          "comment": "Fits well and the collar is a great touch. Good for casual days.",
+          "rating": 4,
+          "date": "2024-12-23T01:09:14.974Z"
+        }
+      ]
+    },
+    {
+      "id": 23,
+      "name": "Handmade wool-blend coat",
+      "price": 189.99,
+      "category": ["Dress"],
+      "style": ["Formal"],
+      "store": {
+        "id": 5,
+        "name": "Sustainable Design",
+        "location": {
+          "city_name": "Amsterdam",
+          "country": "Netherlands",
+          "latitude": 52.3676,
+          "longitude": 4.9041,
+          "distance_to_madrid": 1500,
+          "distance_unit": "km",
+          "transport_method": "plane"
+        }
+      },
+      "rating": 4,
+      "weight": 547,
+      "weight_unit": "g",
+      "available_sizes": ["S", "M", "L"],
+      "materials": ["Organic Cotton", "Recycled Polyester"],
+      "modelImage": "https://image.hm.com/assets/hm/f1/2b/f12bf2da7d4c83a1a28e12d4234e96d224d42142.jpg",
+      "image": "https://image.hm.com/assets/hm/20/22/2022e33670aea9cfbcf3ff48a1bc02a42d27b98f.jpg",
+      "swatches": [
+        {
+          "colorName": "Dark beige",
+          "colorCode": "A79985",
+          "productImage": "https://image.hm.com/assets/hm/20/22/2022e33670aea9cfbcf3ff48a1bc02a42d27b98f.jpg"
+        },
+        {
+          "colorName": "Dark grey",
+          "colorCode": "525457",
+          "productImage": "https://image.hm.com/assets/hm/1d/5e/1d5e5696c11b6d5974fb4d1c949f9c0076e2c696.jpg"
+        },
+        {
+          "colorName": "Beige",
+          "colorCode": "887D70",
+          "productImage": "https://image.hm.com/assets/hm/c4/ab/c4ab07211228fa77037abc03ccbfadb3e0e6cf38.jpg"
+        }
+      ],
+      "images": [
+        {
+          "url": "https://image.hm.com/assets/hm/bf/ab/bfab9dc7e9b6abff993680b6fb9e0eaae2f9b70b.jpg"
+        },
+        {
+          "url": "https://image.hm.com/assets/hm/6a/c4/6ac4e58f8a1d7af428300d814a51438015e591d3.jpg"
+        },
+        {
+          "url": "https://image.hm.com/assets/hm/f7/e9/f7e9f242e8814921b406005022f1c2c3f13f2468.jpg"
+        },
+        {
+          "url": "https://image.hm.com/assets/hm/a7/30/a7309454ffc46a695d96fdcc98e5b243f20ef6ef.jpg"
+        }
+      ],
+      "description": "A stylish and durable handmade wool-blend coat perfect for formal occasions. Designed with sustainability in mind, featuring high-quality organic materials and a sleek, timeless design.",
+      "stock": 94,
+      "date_added": "2024-12-23T01:09:14.974Z",
+      "reviews": [
+        {
+          "user": "John Doe",
+          "comment": "The coat is beautiful and warm, but the size ran a bit large for me. Still, great quality!",
+          "rating": 3,
+          "date": "2024-12-23T01:09:14.974Z"
+        },
+        {
+          "user": "Sarah Smith",
+          "comment": "I love the design and feel of the coat. Very classy and versatile.",
+          "rating": 4,
+          "date": "2024-12-23T01:09:14.974Z"
+        },
+        {
+          "user": "Emily Johnson",
+          "comment": "Good coat but expected better material quality for the price. Still, a good addition to my wardrobe.",
+          "rating": 3,
+          "date": "2024-12-23T01:09:14.974Z"
+        }
+      ]
+    },
+    {
+      "id": 24,
+      "name": "Oversized denim jacket",
+      "price": 37.99,
+      "category": ["Shirt"],
+      "style": ["Casual"],
+      "store": {
+        "id": 8,
+        "name": "Green Craft",
+        "location": {
+          "city_name": "Prague",
+          "country": "Czech Republic",
+          "latitude": 50.0755,
+          "longitude": 14.4378,
+          "distance_to_madrid": 1500,
+          "distance_unit": "km",
+          "transport_method": "train"
+        }
+      },
+      "rating": 3,
+      "weight": 577,
+      "weight_unit": "g",
+      "available_sizes": ["S", "M", "L"],
+      "materials": ["Recycled Denim"],
+      "modelImage": "https://image.hm.com/assets/hm/2d/dc/2ddcd1595b5d06771ccdcdcaab5ade1db3d714b0.jpg",
+      "image": "https://image.hm.com/assets/hm/12/b0/12b00a34ac1069c6845cd359cfe5313a4d82f896.jpg",
+      "swatches": [
+        {
+          "colorName": "Light denim blue",
+          "colorCode": "79829D",
+          "productImage": "https://image.hm.com/assets/hm/12/b0/12b00a34ac1069c6845cd359cfe5313a4d82f896.jpg"
+        },
+        {
+          "colorName": "Denim blue",
+          "colorCode": "79829D",
+          "productImage": "https://image.hm.com/assets/hm/0f/84/0f849c7883c64723c323ad791c28dc55b15895ed.jpg"
+        },
+        {
+          "colorName": "Dark denim blue",
+          "colorCode": "4C5164",
+          "productImage": "https://image.hm.com/assets/hm/9a/95/9a95c413fe071169be4d281f7419e75fe48cc262.jpg"
+        },
+        {
+          "colorName": "Black",
+          "colorCode": "272628",
+          "productImage": "https://image.hm.com/assets/hm/62/c1/62c1bfcf686a5ed634830cbb6704c3f348ab42a4.jpg"
+        }
+      ],
+      "images": [
+        {
+          "url": "https://image.hm.com/assets/hm/fe/94/fe94ed0034fa83f125ee4f50ecfd3f9aeaffe58d.jpg"
+        },
+        {
+          "url": "https://image.hm.com/assets/hm/bc/85/bc85eab5c39ee0964b8630c63072bf1b57db7b91.jpg"
+        },
+        {
+          "url": "https://image.hm.com/assets/hm/9d/63/9d63cb6c5bbc5990c245eb8bc4a65729b6b584cc.jpg"
+        },
+        {
+          "url": "https://image.hm.com/assets/hm/cf/c0/cfc05cf450d0dd63cb2714dcb399ec5a1db2ae40.jpg"
+        },
+        {
+          "url": "https://image.hm.com/assets/hm/59/c1/59c189be8400491effaf386b88ba312e87fa38e9.jpg"
+        }
+      ],
+      "description": "A trendy oversized denim jacket designed for a casual look. Made from high-quality recycled denim, it is both stylish and eco-friendly, perfect for everyday wear.",
+      "stock": 0,
+      "date_added": "2024-12-23T01:09:14.974Z",
+      "reviews": [
+        {
+          "user": "John Smith",
+          "comment": "The jacket fits great and has a nice oversized look. Love the color options too!",
+          "rating": 3,
+          "date": "2024-12-23T01:09:14.974Z"
+        },
+        {
+          "user": "Anna White",
+          "comment": "The denim feels sturdy, but the jacket is a bit stiff at first. Once you break it in, it's perfect.",
+          "rating": 2,
+          "date": "2024-12-23T01:09:14.974Z"
+        },
+        {
+          "user": "Mike Brown",
+          "comment": "Nice jacket for casual wear, though I expected it to be a bit more comfortable. Still, a good product.",
+          "rating": 3,
+          "date": "2024-12-23T01:09:14.974Z"
+        }
+      ]
+    },
+    {
+      "id": 25,
+      "name": "Button-front jacket",
+      "price": 34.99,
+      "category": "Jacket",
+      "style": "Casual",
+      "store": {
+        "id": 7,
+        "name": "Sustained Innovations",
+        "location": {
+          "city_name": "Berlin",
+          "country": "Germany",
+          "latitude": 52.52,
+          "longitude": 13.405,
+          "distance_to_madrid": 1800,
+          "distance_unit": "km",
+          "transport_method": "plane"
+        }
+      },
+      "rating": 3,
+      "weight": 733,
+      "weight_unit": "g",
+      "available_sizes": ["S", "M", "L"],
+      "materials": ["Natural Indigo Dye"],
+      "modelImage": "https://image.hm.com/assets/hm/5f/2f/5f2f7d17b51304155b12302986a63b7e899a8c06.jpg",
+      "image": "https://image.hm.com/assets/hm/fe/f2/fef242e5850f5aac379be3489812517ec1e90adb.jpg",
+      "swatches": [
+        {
+          "colorName": "Light beige marl",
+          "colorCode": "D2C8BA",
+          "productImage": "https://image.hm.com/assets/hm/fe/f2/fef242e5850f5aac379be3489812517ec1e90adb.jpg"
+        },
+        {
+          "colorName": "Dark grey",
+          "colorCode": "6E6E6E",
+          "productImage": "https://image.hm.com/assets/hm/59/7e/597e258249a26712c760b1f21961587f28f3fef3.jpg"
+        }
+      ],
+      "images": [
+        {
+          "url": "https://image.hm.com/assets/hm/55/a0/55a0f1af4c921a86809e833565dca612a0b746d3.jpg"
+        },
+        {
+          "url": "https://image.hm.com/assets/hm/bf/2f/bf2f50c6cf29bffddcec5d4e5ccea9d9d82556be.jpg"
+        },
+        {
+          "url": "https://image.hm.com/assets/hm/70/fc/70fce331fe16fc36695f891c592624c1c216dc3f.jpg"
+        },
+        {
+          "url": "https://image.hm.com/assets/hm/2c/ce/2ccee8d72686ead0c86d0c196fc63046df8bf3af.jpg"
+        },
+        {
+          "url": "https://image.hm.com/assets/hm/ee/5d/ee5d94bb8304a57369558c414f380558a4324bf2.jpg"
+        }
+      ],
+      "description": "A versatile button-front jacket made from sustainable materials. Perfect for layering during chilly days, offering both style and comfort.",
+      "stock": 20,
+      "date_added": "2024-12-23T01:09:14.974Z",
+      "reviews": [
+        {
+          "user": "Emily R.",
+          "comment": "Very comfortable and stylish. The fabric feels amazing!",
+          "rating": 4,
+          "date": "2024-12-24T09:15:00.000Z"
+        },
+        {
+          "user": "Liam H.",
+          "comment": "I love the fit, but I wish there were more color options.",
+          "rating": 3,
+          "date": "2024-12-25T14:20:00.000Z"
+        },
+        {
+          "user": "Sophia W.",
+          "comment": "Eco-friendly and fashionable. Highly recommended!",
+          "rating": 4,
+          "date": "2024-12-26T16:45:00.000Z"
+        }
+      ]
+    },
+    {
+      "id": 26,
+      "name": "Single-Breasted Wool Blazer",
+      "price": 195,
+      "category": "Jacket",
+      "style": "Formal",
+      "store": {
+        "id": 3,
+        "name": "Nature Creations",
+        "location": {
+          "city_name": "Lisbon",
+          "country": "Portugal",
+          "latitude": 38.7169,
+          "longitude": -9.1395,
+          "distance_to_madrid": 640,
+          "distance_unit": "km",
+          "transport_method": "truck"
+        }
+      },
+      "rating": 3,
+      "weight": 691,
+      "weight_unit": "g",
+      "available_sizes": ["M", "L", "XL"],
+      "materials": ["Organic Cotton", "Recycled Polyester"],
+      "modelImage": "https://image.hm.com/assets/005/29/61/29619d9907cf544caf82865fb46b79d790e41c84.jpg",
+      "image": "https://image.hm.com/assets/005/87/68/8768fcb623313da3ef434364c5a6040f5c49d898.jpg",
+      "swatches": [
+        {
+          "colorName": "Navy Blue",
+          "colorCode": "38373F",
+          "productImage": "https://image.hm.com/assets/005/87/68/8768fcb623313da3ef434364c5a6040f5c49d898.jpg"
+        },
+        {
+          "colorName": "Camel",
+          "colorCode": "B29A6B",
+          "productImage": "https://image.hm.com/assets/005/e8/18/e8186747e7465f4a1e6d6e88722afec605b44251.jpg"
+        }
+      ],
+      "images": [
+        {
+          "url": "https://image.hm.com/assets/005/bc/b0/bcb0214afeafe0707f738d8675ccbc999737719b.jpg"
+        },
+        {
+          "url": "https://image.hm.com/assets/005/c0/bf/c0bfd31883719fb97a7f242622b746518bfcb554.jpg"
+        },
+        {
+          "url": "https://image.hm.com/assets/005/07/25/0725f43367748c0c8b6197ed080875ea8572ee3e.jpg"
+        },
+        {
+          "url": "https://image.hm.com/assets/005/de/65/de655cf5ea38af9f41cb7f18bb2ee9e993c40717.jpg"
+        },
+        {
+          "url": "https://image.hm.com/assets/005/c0/48/c0485dfe67cb3fcaec40121f46c3bdab61081a5f.jpg"
+        }
+      ],
+      "description": "This single-breasted wool blazer combines timeless elegance with modern sustainability. Crafted with premium organic wool and recycled polyester, it’s perfect for formal events or office wear.",
+      "stock": 46,
+      "date_added": "2024-12-23T01:09:14.974Z",
+      "reviews": [
+        {
+          "user": "James T.",
+          "comment": "The quality of the wool is excellent, but it feels a bit tight around the shoulders.",
+          "rating": 3,
+          "date": "2024-12-24T10:30:00.000Z"
+        },
+        {
+          "user": "Sophia M.",
+          "comment": "Stylish and sustainable. It’s a great addition to my wardrobe!",
+          "rating": 4,
+          "date": "2024-12-25T14:50:00.000Z"
+        },
+        {
+          "user": "Oliver P.",
+          "comment": "Looks great, but the fabric is a little heavier than I expected.",
+          "rating": 2,
+          "date": "2024-12-26T16:00:00.000Z"
+        }
+      ]
+    },
+    {
+      "id": 27,
+      "name": "Teddy-lined coated jacket",
+      "price": 59.99,
+      "category": "Jacket",
+      "style": "Casual",
+      "store": {
+        "id": 4,
+        "name": "Chic Design",
+        "location": {
+          "city_name": "Paris",
+          "country": "France",
+          "latitude": 48.8566,
+          "longitude": 2.3522,
+          "distance_to_madrid": 1300,
+          "distance_unit": "km",
+          "transport_method": "train"
+        }
+      },
+      "rating": 4,
+      "weight": 222,
+      "weight_unit": "g",
+      "available_sizes": ["S", "M", "L"],
+      "materials": ["Recycled Polyester", "Organic Cotton"],
+      "modelImage": "https://image.hm.com/assets/hm/f6/3d/f63df112c1fb6d86c98d857afe6fe08e31413ea7.jpg",
+      "image": "https://image.hm.com/assets/hm/16/09/1609538c8e671d0adbe8b6a31face423a985b7be.jpg",
+      "swatches": [
+        {
+          "colorName": "Black",
+          "colorCode": "272628",
+          "productImage": "https://image.hm.com/assets/hm/16/09/1609538c8e671d0adbe8b6a31face423a985b7be.jpg"
+        }
+      ],
+      "images": [
+        {
+          "url": "https://image.hm.com/assets/hm/56/3b/563b163af36b30420c782dfd064a1d4cdece5eda.jpg"
+        },
+        {
+          "url": "https://image.hm.com/assets/hm/2e/27/2e27233d4619f374fa7aacb1540a9e22022b65fc.jpg"
+        },
+        {
+          "url": "https://image.hm.com/assets/hm/ce/d2/ced2cf8be9e4fe3d9b677ab392be4e1a61463a4c.jpg"
+        }
+      ],
+      "description": "This teddy-lined coated jacket combines warmth and style, perfect for chilly days. Made with recycled polyester and organic cotton, it ensures comfort and sustainability.",
+      "stock": 17,
+      "date_added": "2024-12-23T01:09:14.974Z",
+      "reviews": [
+        {
+          "user": "Emma W.",
+          "comment": "Super warm and stylish. The lining is so soft, I love wearing it in winter.",
+          "rating": 4,
+          "date": "2024-12-24T10:45:00.000Z"
+        },
+        {
+          "user": "Liam J.",
+          "comment": "Great jacket, but I wish the sleeves were a little longer.",
+          "rating": 3,
+          "date": "2024-12-25T15:20:00.000Z"
+        },
+        {
+          "user": "Sophia R.",
+          "comment": "Perfect for casual outings. It looks amazing and keeps me cozy.",
+          "rating": 4,
+          "date": "2024-12-26T18:10:00.000Z"
+        }
+      ]
+    },
+    {
+      "id": 28,
+      "name": "Insulated mid layer jacket",
+      "price": 54.99,
+      "category": "Jacket",
+      "style": "Casual",
+      "store": {
+        "id": 8,
+        "name": "Green Craft",
+        "location": {
+          "city_name": "Prague",
+          "country": "Czech Republic",
+          "latitude": 50.0755,
+          "longitude": 14.4378,
+          "distance_to_madrid": 1500,
+          "distance_unit": "km",
+          "transport_method": "train"
+        }
+      },
+      "rating": 3,
+      "weight": 337,
+      "weight_unit": "g",
+      "available_sizes": ["XS", "S", "M", "L"],
+      "materials": ["Organic Hemp"],
+      "modelImage": "https://image.hm.com/assets/hm/99/77/997776bab32093f795a68b70d0a000001309e653.jpg",
+      "image": "https://image.hm.com/assets/hm/f4/18/f418e5d54d30521512b9a2d75ea028c7a668d711.jpg",
+      "swatches": [
+        {
+          "colorName": "Black",
+          "colorCode": "272628",
+          "productImage": "https://image.hm.com/assets/hm/f4/18/f418e5d54d30521512b9a2d75ea028c7a668d711.jpg"
+        }
+      ],
+      "images": [
+        {
+          "url": "https://image.hm.com/assets/hm/08/d6/08d6ce4a890c7a4a47208ea3b7f315c7ce85a2ae.jpg"
+        },
+        {
+          "url": "https://image.hm.com/assets/hm/65/b5/65b5ba4b58b15d123402ab815192e047b395b8f6.jpg"
+        },
+        {
+          "url": "https://image.hm.com/assets/hm/51/fe/51fea0178a8886c1d01d4c5e7da0c20d1025adeb.jpg"
+        },
+        {
+          "url": "https://image.hm.com/assets/hm/5e/51/5e517ec8cc9a764794e0f9bffe84808247b18684.jpg"
+        },
+        {
+          "url": "https://image.hm.com/assets/hm/bf/e6/bfe659e57effd43e26dd28d7411f8d4e20b31c7e.jpg"
+        },
+        {
+          "url": "https://image.hm.com/assets/hm/d4/dc/d4dc81c2d7d02a489f71b91cd140522085f92137.jpg"
+        }
+      ],
+      "description": "Stay warm and stylish with this insulated mid-layer jacket, perfect for layering during cold weather. Crafted with recycled polyester and organic cotton for sustainable comfort.",
+      "stock": 0,
+      "date_added": "2024-12-23T01:09:14.974Z",
+      "reviews": [
+        {
+          "user": "Noah T.",
+          "comment": "Great for chilly days, but I wish it came in more colors.",
+          "rating": 3,
+          "date": "2024-12-24T12:30:00.000Z"
+        },
+        {
+          "user": "Olivia H.",
+          "comment": "The fit is good, but it's not as warm as I expected.",
+          "rating": 2,
+          "date": "2024-12-25T16:00:00.000Z"
+        },
+        {
+          "user": "Ethan B.",
+          "comment": "Stylish and lightweight, ideal for layering in winter.",
+          "rating": 4,
+          "date": "2024-12-26T19:00:00.000Z"
+        }
+      ]
+    },
+    {
+      "id": 29,
+      "name": "Teddy jacket",
+      "price": 29.99,
+      "category": "Jacket",
+      "style": "Casual",
+      "store": {
+        "id": 5,
+        "name": "Sustainable Design",
+        "location": {
+          "city_name": "Amsterdam",
+          "country": "Netherlands",
+          "latitude": 52.3676,
+          "longitude": 4.9041,
+          "distance_to_madrid": 1500,
+          "distance_unit": "km",
+          "transport_method": "plane"
+        }
+      },
+      "rating": 3,
+      "weight": 214,
+      "weight_unit": "g",
+      "available_sizes": ["S", "M", "L", "XL"],
+      "materials": ["Organic Cotton", "Natural Indigo Dye"],
+      "modelImage": "https://image.hm.com/assets/hm/01/74/017471ed725f76f457e4558923682357479bb72f.jpg",
+      "image": "https://image.hm.com/assets/hm/38/a5/38a5d84bb92d0c9b35759ffd35c555553a382be3.jpg",
+      "swatches": [
+        {
+          "colorName": "Dark brown",
+          "colorCode": "53423C",
+          "productImage": "https://image.hm.com/assets/hm/38/a5/38a5d84bb92d0c9b35759ffd35c555553a382be3.jpg"
+        },
+        {
+          "colorName": "Light beige",
+          "colorCode": "DFD8C9",
+          "productImage": "https://image.hm.com/assets/hm/9c/17/9c170f28496c53da49afc0ee0184227487e73b2f.jpg"
+        }
+      ],
+      "images": [
+        {
+          "url": "https://image.hm.com/assets/hm/73/52/73523f7a495aa534bc4061c59c41fba25f076f0d.jpg"
+        },
+        {
+          "url": "https://image.hm.com/assets/hm/4c/7c/4c7c9dea81d7467a3d2c5a0548f1cbcdf56ea85e.jpg"
+        },
+        {
+          "url": "https://image.hm.com/assets/hm/ef/02/ef0273e7a37f60508840b6630290fdb09b6d5d65.jpg"
+        },
+        {
+          "url": "https://image.hm.com/assets/hm/85/6f/856f290e8a3097c58256525463a68c3397ec3561.jpg"
+        }
+      ],
+      "description": "This cozy teddy jacket combines warmth and style effortlessly. Perfect for layering or as a statement piece on cooler days. Made with organic cotton and recycled polyester for a sustainable choice.",
+      "stock": 66,
+      "date_added": "2024-12-23T01:09:14.974Z",
+      "reviews": [
+        {
+          "user": "Sophia L.",
+          "comment": "Super warm and soft! I love the brown color, it's so versatile.",
+          "rating": 4,
+          "date": "2024-12-24T10:00:00.000Z"
+        },
+        {
+          "user": "Liam K.",
+          "comment": "The fit is slightly oversized, but it adds to the comfort. Great value for the price.",
+          "rating": 3,
+          "date": "2024-12-25T14:45:00.000Z"
+        },
+        {
+          "user": "Emma V.",
+          "comment": "I expected it to be warmer, but it's stylish and works well for mild weather.",
+          "rating": 3,
+          "date": "2024-12-26T18:20:00.000Z"
+        }
+      ]
+    },
+    {
+      "id": 30,
+      "name": "Hooded Faux Fur Jacket",
+      "price": 74.99,
+      "category": "Jacket",
+      "style": "Casual",
+      "store": {
+        "id": 4,
+        "name": "Chic Design",
+        "location": {
+          "city_name": "Paris",
+          "country": "France",
+          "latitude": 48.8566,
+          "longitude": 2.3522,
+          "distance_to_madrid": 1300,
+          "distance_unit": "km",
+          "transport_method": "train"
+        }
+      },
+      "rating": 5,
+      "weight": 632,
+      "weight_unit": "g",
+      "available_sizes": ["S", "M", "L", "XL"],
+      "materials": ["Organic Cotton", "Recycled Polyester"],
+      "modelImage": "https://image.hm.com/assets/002/71/03/71038eb93a437e9cd7a5622e8af0c0deff7845c1.jpg",
+      "image": "https://image.hm.com/assets/002/71/03/71038eb93a437e9cd7a5622e8af0c0deff7845c1.jpg",
+      "swatches": [
+        {
+          "colorName": "Black",
+          "colorCode": "272628",
+          "productImage": "https://image.hm.com/assets/002/71/03/71038eb93a437e9cd7a5622e8af0c0deff7845c1.jpg"
+        },
+        {
+          "colorName": "Leopard",
+          "colorCode": "F0EFEC",
+          "productImage": "https://image.hm.com/assets/002/05/e6/05e6fbef67ac8f0e9e81cf98792d651873ee3566.jpg"
+        }
+      ],
+      "images": [
+        {
+          "url": "https://image.hm.com/assets/002/2b/31/2b31f900a05ce3113cb891c9f43af52333da9e81.jpg"
+        }
+      ],
+      "description": "This stylish hooded faux fur jacket offers both warmth and a fashionable look. Perfect for chilly days, it combines comfort with a chic design, featuring organic cotton and recycled polyester materials for an eco-friendly touch.",
+      "stock": 92,
+      "date_added": "2024-12-23T01:09:14.974Z",
+      "reviews": [
+        {
+          "user": "Charlotte M.",
+          "comment": "Absolutely love this jacket! It's so warm and looks amazing. The faux fur is soft and luxurious.",
+          "rating": 4,
+          "date": "2024-12-24T12:30:00.000Z"
+        },
+        {
+          "user": "James T.",
+          "comment": "Good quality for the price. It's cozy, but I was expecting it to be a bit warmer for winter.",
+          "rating": 3,
+          "date": "2024-12-25T16:45:00.000Z"
+        },
+        {
+          "user": "Olivia W.",
+          "comment": "Great jacket, perfect for casual outings. Love the black color, goes with everything!",
+          "rating": 5,
+          "date": "2024-12-26T10:15:00.000Z"
+        }
+      ]
+    },
+    {
+      "id": 31,
+      "name": "Double-breasted car coat",
+      "price": 54.99,
+      "category": "Jacket",
+      "style": "Office",
+      "store": {
+        "id": 2,
+        "name": "Green Style",
+        "location": {
+          "city_name": "Rome",
+          "country": "Italy",
+          "latitude": 41.9028,
+          "longitude": 12.4964,
+          "distance_to_madrid": 1300,
+          "distance_unit": "km",
+          "transport_method": "ship"
+        }
+      },
+      "rating": 1,
+      "weight": 820,
+      "weight_unit": "g",
+      "available_sizes": ["S", "M", "L"],
+      "materials": ["Organic Cotton", "Recycled Polyester"],
+      "modelImage": "https://image.hm.com/assets/hm/1d/91/1d91e5c30c0aeacf6f1feb85f11b1a25835d37c0.jpg",
+      "image": "https://image.hm.com/assets/hm/58/7a/587aaf38e96dff41281712b88fc8920cd26eefda.jpg",
+      "swatches": [
+        {
+          "colorName": "Grey",
+          "colorCode": "90939C",
+          "productImage": "https://image.hm.com/assets/hm/58/7a/587aaf38e96dff41281712b88fc8920cd26eefda.jpg"
+        },
+        {
+          "colorName": "Navy blue",
+          "colorCode": "272930",
+          "productImage": "https://image.hm.com/assets/hm/e1/78/e1786a06807a1090f1e59b8b692cd6c8ffa9944e.jpg"
+        }
+      ],
+      "images": [
+        {
+          "url": "https://image.hm.com/assets/hm/9f/62/9f621a665477e5ce8b21a49356c69db54317055a.jpg"
+        },
+        {
+          "url": "https://image.hm.com/assets/hm/2c/6f/2c6fb1454f62bff30b564f55d75fee1ce31de6a6.jpg"
+        },
+        {
+          "url": "https://image.hm.com/assets/hm/8e/5a/8e5a716d61e8403344d1acca76f6ea2e5792d022.jpg"
+        },
+        {
+          "url": "https://image.hm.com/assets/hm/19/0b/190b5b3beb40b78a175164368283b78dcdc458a1.jpg"
+        }
+      ],
+      "description": "This classic double-breasted car coat is a must-have for your office wardrobe. Made with organic cotton and recycled polyester, it offers a stylish yet eco-friendly option. Available in two timeless colors, it will keep you warm and fashionable all day.",
+      "stock": 43,
+      "date_added": "2024-12-23T01:09:14.974Z",
+      "reviews": [
+        {
+          "user": "Maria R.",
+          "comment": "A beautiful coat, very warm but a bit snug. I had to go a size up for comfort.",
+          "rating": 3,
+          "date": "2024-12-23T01:09:14.974Z"
+        },
+        {
+          "user": "Giovanni L.",
+          "comment": "I didn’t like the fabric. It felt cheap and not as expected for the price.",
+          "rating": 2,
+          "date": "2024-12-24T08:15:00.000Z"
+        }
+      ]
+    },
+    {
+      "id": 32,
+      "name": "Half Sleeve Jacket",
+      "price": 37.99,
+      "category": "Jacket",
+      "style": "Casual",
+      "store": {
+        "id": 2,
+        "name": "Green Style",
+        "location": {
+          "city_name": "Rome",
+          "country": "Italy",
+          "latitude": 41.9028,
+          "longitude": 12.4964,
+          "distance_to_madrid": 1300,
+          "distance_unit": "km",
+          "transport_method": "ship"
+        }
+      },
+      "rating": 2,
+      "weight": 715,
+      "weight_unit": "g",
+      "available_sizes": ["S", "M", "L"],
+      "materials": ["Organic Cotton", "Recycled Polyester"],
+      "modelImage": "https://image.hm.com/assets/hm/08/04/08041ec973a2cdb4b55a841da226b5eee3ce5d54.jpg",
+      "image": "https://image.hm.com/assets/hm/1b/57/1b57843cfd90d83494db23dbf6e57b7ddbe18e66.jpg",
+      "swatches": [
+        {
+          "colorName": "Dark grey",
+          "colorCode": "6E6E6E",
+          "productImage": "https://image.hm.com/assets/hm/1b/57/1b57843cfd90d83494db23dbf6e57b7ddbe18e66.jpg"
+        },
+        {
+          "colorName": "Black",
+          "colorCode": "272628",
+          "productImage": "https://image.hm.com/assets/hm/6c/a3/6ca3fd7605707fe33430e1fbdd49185557468c49.jpg"
+        },
+        {
+          "colorName": "White",
+          "colorCode": "F0EEED",
+          "productImage": "https://image.hm.com/assets/hm/a1/89/a1895e364a44ef37fafb0e861c0779832d1de987.jpg"
+        }
+      ],
+      "images": [
+        {
+          "url": "https://image.hm.com/assets/hm/ad/d8/add8b2a0a311785c6fe969661a7980b043a04bdc.jpg"
+        },
+        {
+          "url": "https://image.hm.com/assets/hm/c3/f9/c3f94d78bc0dfa19ec99fe35b8a77de4ceb1cd2e.jpg"
+        },
+        {
+          "url": "https://image.hm.com/assets/hm/79/f8/79f82ff90d952b61283af7223f490ab763bfd644.jpg"
+        },
+        {
+          "url": "https://image.hm.com/assets/hm/90/13/901314c3072bf9136cb657d023e8f5066c437434.jpg"
+        }
+      ],
+      "description": "A stylish and comfortable casual jacket made from organic cotton and recycled polyester. Perfect for everyday wear with a soft finish and a versatile look that pairs well with various outfits.",
+      "stock": 58,
+      "date_added": "2024-12-23T01:09:14.974Z",
+      "reviews": [
+        {
+          "user": "Laura M.",
+          "comment": "I love the feel of this jacket, it's very soft and comfortable. The fit is just right!",
+          "rating": 4,
+          "date": "2024-12-23T01:09:14.974Z"
+        },
+        {
+          "user": "Roberto F.",
+          "comment": "The quality is decent but the size runs a bit small for me. I had to exchange it for a larger size.",
+          "rating": 3,
+          "date": "2024-12-24T08:15:00.000Z"
+        }
+      ]
+    },
+    {
+      "id": 33,
+      "name": "Oversized denim jacket",
+      "price": 42.99,
+      "category": "Jacket",
+      "style": "Casual",
+      "store": {
+        "id": 3,
+        "name": "Nature Creations",
+        "location": {
+          "city_name": "Lisbon",
+          "country": "Portugal",
+          "latitude": 38.7169,
+          "longitude": -9.1395,
+          "distance_to_madrid": 640,
+          "distance_unit": "km",
+          "transport_method": "truck"
+        }
+      },
+      "rating": 3,
+      "weight": 824,
+      "weight_unit": "g",
+      "available_sizes": ["S", "M", "L", "XL"],
+      "materials": ["Recycled Denim", "Organic Cotton"],
+      "modelImage": "https://image.hm.com/assets/hm/e3/5e/e35e96c27f50204ed0d9714cc01390d0626b42bc.jpg",
+      "image": "https://image.hm.com/assets/hm/75/06/7506e354c0dda3f0389c5a44b720b2268ae1a5a1.jpg",
+      "swatches": [
+        {
+          "colorName": "Light denim blue",
+          "colorCode": "79829D",
+          "productImage": "https://image.hm.com/assets/hm/75/06/7506e354c0dda3f0389c5a44b720b2268ae1a5a1.jpg"
+        },
+        {
+          "colorName": "Denim blue",
+          "colorCode": "79829D",
+          "productImage": "https://image.hm.com/assets/hm/f2/0c/f20c4b328fb2df00c5c95053e61f6c5bcbe8b71c.jpg"
+        },
+        {
+          "colorName": "Dark denim blue",
+          "colorCode": "4C5164",
+          "productImage": "https://image.hm.com/assets/hm/c6/fa/c6fa67823cc9bf358ef554570c5ffb3e053572a8.jpg"
+        },
+        {
+          "colorName": "Black",
+          "colorCode": "272628",
+          "productImage": "https://image.hm.com/assets/hm/62/d1/62d1463776400e976756955feb6edec200887a4b.jpg"
+        }
+      ],
+      "images": [
+        {
+          "url": "https://image.hm.com/assets/hm/75/55/7555b76cb4b94202bd1253af93a39f43c8c9279d.jpg"
+        },
+        {
+          "url": "https://image.hm.com/assets/hm/57/11/5711d2a0084e88333c026c83e2da5d498217bfb8.jpg"
+        },
+        {
+          "url": "https://image.hm.com/assets/hm/ac/da/acda10c177a42a349a82b0a7f34ff58e50db914a.jpg"
+        },
+        {
+          "url": "https://image.hm.com/assets/hm/e3/68/e368ec704f62022ed291ba69e0a1b02e3c4f87bf.jpg"
+        },
+        {
+          "url": "https://image.hm.com/assets/hm/4a/47/4a47ff28758aea881abcc63502218cb82abd734b.jpg"
+        }
+      ],
+      "description": "An oversized denim jacket that combines style and comfort. Made with recycled denim and organic cotton, it's perfect for a casual day out or layering in cooler weather.",
+      "stock": 23,
+      "date_added": "2024-12-23T01:09:14.974Z",
+      "reviews": [
+        {
+          "user": "Sophia D.",
+          "comment": "Love the oversized fit! It's comfortable and goes with everything. Highly recommend.",
+          "rating": 4,
+          "date": "2024-12-23T01:09:14.974Z"
+        },
+        {
+          "user": "Luis M.",
+          "comment": "Nice jacket, but I expected the fabric to be a bit thicker. Still a good purchase for the price.",
+          "rating": 3,
+          "date": "2024-12-24T12:05:00.000Z"
+        }
+      ]
+    },
+    {
+      "id": 34,
+      "name": "Tie-belt felted coat",
+      "price": 49.99,
+      "category": "Jacket",
+      "style": "Formal",
+      "store": {
+        "id": 1,
+        "name": "EcoDesign",
+        "location": {
+          "city_name": "Barcelona",
+          "country": "Spain",
+          "latitude": 41.3784,
+          "longitude": 2.1923,
+          "distance_to_madrid": 600,
+          "distance_unit": "km",
+          "transport_method": "truck"
+        }
+      },
+      "rating": 4,
+      "weight": 853,
+      "weight_unit": "g",
+      "available_sizes": ["S", "M", "L", "XL"],
+      "materials": ["Felted Wool", "Organic Cotton"],
+      "modelImage": "https://image.hm.com/assets/hm/fa/ca/facab9824f92f4a792dfd84aa306d4ad17465c9f.jpg",
+      "image": "https://image.hm.com/assets/hm/3f/47/3f47058f665a849b464e0becda2050b39088ee28.jpg",
+      "swatches": [
+        {
+          "colorName": "Beige",
+          "colorCode": "9E886B",
+          "productImage": "https://image.hm.com/assets/hm/3f/47/3f47058f665a849b464e0becda2050b39088ee28.jpg"
+        },
+        {
+          "colorName": "Cream",
+          "colorCode": "ECE9E2",
+          "productImage": "https://image.hm.com/assets/hm/fe/b0/feb0b8c2b15979a349e95d8306f64d781b397ad5.jpg"
+        },
+        {
+          "colorName": "Dark grey/Herringbone-patterned",
+          "colorCode": "626366",
+          "productImage": "https://image.hm.com/assets/hm/5d/1f/5d1f334a46ea367fd4af9040f34f45ee6dd56882.jpg"
+        },
+        {
+          "colorName": "Black",
+          "colorCode": "272628",
+          "productImage": "https://image.hm.com/assets/hm/f7/42/f74276c26ba52724d935eef9603dc5a513c5892d.jpg"
+        },
+        {
+          "colorName": "Beige/Checked",
+          "colorCode": "D6CBB3",
+          "productImage": "https://image.hm.com/assets/hm/52/80/52806fd342582b80bd0d4e655264f8b5eaefbb5f.jpg"
+        }
+      ],
+      "images": [
+        {
+          "url": "https://image.hm.com/assets/hm/68/d3/68d35a8f55caf5ecad722608204a2d145b7d2495.jpg"
+        },
+        {
+          "url": "https://image.hm.com/assets/hm/b3/29/b329979912e1d0ca41eb97aef0fb1d25a1874bde.jpg"
+        },
+        {
+          "url": "https://image.hm.com/assets/hm/4b/2a/4b2ab5287bfe7e7e3b0695d9719cfb3d8473df67.jpg"
+        },
+        {
+          "url": "https://image.hm.com/assets/hm/84/07/8407e22101c990af641a9322686292f83aa08d53.jpg"
+        },
+        {
+          "url": "https://image.hm.com/assets/hm/00/2d/002d30c7532aea2928e9dc57e75493cf726f599d.jpg"
+        }
+      ],
+      "description": "A stylish tie-belt felted coat, perfect for formal or business occasions. Made from high-quality felted wool and organic cotton, this coat offers both warmth and elegance.",
+      "stock": 36,
+      "date_added": "2024-12-23T01:09:14.974Z",
+      "reviews": [
+        {
+          "user": "Maria L.",
+          "comment": "Beautiful coat, fits perfectly. The material feels very premium and keeps me warm in the winter.",
+          "rating": 5,
+          "date": "2024-12-23T01:09:14.974Z"
+        },
+        {
+          "user": "Carlos P.",
+          "comment": "Nice coat, but I found it a bit heavier than expected. Still a good purchase.",
+          "rating": 4,
+          "date": "2024-12-24T12:05:00.000Z"
+        }
+      ]
+    },
+    {
+      "id": 35,
+      "name": "Ski suit in ThermoMove™",
+      "price": 219.99,
+      "category": "Accessories",
+      "style": "Casual",
+      "store": {
+        "id": 2,
+        "name": "Green Style",
+        "location": {
+          "city_name": "Rome",
+          "country": "Italy",
+          "latitude": 41.9028,
+          "longitude": 12.4964,
+          "distance_to_madrid": 1300,
+          "distance_unit": "km",
+          "transport_method": "ship"
+        }
+      },
+      "rating": 5,
+      "weight": 284,
+      "weight_unit": "g",
+      "available_sizes": ["S", "M", "L", "XL"],
+      "materials": ["Recycled Polyester"],
+      "modelImage": "https://image.hm.com/assets/hm/06/8f/068fc56bcce8ea05a8ed928ec2bef962cb5f71f5.jpg",
+      "image": "https://image.hm.com/assets/hm/a6/ab/a6ab01baafaefebb86d26d418c8ed0341c04adae.jpg",
+      "swatches": [
+        {
+          "colorName": "Black",
+          "colorCode": "272628",
+          "productImage": "https://image.hm.com/assets/hm/a6/ab/a6ab01baafaefebb86d26d418c8ed0341c04adae.jpg"
+        }
+      ],
+      "images": [
+        {
+          "url": "https://image.hm.com/assets/hm/f1/d4/f1d4879f25b779c2946e1fe020f82be515404878.jpg"
+        },
+        {
+          "url": "https://image.hm.com/assets/hm/f0/76/f076d5309433677c433e80d72efaedc7a2184f29.jpg"
+        },
+        {
+          "url": "https://image.hm.com/assets/hm/7c/f0/7cf069d4c043ce54659d8feaaa63dd84725f5914.jpg"
+        },
+        {
+          "url": "https://image.hm.com/assets/hm/ab/c7/abc74fd93a961ff7204ca66eaf14e51d3e19d8f1.jpg"
+        },
+        {
+          "url": "https://image.hm.com/assets/hm/24/92/249251913e4acad6addf3eb1c0f6b915eb6085b5.jpg"
+        },
+        {
+          "url": "https://image.hm.com/assets/hm/34/ec/34ec03bbcee719120a54173318ae85989245c289.jpg"
+        }
+      ],
+      "description": "A high-performance ski suit made with ThermoMove™ fabric, designed to keep you warm and dry on the slopes. It features a sleek and durable design for optimum comfort.",
+      "stock": 23,
+      "date_added": "2024-12-23T01:09:14.974Z",
+      "reviews": [
+        {
+          "user": "John D.",
+          "comment": "Fantastic ski suit. It kept me warm and dry in extreme conditions. Worth every penny.",
+          "rating": 5,
+          "date": "2024-12-23T01:09:14.974Z"
+        },
+        {
+          "user": "Sophia K.",
+          "comment": "Good fit and very comfortable. However, it is a bit bulky for everyday wear.",
+          "rating": 4,
+          "date": "2024-12-24T14:02:00.000Z"
+        }
+      ]
+    },
+    {
+      "id": 36,
+      "name": "Twill trench coat",
+      "price": 49.99,
+      "category": "Jacket",
+      "style": "Casual",
+      "store": {
+        "id": 5,
+        "name": "Sustainable Design",
+        "location": {
+          "city_name": "Amsterdam",
+          "country": "Netherlands",
+          "latitude": 52.3676,
+          "longitude": 4.9041,
+          "distance_to_madrid": 1500,
+          "distance_unit": "km",
+          "transport_method": "plane"
+        }
+      },
+      "rating": 1,
+      "weight": 403,
+      "weight_unit": "g",
+      "available_sizes": ["S", "M", "L", "XL", "XXL"],
+      "materials": ["Sustainable Cotton", "Recycled Polyester"],
+      "modelImage": "https://image.hm.com/assets/hm/7c/7e/7c7eda8b167821343cb721a8a309daf746ae3010.jpg",
+      "image": "https://image.hm.com/assets/hm/ea/bc/eabc242078b691dc82b6b2c3ef04239b646373e1.jpg",
+      "swatches": [
+        {
+          "colorName": "Beige",
+          "colorCode": "B2A78D",
+          "productImage": "https://image.hm.com/assets/hm/ea/bc/eabc242078b691dc82b6b2c3ef04239b646373e1.jpg"
+        },
+        {
+          "colorName": "Light beige",
+          "colorCode": "ABA08D",
+          "productImage": "https://image.hm.com/assets/hm/ac/31/ac314a4d15f3bf3ba21aa41c57b755e7481eb238.jpg"
+        }
+      ],
+      "images": [
+        {
+          "url": "https://image.hm.com/assets/hm/5f/67/5f6743768213e74b569de9374ed3ab7f4fbe0f20.jpg"
+        },
+        {
+          "url": "https://image.hm.com/assets/hm/3a/50/3a501a83ee8c1dc76ec161a85dd1a02d0cfc6212.jpg"
+        },
+        {
+          "url": "https://image.hm.com/assets/hm/ce/b0/ceb03cb9a611a3e4755f71d42d49c7aa754d249b.jpg"
+        },
+        {
+          "url": "https://image.hm.com/assets/hm/6e/b9/6eb91edde8259c954d19148ecb7cfc6ef3845074.jpg"
+        },
+        {
+          "url": "https://image.hm.com/assets/hm/76/cf/76cf5ada8b244d3fd96d60d3d501356eb67016e1.jpg"
+        },
+        {
+          "url": "https://image.hm.com/assets/hm/d5/18/d518a1abfd4d2e190077fb653a3d29e3980fec11.jpg"
+        }
+      ],
+      "description": "A classic twill trench coat designed for both style and comfort. Featuring sustainable materials and a versatile design for various occasions.",
+      "stock": 74,
+      "date_added": "2024-12-23T01:09:14.974Z",
+      "reviews": [
+        {
+          "user": "Emily R.",
+          "comment": "Great quality coat, very stylish, but I expected better fitting.",
+          "rating": 4,
+          "date": "2024-12-23T01:09:14.974Z"
+        },
+        {
+          "user": "Laura P.",
+          "comment": "Perfect for colder days, love the color and the fabric.",
+          "rating": 5,
+          "date": "2024-12-23T01:09:14.974Z"
+        }
+      ]
+    },
+    {
+      "id": 37,
+      "name": "Quilted puffer jacket",
+      "price": 39.99,
+      "category": ["Jacket"],
+      "style": ["Casual"],
+      "store": {
+        "id": 1,
+        "name": "EcoDesign",
+        "location": {
+          "city_name": "Barcelona",
+          "country": "Spain",
+          "latitude": 41.3784,
+          "longitude": 2.1923,
+          "distance_to_madrid": 600,
+          "distance_unit": "km",
+          "transport_method": "truck"
+        }
+      },
+      "rating": 2,
+      "weight": 156,
+      "weight_unit": "g",
+      "available_sizes": ["S", "M", "L", "XL", "XXL"],
+      "materials": ["Recycled Polyester"],
+      "modelImage": "https://image.hm.com/assets/hm/85/a9/85a9fdc4d51939b70bc559c037ae1aefd10fbb38.jpg",
+      "image": "https://image.hm.com/assets/hm/72/fe/72fee6dcc8143da222001292520fc1626f3648ba.jpg",
+      "swatches": [
+        {
+          "colorName": "Dark khaki green",
+          "colorCode": "5D584C",
+          "productImage": "https://image.hm.com/assets/hm/72/fe/72fee6dcc8143da222001292520fc1626f3648ba.jpg"
+        },
+        {
+          "colorName": "Black",
+          "colorCode": "272628",
+          "productImage": "https://image.hm.com/assets/hm/13/0c/130c515f0caee9f642249d07fecfaed034aa279c.jpg"
+        }
+      ],
+      "images": [
+        {
+          "url": "https://image.hm.com/assets/hm/01/71/017124ba7792bd0e1d7cbe984fa9d86eb150824f.jpg"
+        },
+        {
+          "url": "https://image.hm.com/assets/hm/6d/bd/6dbd5c6a3a716b3f51465478179e192f12a1f770.jpg"
+        },
+        {
+          "url": "https://image.hm.com/assets/hm/08/76/087679a56c0db4da8206c032b9658a44fa4c810b.jpg"
+        },
+        {
+          "url": "https://image.hm.com/assets/hm/b0/89/b089f3e297d68076f692e631cb2ddc5d9e2e7cfb.jpg"
+        },
+        {
+          "url": "https://image.hm.com/assets/hm/93/d8/93d88a938e95d51afc37ef16c651d23474aa957b.jpg"
+        }
+      ],
+      "description": "This quilted puffer jacket is made with recycled polyester, offering warmth and comfort for casual wear during the colder months. It features a sleek design and comes in multiple color options.",
+      "stock": 67,
+      "date_added": "2024-12-23T01:09:14.974Z",
+      "reviews": [
+        {
+          "user": "Anna K.",
+          "comment": "The jacket is very warm and stylish. I love the color options.",
+          "rating": 4,
+          "date": "2024-12-23T01:09:14.974Z"
+        },
+        {
+          "user": "David L.",
+          "comment": "Good quality for the price, but a bit too small for my liking.",
+          "rating": 3,
+          "date": "2024-12-23T01:09:14.974Z"
+        }
+      ]
+    },
+    {
+      "id": 38,
+      "name": "Trench-look jacket",
+      "price": 34.99,
+      "category": ["Jacket"],
+      "style": ["Office"],
+      "store": {
+        "id": 3,
+        "name": "Nature Creations",
+        "location": {
+          "city_name": "Lisbon",
+          "country": "Portugal",
+          "latitude": 38.7169,
+          "longitude": -9.1395,
+          "distance_to_madrid": 640,
+          "distance_unit": "km",
+          "transport_method": "truck"
+        }
+      },
+      "rating": 1,
+      "weight": 512,
+      "weight_unit": "g",
+      "available_sizes": ["S", "M", "L", "XL", "XXL"],
+      "materials": ["Organic Cotton"],
+      "modelImage": "https://image.hm.com/assets/hm/56/25/5625c1218bff5c36533b36f39eea2b583adccff1.jpg",
+      "image": "https://image.hm.com/assets/hm/ed/fa/edfa3fa9bfc96a9102c85159d6170516ebfbdf91.jpg",
+      "swatches": [
+        {
+          "colorName": "Black",
+          "colorCode": "272628",
+          "productImage": "https://image.hm.com/assets/hm/ed/fa/edfa3fa9bfc96a9102c85159d6170516ebfbdf91.jpg"
+        },
+        {
+          "colorName": "Navy blue",
+          "colorCode": "272930",
+          "productImage": "https://image.hm.com/assets/hm/68/c4/68c42252de52e02fc832405ecb15644f39062c67.jpg"
+        },
+        {
+          "colorName": "Beige",
+          "colorCode": "938976",
+          "productImage": "https://image.hm.com/assets/hm/07/04/0704ec07f281afd824c1aa7fd6a59c7deb96de79.jpg"
+        },
+        {
+          "colorName": "Dark khaki green",
+          "colorCode": "49453A",
+          "productImage": "https://image.hm.com/assets/hm/f3/a6/f3a62f0859812337413cb685c8ee709ccab6d6a5.jpg"
+        }
+      ],
+      "images": [
+        {
+          "url": "https://image.hm.com/assets/hm/10/b8/10b8e1768f9fad7d7c0fa300715f803b59ef2f13.jpg"
+        },
+        {
+          "url": "https://image.hm.com/assets/hm/dc/a3/dca301b035bbb9e88c2f2e40d49a1135600183aa.jpg"
+        },
+        {
+          "url": "https://image.hm.com/assets/hm/e2/2d/e22d1fa532676a99608244e982b9664762b2a13c.jpg"
+        },
+        {
+          "url": "https://image.hm.com/assets/hm/9d/f7/9df7a31912576dc889e96cd70644f720b2ec68ab.jpg"
+        },
+        {
+          "url": "https://image.hm.com/assets/hm/0f/a7/0fa73083a88814f43ab0aabf5a48af6baffea611.jpg"
+        }
+      ],
+      "description": "This trench-look jacket offers a sophisticated design perfect for office wear. Made from organic cotton, it ensures comfort while maintaining a professional appearance. It is available in various colors to match different styles.",
+      "stock": 24,
+      "date_added": "2024-12-23T01:09:14.974Z",
+      "reviews": [
+        {
+          "user": "John D.",
+          "comment": "The jacket is very comfortable and stylish. I love the quality of the fabric.",
+          "rating": 4,
+          "date": "2024-12-23T01:09:14.974Z"
+        },
+        {
+          "user": "Mary S.",
+          "comment": "Nice jacket, but the sizing is a bit off. I recommend ordering one size up.",
+          "rating": 3,
+          "date": "2024-12-23T01:09:14.974Z"
+        }
+      ]
+    },
+    {
+      "id": 39,
+      "name": "Tie-belt coat",
+      "price": 74.99,
+      "category": ["Jacket"],
+      "style": ["Formal"],
+      "store": {
+        "id": 7,
+        "name": "Sustained Innovations",
+        "location": {
+          "city_name": "Berlin",
+          "country": "Germany",
+          "latitude": 52.52,
+          "longitude": 13.405,
+          "distance_to_madrid": 1800,
+          "distance_unit": "km",
+          "transport_method": "plane"
+        }
+      },
+      "rating": 5,
+      "weight": 859,
+      "weight_unit": "g",
+      "available_sizes": ["S", "M", "L", "XL", "XXL"],
+      "materials": ["Organic Cotton"],
+      "modelImage": "https://image.hm.com/assets/hm/52/09/52097364ed06cfc7ca0c1d583f409a115aaf439a.jpg",
+      "image": "https://image.hm.com/assets/hm/2f/5e/2f5ee9a9e8b4f0983e84a6649009b4a77924b4a2.jpg",
+      "swatches": [
+        {
+          "colorName": "Dark khaki green",
+          "colorCode": "46433F",
+          "productImage": "https://image.hm.com/assets/hm/2f/5e/2f5ee9a9e8b4f0983e84a6649009b4a77924b4a2.jpg"
+        },
+        {
+          "colorName": "Black",
+          "colorCode": "272628",
+          "productImage": "https://image.hm.com/assets/hm/a4/18/a418a2a34935eed765533bf34bc7c7898ec7c599.jpg"
+        },
+        {
+          "colorName": "Beige",
+          "colorCode": "A1998A",
+          "productImage": "https://image.hm.com/assets/hm/53/f0/53f0a86f79af06fdbfc7693d406e1356fcd98a1e.jpg"
+        }
+      ],
+      "images": [
+        {
+          "url": "https://image.hm.com/assets/hm/da/48/da487c281f9b1b47a4a1c7430bd783c6db7da05b.jpg"
+        },
+        {
+          "url": "https://image.hm.com/assets/hm/d1/03/d1030d4ceb2cc8d7267b39ed4b01937e3f959c2b.jpg"
+        },
+        {
+          "url": "https://image.hm.com/assets/hm/41/da/41da54a1cbccae77fc735c3f927c4af7e1122aae.jpg"
+        },
+        {
+          "url": "https://image.hm.com/assets/hm/88/df/88df9736eff990e6a84342f06380b1a3d3297ca1.jpg"
+        }
+      ],
+      "description": "This stylish tie-belt coat is perfect for formal occasions. Made from high-quality organic cotton, it offers both comfort and elegance. The coat features a chic tie-belt detail and is available in various colors, making it a versatile addition to your wardrobe.",
+      "stock": 88,
+      "date_added": "2024-12-23T01:09:14.974Z",
+      "reviews": [
+        {
+          "user": "Anna K.",
+          "comment": "Absolutely love this coat! The material is soft, and the fit is perfect. Highly recommend.",
+          "rating": 4,
+          "date": "2024-12-23T01:09:14.974Z"
+        },
+        {
+          "user": "Laura B.",
+          "comment": "Great quality but a little tight around the shoulders. I would suggest sizing up.",
+          "rating": 3,
+          "date": "2024-12-23T01:09:14.974Z"
+        }
+      ]
+    },
+    {
+      "id": 40,
+      "name": "Teddy coat",
+      "price": 84.99,
+      "category": ["Jacket"],
+      "style": ["Casual"],
+      "store": {
+        "id": 2,
+        "name": "Green Style",
+        "location": {
+          "city_name": "Rome",
+          "country": "Italy",
+          "latitude": 41.9028,
+          "longitude": 12.4964,
+          "distance_to_madrid": 1300,
+          "distance_unit": "km",
+          "transport_method": "ship"
+        }
+      },
+      "rating": 4,
+      "weight": 388,
+      "weight_unit": "g",
+      "available_sizes": ["S", "M", "L", "XL", "XXL"],
+      "materials": ["Recycled Polyester"],
+      "modelImage": "https://image.hm.com/assets/hm/a2/6d/a26d89d9301c636a8691619f924e9570d5e540de.jpg",
+      "image": "https://image.hm.com/assets/hm/1c/4f/1c4fda2e81bc822bb93147ce9f8d5e40eafd16bb.jpg",
+      "swatches": [
+        {
+          "colorName": "Black",
+          "colorCode": "3A3539",
+          "productImage": "https://image.hm.com/assets/hm/1c/4f/1c4fda2e81bc822bb93147ce9f8d5e40eafd16bb.jpg"
+        },
+        {
+          "colorName": "Beige",
+          "colorCode": "A49B8B",
+          "productImage": "https://image.hm.com/assets/hm/c8/67/c8677691167abbac0f669b11d6daaf31b3d722ed.jpg"
+        }
+      ],
+      "images": [
+        {
+          "url": "https://image.hm.com/assets/hm/e0/c8/e0c846f499509fc6a72cffeb64bee96a4e8703aa.jpg"
+        },
+        {
+          "url": "https://image.hm.com/assets/hm/43/df/43dfba87ca90ee4e62bf9260ec5f7ff725f8c0ef.jpg"
+        },
+        {
+          "url": "https://image.hm.com/assets/hm/91/97/91971985e0f3158574baa5dd425cd3f99f194a30.jpg"
+        },
+        {
+          "url": "https://image.hm.com/assets/hm/2b/b7/2bb7853e7eac42fc4d5c5a226bb581c242736c2b.jpg"
+        },
+        {
+          "url": "https://image.hm.com/assets/hm/dc/fb/dcfbffeac0a403c8848fb61c3f9a8c81f7ba7977.jpg"
+        }
+      ],
+      "description": "This cozy teddy coat is perfect for casual outings. Made with recycled polyester, it combines comfort and sustainability. The soft texture provides warmth, making it ideal for cooler months. Available in black and beige, it's a versatile piece for your wardrobe.",
+      "stock": 89,
+      "date_added": "2024-12-23T01:09:14.974Z",
+      "reviews": [
+        {
+          "user": "Sarah L.",
+          "comment": "Super comfy and warm! Love the feel of the fabric, but it could use more size options.",
+          "rating": 3,
+          "date": "2024-12-23T01:09:14.974Z"
+        },
+        {
+          "user": "Mike D.",
+          "comment": "Great coat, really stylish. The beige color is perfect for all seasons.",
+          "rating": 4,
+          "date": "2024-12-23T01:09:14.974Z"
+        }
+      ]
+    },
+    {
+      "id": 41,
+      "name": "Quilted sports anorak in ThermoMove™",
+      "price": 64.99,
+      "category": ["Jacket"],
+      "style": ["Gym"],
+      "store": {
+        "id": 3,
+        "name": "Nature Creations",
+        "location": {
+          "city_name": "Lisbon",
+          "country": "Portugal",
+          "latitude": 38.7169,
+          "longitude": -9.1395,
+          "distance_to_madrid": 640,
+          "distance_unit": "km",
+          "transport_method": "truck"
+        }
+      },
+      "rating": 2,
+      "weight": 627,
+      "weight_unit": "g",
+      "available_sizes": ["S", "M", "L", "XL", "XXL"],
+      "materials": ["Recycled Polyester"],
+      "modelImage": "https://image.hm.com/assets/hm/01/d0/01d05f098d4811fec5366b7ca840bb7f655156e5.jpg",
+      "image": "https://image.hm.com/assets/hm/01/d0/01d05f098d4811fec5366b7ca840bb7f655156e5.jpg",
+      "swatches": [
+        {
+          "colorName": "Black",
+          "colorCode": "272628",
+          "productImage": "https://image.hm.com/assets/hm/01/d0/01d05f098d4811fec5366b7ca840bb7f655156e5.jpg"
+        }
+      ],
+      "images": [
+        {
+          "url": "https://image.hm.com/assets/hm/fe/34/fe342e3b36b2360bcd9cab41db4b9143cf1a6e09.jpg"
+        },
+        {
+          "url": "https://image.hm.com/assets/hm/bb/ab/bbab5a8cbfb9dba273d46aa612405828c92c7aa8.jpg"
+        },
+        {
+          "url": "https://image.hm.com/assets/hm/a7/b7/a7b74cf2ad69a4bb037790579909e2541a0bf8a2.jpg"
+        },
+        {
+          "url": "https://image.hm.com/assets/hm/73/58/73583dc32aef6e2845f69fb1d2ffe99d82a0a0cf.jpg"
+        }
+      ],
+      "description": "Stay warm and stylish with this quilted anorak made with ThermoMove™ technology, designed for maximum comfort and breathability during intense workouts or outdoor activities. Featuring a sleek black finish and made from recycled polyester, this jacket offers both function and sustainability.",
+      "stock": 90,
+      "date_added": "2024-12-23T01:09:14.974Z",
+      "reviews": [
+        {
+          "user": "Alex G.",
+          "comment": "Very warm and comfortable, but I found the fit a bit tight around the shoulders.",
+          "rating": 2,
+          "date": "2024-12-23T01:09:14.974Z"
+        },
+        {
+          "user": "Lara W.",
+          "comment": "Perfect for my gym sessions! I love the material, but the color could be a bit brighter.",
+          "rating": 3,
+          "date": "2024-12-23T01:09:14.974Z"
+        }
+      ]
+    },
+
+    {
+      "id": 43,
+      "name": "Teddy sports jacket",
+      "price": 37.99,
+      "category": ["Jacket"],
+      "style": ["Gym"],
+      "store": {
+        "id": 2,
+        "name": "Green Style",
+        "location": {
+          "city_name": "Rome",
+          "country": "Italy",
+          "latitude": 41.9028,
+          "longitude": 12.4964,
+          "distance_to_madrid": 1300,
+          "distance_unit": "km",
+          "transport_method": "ship"
+        }
+      },
+      "rating": 5,
+      "weight": 252,
+      "weight_unit": "g",
+      "available_sizes": ["S", "M", "L"],
+      "materials": ["Organic Cotton", "Recycled Polyester"],
+      "modelImage": "https://image.hm.com/assets/hm/bd/86/bd868127cfb406c0501c6d84e3c2116f93bce57f.jpg",
+      "image": "https://image.hm.com/assets/hm/4e/9b/4e9b2a66ed84f0e66882af93f6675601d5aaf710.jpg",
+      "swatches": [
+        {
+          "colorName": "Grey",
+          "colorCode": "6E6C6E",
+          "productImage": "https://image.hm.com/assets/hm/4e/9b/4e9b2a66ed84f0e66882af93f6675601d5aaf710.jpg"
+        },
+        {
+          "colorName": "Light beige",
+          "colorCode": "DAD0BC",
+          "productImage": "https://image.hm.com/assets/hm/ea/0b/ea0bd46332183b89d860671c9a804e9ea3c619a1.jpg"
+        },
+        {
+          "colorName": "Black",
+          "colorCode": "272628",
+          "productImage": "https://image.hm.com/assets/hm/03/38/03386bfa88da554bd32ed3d2b7cb07fa3b666659.jpg"
+        }
+      ],
+      "images": [
+        {
+          "url": "https://image.hm.com/assets/hm/fb/8d/fb8d9e598191975cb2fee9c87546a83df2b51a4d.jpg"
+        },
+        {
+          "url": "https://image.hm.com/assets/hm/13/ab/13ab728f12ebef44379fba00891e90431e5e0636.jpg"
+        },
+        {
+          "url": "https://image.hm.com/assets/hm/b3/90/b3906603f616adf453117aa7e9d4f27811f4ebe1.jpg"
+        },
+        {
+          "url": "https://image.hm.com/assets/hm/9e/d9/9ed9a83c337465845331a47e7b0fd54dbfb70da8.jpg"
+        }
+      ],
+      "description": "A cozy teddy sports jacket that combines comfort and performance. Ideal for gym sessions or casual wear, the jacket is made from sustainable materials like organic cotton and recycled polyester. Its relaxed fit and soft texture make it perfect for active lifestyles.",
+      "stock": 59,
+      "date_added": "2024-12-23T01:09:14.974Z",
+      "reviews": [
+        {
+          "user": "John Doe",
+          "comment": "Great jacket for the gym! It's lightweight but keeps me warm.",
+          "rating": 4,
+          "date": "2024-12-23T01:09:14.974Z"
+        },
+        {
+          "user": "Sarah Miller",
+          "comment": "Love the material and fit. Perfect for both workouts and casual days.",
+          "rating": 5,
+          "date": "2024-12-23T01:09:14.974Z"
+        },
+        {
+          "user": "Tom Roberts",
+          "comment": "The jacket is comfortable but a bit too loose for my taste. Still a solid buy.",
+          "rating": 3,
+          "date": "2024-12-23T01:09:14.974Z"
+        }
+      ]
+    },
+    {
+      "id": 44,
+      "name": "Cropped fluffy jacket",
+      "price": 34.99,
+      "category": ["Jacket"],
+      "style": ["Casual"],
+      "store": {
+        "id": 3,
+        "name": "Nature Creations",
+        "location": {
+          "city_name": "Lisbon",
+          "country": "Portugal",
+          "latitude": 38.7169,
+          "longitude": -9.1395,
+          "distance_to_madrid": 640,
+          "distance_unit": "km",
+          "transport_method": "truck"
+        }
+      },
+      "rating": 4,
+      "weight": 678,
+      "weight_unit": "g",
+      "available_sizes": ["S", "M", "L"],
+      "materials": ["Organic Cotton", "Recycled Polyester"],
+      "modelImage": "https://image.hm.com/assets/hm/9c/41/9c4100dc70e18279345e4c1b66f539177f4f1a4f.jpg",
+      "image": "https://image.hm.com/assets/hm/a8/50/a850c9a9891a5389dbb7cc99192884eb1ce0b742.jpg",
+      "swatches": [
+        {
+          "colorName": "Brown/Leopard print",
+          "colorCode": "3D3533",
+          "productImage": "https://image.hm.com/assets/hm/a8/50/a850c9a9891a5389dbb7cc99192884eb1ce0b742.jpg"
+        },
+        {
+          "colorName": "Dark brown",
+          "colorCode": "3D3533",
+          "productImage": "https://image.hm.com/assets/hm/1c/f3/1cf3ee535f6498f9061f814904e190f369d2c1f8.jpg"
+        },
+        {
+          "colorName": "Black",
+          "colorCode": "272628",
+          "productImage": "https://image.hm.com/assets/hm/21/63/2163d0229efe5ef0c0a03f92e022234daed275be.jpg"
+        }
+      ],
+      "images": [
+        {
+          "url": "https://image.hm.com/assets/hm/20/db/20db276d3003ee8fabda26f39625eb1d5c3370cd.jpg"
+        },
+        {
+          "url": "https://image.hm.com/assets/hm/0b/6a/0b6a255a0406ec47b2913e3f9b3f1efa0b87cd74.jpg"
+        },
+        {
+          "url": "https://image.hm.com/assets/hm/ae/65/ae6594db86cbad8c2ef7c036fec029988b4721f8.jpg"
+        },
+        {
+          "url": "https://image.hm.com/assets/hm/80/51/805106ca69f4aa3e2be95686dd04ad9b710b9188.jpg"
+        },
+        {
+          "url": "https://image.hm.com/assets/hm/4f/01/4f0176f81ec4a9d117417385d62665c0bd6df8a6.jpg"
+        }
+      ],
+      "description": "A cropped fluffy jacket that combines comfort with style. Perfect for casual outings, it provides warmth while making a fashion statement. The brown/leopard print pattern adds a unique touch, and the jacket is made with eco-friendly materials like organic cotton and recycled polyester.",
+      "stock": 66,
+      "date_added": "2024-12-23T01:09:14.974Z",
+      "reviews": [
+        {
+          "user": "Alice White",
+          "comment": "This jacket is adorable! Super soft and stylish. Perfect for cool weather.",
+          "rating": 4,
+          "date": "2024-12-23T01:09:14.974Z"
+        },
+        {
+          "user": "Mark Davis",
+          "comment": "I love the fit of this jacket, but the material could be a bit thicker for colder days.",
+          "rating": 3,
+          "date": "2024-12-23T01:09:14.974Z"
+        },
+        {
+          "user": "Lisa Green",
+          "comment": "Great value for money. The leopard print is eye-catching and it goes with almost everything!",
+          "rating": 4,
+          "date": "2024-12-23T01:09:14.974Z"
+        }
+      ]
+    },
+    {
+      "id": 45,
+      "name": "Fluffy tie-belt coat",
+      "price": 84.99,
+      "category": ["Dress"],
+      "style": ["Casual"],
+      "store": {
+        "id": 4,
+        "name": "Chic Design",
+        "location": {
+          "city_name": "Paris",
+          "country": "France",
+          "latitude": 48.8566,
+          "longitude": 2.3522,
+          "distance_to_madrid": 1300,
+          "distance_unit": "km",
+          "transport_method": "train"
+        }
+      },
+      "rating": 4,
+      "weight": 890,
+      "weight_unit": "g",
+      "available_sizes": ["S", "M", "L"],
+      "materials": ["Organic Cotton", "Recycled Polyester"],
+      "modelImage": "https://image.hm.com/assets/hm/cd/74/cd743cf14d0fd0ecc8b0555dda6c9f6a537480f3.jpg",
+      "image": "https://image.hm.com/assets/hm/cd/83/cd83a19dca6017aa90bac851e6d57f343740f09b.jpg",
+      "swatches": [
+        {
+          "colorName": "Light beige",
+          "colorCode": "B6AEA8",
+          "productImage": "https://image.hm.com/assets/hm/cd/83/cd83a19dca6017aa90bac851e6d57f343740f09b.jpg"
+        }
+      ],
+      "images": [
+        {
+          "url": "https://image.hm.com/assets/hm/a3/6b/a36b97fe9a66d82b84410282d30ee46bfbbb5c25.jpg"
+        },
+        {
+          "url": "https://image.hm.com/assets/hm/28/3e/283eec45d097ab27f18ec6648adc1be0c7035e29.jpg"
+        },
+        {
+          "url": "https://image.hm.com/assets/hm/dd/4b/dd4b8173fe7f52064b567b91f620f88aa41d5179.jpg"
+        },
+        {
+          "url": "https://image.hm.com/assets/hm/67/49/67495a4a58b7eed9e56a08756db508c74f3e1746.jpg"
+        }
+      ],
+      "description": "A fluffy, tie-belt coat perfect for casual outings. Made with a combination of organic cotton and recycled polyester, offering both comfort and sustainability. The light beige color provides a neutral and stylish look for any occasion.",
+      "stock": 78,
+      "date_added": "2024-12-23T01:09:14.974Z",
+      "reviews": [
+        {
+          "user": "Emma Brown",
+          "comment": "I love this coat! It’s super cozy and perfect for casual days. The material feels high quality too.",
+          "rating": 4,
+          "date": "2024-12-23T01:09:14.974Z"
+        },
+        {
+          "user": "John Smith",
+          "comment": "The coat is nice but a bit too big for me. I wish they had a smaller size.",
+          "rating": 3,
+          "date": "2024-12-23T01:09:14.974Z"
+        },
+        {
+          "user": "Sophia Lee",
+          "comment": "Great product overall. Looks great with casual outfits and feels comfortable.",
+          "rating": 4,
+          "date": "2024-12-23T01:09:14.974Z"
+        }
+      ]
+    },
+    {
+      "id": 46,
+      "name": "Fluffy jacket",
+      "price": 54.99,
+      "category": ["Jacket"],
+      "style": ["Casual"],
+      "store": {
+        "id": 1,
+        "name": "EcoDesign",
+        "location": {
+          "city_name": "Barcelona",
+          "country": "Spain",
+          "latitude": 41.3784,
+          "longitude": 2.1923,
+          "distance_to_madrid": 600,
+          "distance_unit": "km",
+          "transport_method": "truck"
+        }
+      },
+      "rating": 4,
+      "weight": 828,
+      "weight_unit": "g",
+      "available_sizes": ["XS", "S", "L", "M", "X", "XXL"],
+      "materials": ["Organic Cotton", "Recycled Polyester"],
+      "modelImage": "https://image.hm.com/assets/hm/f9/91/f9912bd5c05f29962b379e998b4fff8c1cb40ff3.jpg",
+      "image": "https://image.hm.com/assets/hm/5b/8e/5b8e020c28f8737752ae407957c3f2911ff0c4b0.jpg",
+      "swatches": [
+        {
+          "colorName": "Cream",
+          "colorCode": "EEEDE1",
+          "productImage": "https://image.hm.com/assets/hm/5b/8e/5b8e020c28f8737752ae407957c3f2911ff0c4b0.jpg"
+        },
+        {
+          "colorName": "Brown",
+          "colorCode": "675240",
+          "productImage": "https://image.hm.com/assets/hm/67/73/67735f96bc958b542623a670c8a63f726bbe4c89.jpg"
+        },
+        {
+          "colorName": "Dark brown/Patterned",
+          "colorCode": "272628",
+          "productImage": "https://image.hm.com/assets/hm/e8/42/e84219f97563de919c9e24a549a65927ea192a0d.jpg"
+        }
+      ],
+      "images": [
+        {
+          "url": "https://image.hm.com/assets/hm/96/71/9671c18db35e7e8c2fa37200f46583e97fdf986d.jpg"
+        },
+        {
+          "url": "https://image.hm.com/assets/hm/03/a9/03a9d1fad432f9b5669972f3cb322203efac45fe.jpg"
+        },
+        {
+          "url": "https://image.hm.com/assets/hm/91/69/91694948b15bd4a22f5fee3124bebbdc794ca2ed.jpg"
+        },
+        {
+          "url": "https://image.hm.com/assets/hm/ec/b0/ecb01434014afaae3ef6343d40210e4aa7b168ef.jpg"
+        },
+        {
+          "url": "https://image.hm.com/assets/hm/69/1e/691e1bfccea459ebafa1345765d741ef0f3fb1e7.jpg"
+        }
+      ],
+      "description": "This fluffy jacket is designed to keep you warm and cozy while adding a stylish touch to your casual outfit. Made from organic cotton and recycled polyester, it's an eco-friendly choice for the fashion-conscious.",
+      "stock": 78,
+      "date_added": "2024-12-23T01:09:14.974Z",
+      "reviews": [
+        {
+          "user": "Anna R.",
+          "comment": "Really comfortable and warm, perfect for chilly days!",
+          "rating": 4,
+          "date": "2024-12-23T01:09:14.974Z"
+        },
+        {
+          "user": "Carlos M.",
+          "comment": "I love the color and softness, but it runs a bit large.",
+          "rating": 3,
+          "date": "2024-12-23T01:09:14.974Z"
+        }
+      ]
+    },
+    {
+      "id": 47,
+      "name": "Zip-through sports jacket in SoftMove™",
+      "price": 27.99,
+      "category": ["Jacket"],
+      "style": ["Gym"],
+      "store": {
+        "id": 7,
+        "name": "Sustained Innovations",
+        "location": {
+          "city_name": "Berlin",
+          "country": "Germany",
+          "latitude": 52.52,
+          "longitude": 13.405,
+          "distance_to_madrid": 1800,
+          "distance_unit": "km",
+          "transport_method": "plane"
+        }
+      },
+      "rating": 4,
+      "weight": 232,
+      "weight_unit": "g",
+      "available_sizes": ["S", "M", "L"],
+      "materials": ["Organic Cotton", "Recycled Polyester"],
+      "modelImage": "https://image.hm.com/assets/hm/2c/d4/2cd48207562800abc25e46c916d039b89712cda9.jpg",
+      "image": "https://image.hm.com/assets/hm/2c/d4/2cd48207562800abc25e46c916d039b89712cda9.jpg",
+      "swatches": [
+        {
+          "colorName": "Light blue",
+          "colorCode": "9FA8B6",
+          "productImage": "https://image.hm.com/assets/hm/2c/d4/2cd48207562800abc25e46c916d039b89712cda9.jpg"
+        },
+        {
+          "colorName": "Black",
+          "colorCode": "272628",
+          "productImage": "https://image.hm.com/assets/hm/79/be/79be6910c338175c2ced088b4fccb22168b28562.jpg"
+        },
+        {
+          "colorName": "Dark grey",
+          "colorCode": "58534F",
+          "productImage": "https://image.hm.com/assets/hm/70/75/7075ac908f1dec6ebc905cceb587b7be706cf404.jpg"
+        },
+        {
+          "colorName": "White",
+          "colorCode": "ECE9E2",
+          "productImage": "https://image.hm.com/assets/hm/e2/48/e248e7ee570ae131a888bf87ea40d4bd76e4200b.jpg"
+        },
+        {
+          "colorName": "Beige",
+          "colorCode": "8A8A7F",
+          "productImage": "https://image.hm.com/assets/hm/0f/84/0f84193203b09377f46e512c8fae21a9290b737d.jpg"
+        },
+        {
+          "colorName": "Pigeon blue",
+          "colorCode": "454553",
+          "productImage": "https://image.hm.com/assets/hm/ac/77/ac77ca1d234407f39e807604d03dbaef2e975866.jpg"
+        },
+        {
+          "colorName": "Purple",
+          "colorCode": "B1999D",
+          "productImage": "https://image.hm.com/assets/hm/53/5a/535a8566dd5e60bdc1d32dc4058c4006d57b03d5.jpg"
+        },
+        {
+          "colorName": "Rust red",
+          "colorCode": "4B262D",
+          "productImage": "https://image.hm.com/assets/hm/7f/da/7fdac3db28818e1bdf3edcbdd7a72d4d132c8abb.jpg"
+        },
+        {
+          "colorName": "Dark grey",
+          "colorCode": "4C4D50",
+          "productImage": "https://image.hm.com/assets/hm/fa/d4/fad4067ef001ed9a5148bfe94c04306572068159.jpg"
+        }
+      ],
+      "images": [
+        {
+          "url": "https://image.hm.com/assets/hm/69/3b/693b70766996583df04bfcce7d72035cf67dbe72.jpg"
+        },
+        {
+          "url": "https://image.hm.com/assets/hm/dc/f0/dcf0522452db46bfdea35cfa5cd7d42de3964d1e.jpg"
+        }
+      ],
+      "description": "This Zip-through sports jacket in SoftMove™ is designed to offer maximum comfort and flexibility for your workout. Featuring breathable materials and a lightweight feel, it’s perfect for gym sessions or casual outings. The sleek design and vibrant colors make it a versatile choice for active wear.",
+      "stock": 0,
+      "date_added": "2024-12-23T01:09:14.974Z",
+      "reviews": [
+        {
+          "user": "Emily Johnson",
+          "comment": "Love this jacket! It’s so comfortable, and the material feels amazing for sports.",
+          "rating": 4,
+          "date": "2024-12-23T01:09:14.974Z"
+        },
+        {
+          "user": "Michael Brown",
+          "comment": "The jacket is great, but the fit is a bit tight around the chest. I would recommend sizing up.",
+          "rating": 3,
+          "date": "2024-12-23T01:09:14.974Z"
+        }
+      ]
+    },
+    {
+      "id": 42,
+      "name": "Zip-through sports jacket in SoftMove™",
+      "price": 27.99,
+      "category": [
+        "Jacket"
+      ],
+      "style": [
+        "Gym"
+      ],
+      "store": {
+        "id": 1,
+        "name": "EcoDesign",
+        "location": {
+          "city_name": "Barcelona",
+          "country": "Spain",
+          "latitude": 41.3784,
+          "longitude": 2.1923,
+          "distance_to_madrid": 600,
+          "distance_unit": "km",
+          "transport_method": "truck"
+        }
+      },
+      "rating": 2,
+      "weight": 525,
+      "weight_unit": "g",
+      "available_sizes": [
+        "S",
+        "M",
+        "L"
+      ],
+      "materials": [
+        "Organic Cotton"
+      ],
+      "modelImage": "https://image.hm.com/assets/hm/c6/5e/c65eb95472e5c19b29e936e5afdbc625ff72e93f.jpg",
+      "image": "https://image.hm.com/assets/hm/70/75/7075ac908f1dec6ebc905cceb587b7be706cf404.jpg",
+      "swatches": [
+        {
+          "colorName": "Dark grey",
+          "colorCode": "58534F",
+          "productImage": "https://image.hm.com/assets/hm/70/75/7075ac908f1dec6ebc905cceb587b7be706cf404.jpg"
+        },
+        {
+          "colorName": "Black",
+          "colorCode": "272628",
+          "productImage": "https://image.hm.com/assets/hm/79/be/79be6910c338175c2ced088b4fccb22168b28562.jpg"
+        },
+        {
+          "colorName": "Light blue",
+          "colorCode": "9FA8B6",
+          "productImage": "https://image.hm.com/assets/hm/2c/d4/2cd48207562800abc25e46c916d039b89712cda9.jpg"
+        },
+        {
+          "colorName": "White",
+          "colorCode": "ECE9E2",
+          "productImage": "https://image.hm.com/assets/hm/e2/48/e248e7ee570ae131a888bf87ea40d4bd76e4200b.jpg"
+        },
+        {
+          "colorName": "Beige",
+          "colorCode": "8A8A7F",
+          "productImage": "https://image.hm.com/assets/hm/0f/84/0f84193203b09377f46e512c8fae21a9290b737d.jpg"
+        },
+        {
+          "colorName": "Pigeon blue",
+          "colorCode": "454553",
+          "productImage": "https://image.hm.com/assets/hm/ac/77/ac77ca1d234407f39e807604d03dbaef2e975866.jpg"
+        },
+        {
+          "colorName": "Purple",
+          "colorCode": "B1999D",
+          "productImage": "https://image.hm.com/assets/hm/53/5a/535a8566dd5e60bdc1d32dc4058c4006d57b03d5.jpg"
+        },
+        {
+          "colorName": "Rust red",
+          "colorCode": "4B262D",
+          "productImage": "https://image.hm.com/assets/hm/7f/da/7fdac3db28818e1bdf3edcbdd7a72d4d132c8abb.jpg"
+        }
+      ],
+      "images": [
+        {
+          "url": "https://image.hm.com/assets/hm/b4/ff/b4ff248bbeb8a2b7c48bbc608bcc2141000fa4c5.jpg"
+        },
+        {
+          "url": "https://image.hm.com/assets/hm/4b/4d/4b4da0dd2c302b9a0d0c948b4331a2a2101bec64.jpg"
+        },
+        {
+          "url": "https://image.hm.com/assets/hm/85/f4/85f4679c5410b9fe59aedd41ef8ae0bd2e0562da.jpg"
+        },
+        {
+          "url": "https://image.hm.com/assets/hm/00/70/00705fa825315038a2658af6dec65502ae404105.jpg"
+        },
+        {
+          "url": "https://image.hm.com/assets/hm/a3/52/a35262ae00b52df6ce24bd7ced54ffb390e8cc4d.jpg"
+        },
+        {
+          "url": "https://image.hm.com/assets/hm/02/c2/02c2aa353dcb2c14af11622752e63291ed7684dd.jpg"
+        },
+        {
+          "url": "https://image.hm.com/assets/hm/32/20/3220fb744ccdb359de725470e85d30bfa9318d8e.jpg"
+        }
+      ],
+      "description": "A sleek, zip-through jacket crafted from SoftMove™ fabric, designed for a comfortable and breathable experience. Perfect for sports activities or casual wear, offering flexibility and style.",
+      "stock": 95,
+      "date_added": "2024-12-23T01:09:14.974Z",
+      "reviews": [
+        {
+          "user": "John Smith",
+          "comment": "Disappointing quality for the price. Fabric is not as breathable as expected.",
+          "rating": 1,
+          "date": "2024-12-23T01:09:14.974Z"
+        },
+        {
+          "user": "Alice Brown",
+          "comment": "The jacket looks great, but the fit was too tight for my usual size. Had to return it.",
+          "rating": 2,
+          "date": "2024-12-23T01:09:14.974Z"
+        }
+      ]
+  }
+  ,
+    {
+      "id": 48,
+      "name": "Oversized down puffer jacket",
+      "price": 149.99,
+      "category": ["Jacket"],
+      "style": ["Casual"],
+      "store": {
+        "id": 3,
+        "name": "Nature Creations",
+        "location": {
+          "city_name": "Lisbon",
+          "country": "Portugal",
+          "latitude": 38.7169,
+          "longitude": -9.1395,
+          "distance_to_madrid": 640,
+          "distance_unit": "km",
+          "transport_method": "truck"
+        }
+      },
+      "rating": 4,
+      "weight": 728,
+      "weight_unit": "g",
+      "available_sizes": ["S", "M", "L"],
+      "materials": ["Organic Cotton", "Recycled Polyester"],
+      "modelImage": "https://image.hm.com/assets/hm/fe/39/fe3954b53586bfe642b959e3779ee3a1b3add388.jpg",
+      "image": "https://image.hm.com/assets/hm/c9/53/c953b3f4ff67d69f007a40e56a131692aeb7b0c6.jpg",
+      "swatches": [
+        {
+          "colorName": "Dark greige",
+          "colorCode": "625B57",
+          "productImage": "https://image.hm.com/assets/hm/c9/53/c953b3f4ff67d69f007a40e56a131692aeb7b0c6.jpg"
+        },
+        {
+          "colorName": "Black",
+          "colorCode": "272628",
+          "productImage": "https://image.hm.com/assets/hm/3d/28/3d28f4ad2794c2c35c7785dfcf6f326a8e977f56.jpg"
+        }
+      ],
+      "images": [
+        {
+          "url": "https://image.hm.com/assets/hm/13/3a/133ab4dc0d22d2cd3c28807fc5a6ea13e3357d99.jpg"
+        },
+        {
+          "url": "https://image.hm.com/assets/hm/d4/97/d497daae3eca9302ce5be9eae5ab1da3f4a3b3f9.jpg"
+        },
+        {
+          "url": "https://image.hm.com/assets/hm/0c/e2/0ce2d21aa1b8584308097de15215cc1f68a56c09.jpg"
+        },
+        {
+          "url": "https://image.hm.com/assets/hm/ed/7d/ed7d6738370a1c780d9b8f477dff8bd1100eb7ef.jpg"
+        },
+        {
+          "url": "https://image.hm.com/assets/hm/0e/4a/0e4affffe74881fade5ceaeec91eeba1ef687d2b.jpg"
+        }
+      ],
+      "description": "This oversized down puffer jacket offers the perfect balance of comfort and warmth for casual outings. Featuring soft and sustainable materials like Organic Cotton and Recycled Polyester, this jacket is a cozy addition to your winter wardrobe. Its relaxed fit ensures comfort all day long.",
+      "stock": 83,
+      "date_added": "2024-12-23T01:09:14.974Z",
+      "reviews": [
+        {
+          "user": "John Doe",
+          "comment": "Great jacket! Super warm and comfy for the winter. The material feels high quality.",
+          "rating": 4,
+          "date": "2024-12-23T01:09:14.974Z"
+        },
+        {
+          "user": "Jane Smith",
+          "comment": "It’s okay, but the sizing runs a bit large. I had to exchange it for a smaller size.",
+          "rating": 3,
+          "date": "2024-12-23T01:09:14.974Z"
+        }
+      ]
+    },
+    {
+      "id": 49,
+      "name": "Single-breasted coat",
+      "price": 59.99,
+      "category": ["Jacket"],
+      "style": ["Formal"],
+      "store": {
+        "id": 6,
+        "name": "Creative Eco",
+        "location": {
+          "city_name": "Brussels",
+          "country": "Belgium",
+          "latitude": 50.8503,
+          "longitude": 4.3517,
+          "distance_to_madrid": 1300,
+          "distance_unit": "km",
+          "transport_method": "train"
+        }
+      },
+      "rating": 5,
+      "weight": 225,
+      "weight_unit": "g",
+      "available_sizes": ["S", "M", "L"],
+      "materials": ["Organic Hemp"],
+      "modelImage": "https://image.hm.com/assets/hm/6d/2c/6d2cf65cffef0d377861939bace8888001c857b6.jpg",
+      "image": "https://image.hm.com/assets/hm/2e/95/2e956d035a9a638682e4683d98bc1fd08c15e835.jpg",
+      "swatches": [
+        {
+          "colorName": "Dark grey/Leopard print",
+          "colorCode": "DAD6D3",
+          "productImage": "https://image.hm.com/assets/hm/2e/95/2e956d035a9a638682e4683d98bc1fd08c15e835.jpg"
+        },
+        {
+          "colorName": "Black",
+          "colorCode": "272628",
+          "productImage": "https://image.hm.com/assets/hm/a5/53/a55382764664518e057e6402558f973217c29345.jpg"
+        },
+        {
+          "colorName": "Beige marl",
+          "colorCode": "BBAB92",
+          "productImage": "https://image.hm.com/assets/hm/63/3a/633a36d752058c286987fb6d1c7a3a969d7f2e1f.jpg"
+        }
+      ],
+      "images": [
+        {
+          "url": "https://image.hm.com/assets/hm/1a/e1/1ae1d49215c2288e53064acb56ebc688af734421.jpg"
+        },
+        {
+          "url": "https://image.hm.com/assets/hm/88/66/88667f4df34a4d5d9235c32f9ac7e30078905f8b.jpg"
+        },
+        {
+          "url": "https://image.hm.com/assets/hm/c5/16/c51628952bb20b69d3fe60cf8fb90f5ccd4a927d.jpg"
+        },
+        {
+          "url": "https://image.hm.com/assets/hm/59/6f/596fbb17b498f700cbc82667f73f61cd7e0fd17e.jpg"
+        }
+      ],
+      "description": "A stylish single-breasted coat crafted from a wool blend, perfect for adding a refined touch to any formal look. Its timeless design makes it an essential piece for colder months.",
+      "stock": 31,
+      "date_added": "2024-12-23T01:09:14.974Z",
+      "reviews": [
+        {
+          "user": "John Doe",
+          "comment": "A classic and elegant coat. Fits well and is very warm. Perfect for the office!",
+          "rating": 5,
+          "date": "2024-12-23T01:09:14.974Z"
+        },
+        {
+          "user": "Jane Smith",
+          "comment": "Lovely design but a bit tight around the shoulders. Otherwise, great quality.",
+          "rating": 4,
+          "date": "2024-12-23T01:09:14.974Z"
+        },
+        {
+          "user": "Maria Gonzalez",
+          "comment": "I love the leopard print! It's a bold choice that works surprisingly well for formal events.",
+          "rating": 5,
+          "date": "2024-12-23T01:09:14.974Z"
+        }
+      ]
+    },
+    {
+      "id": 50,
+      "name": "Tie-belt coat",
+      "price": 74.99,
+      "category": ["Dress"],
+      "style": ["Formal"],
+      "store": {
+        "id": 2,
+        "name": "Green Style",
+        "location": {
+          "city_name": "Rome",
+          "country": "Italy",
+          "latitude": 41.9028,
+          "longitude": 12.4964,
+          "distance_to_madrid": 1300,
+          "distance_unit": "km",
+          "transport_method": "ship"
+        }
+      },
+      "rating": 4,
+      "weight": 554,
+      "weight_unit": "g",
+      "available_sizes": ["S", "M", "L"],
+      "materials": ["Organic Cotton"],
+      "modelImage": "https://image.hm.com/assets/hm/e8/42/e8428e6bfed8088c78cf97c095f869748407372b.jpg",
+      "image": "https://image.hm.com/assets/hm/53/f0/53f0a86f79af06fdbfc7693d406e1356fcd98a1e.jpg",
+      "swatches": [
+        {
+          "colorName": "Beige",
+          "colorCode": "A1998A",
+          "productImage": "https://image.hm.com/assets/hm/53/f0/53f0a86f79af06fdbfc7693d406e1356fcd98a1e.jpg"
+        },
+        {
+          "colorName": "Black",
+          "colorCode": "272628",
+          "productImage": "https://image.hm.com/assets/hm/a4/18/a418a2a34935eed765533bf34bc7c7898ec7c599.jpg"
+        },
+        {
+          "colorName": "Dark khaki green",
+          "colorCode": "46433F",
+          "productImage": "https://image.hm.com/assets/hm/2f/5e/2f5ee9a9e8b4f0983e84a6649009b4a77924b4a2.jpg"
+        }
+      ],
+      "images": [
+        {
+          "url": "https://image.hm.com/assets/hm/44/3e/443ebe4af7c50ca63cecb7af0ab6ac8a28458060.jpg"
+        },
+        {
+          "url": "https://image.hm.com/assets/hm/19/e9/19e9672e6c50b5d5a1997dc5acdfff7a671c2668.jpg"
+        },
+        {
+          "url": "https://image.hm.com/assets/hm/bf/24/bf24a4cd4af59ec8bb0d5a873152f2ab5d7134df.jpg"
+        },
+        {
+          "url": "https://image.hm.com/assets/hm/d5/48/d548cc411d22a91b0ca65a2802690a2a98bdaf72.jpg"
+        }
+      ],
+      "description": "A stylish tie-belt coat made from soft organic cotton, perfect for formal occasions. Its elegant design and versatile fit make it an ideal wardrobe staple for sophisticated looks.",
+      "stock": 78,
+      "date_added": "2024-12-23T01:09:14.974Z",
+      "reviews": [
+        {
+          "user": "Sarah Lee",
+          "comment": "Absolutely love this coat! It's chic and comfortable, perfect for formal events.",
+          "rating": 4,
+          "date": "2024-12-23T01:09:14.974Z"
+        },
+        {
+          "user": "Michael Taylor",
+          "comment": "Great quality, but the fit is a bit loose. Still, a great choice for dressy occasions.",
+          "rating": 3,
+          "date": "2024-12-23T01:09:14.974Z"
+        },
+        {
+          "user": "Emma Johnson",
+          "comment": "This coat is beautiful and well made, but I wish it came in more colors. Otherwise, it's perfect.",
+          "rating": 4,
           "date": "2024-12-23T01:09:14.974Z"
         }
       ]

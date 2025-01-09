@@ -29,13 +29,13 @@ function ProductItem({ product, onAddCart, onAddWishList }) {
         </Link>
         <div className="absolute -right-16 bottom-0 mr-2 mb-4 space-y-2 transition-all duration-100 group-hover:right-0">
           <button
-            className="flex h-10 w-10 items-center justify-center rounded-full bg-primary text-white hover:bg-gray-700"
+            className="flex h-10 w-10 items-center justify-center rounded-full bg-dark-green text-white hover:bg-gray-700"
             onClick={() => onAddCart(product)}
           >
             <ShoppingBagIcon />
           </button>
           <button
-            className="flex h-10 w-10 items-center justify-center rounded-full bg-primary text-white hover:bg-gray-700"
+            className="flex h-10 w-10 items-center justify-center rounded-full bg-dark-greeny text-white hover:bg-gray-700"
             onClick={() => onAddWishList(product)}
           >
             <FavoriteIcon />
