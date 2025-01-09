@@ -65,8 +65,8 @@ function NavBar() {
             <li><span className="font-bold text-gray-900">·</span></li>
             <li>
               <Link
-                to="/products"
-                className="block text-gray-900 md:hover:bg-transparent md:hover:text-dark-green md:p-0 hover:scale-110 transition-all duration-300"
+                to="/about"
+                className="block text-gray-900 md:hover:bg-transparent md:hover:text-primary md:p-0 hover:scale-110 transition-all duration-300"
                 aria-current="page"
               >
                 ABOUT US
@@ -75,8 +75,8 @@ function NavBar() {
             <li><span className="font-bold text-gray-900">·</span></li>
             <li>
               <Link
-                to="/products"
-                className="block text-gray-900 md:hover:bg-transparent md:hover:text-dark-green md:p-0 hover:scale-110 transition-all duration-300"
+                to="/contact"
+                className="block text-gray-900 md:hover:bg-transparent md:hover:text-primary md:p-0 hover:scale-110 transition-all duration-300"
                 aria-current="page"
               >
                 CONTACT
