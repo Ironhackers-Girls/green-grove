@@ -28,13 +28,13 @@ function FiltersSideBar({ onFilters }) {
 
     onFilters(filters);
 
-      console.log("En filter side bar:", filters)
+    console.log("En filter side bar:", filters)
 
   }, [category, price, size, style, store, material, stock, rating]);
-  
 
 
-  
+
+
   const handleCategoryFilter = (category) => setCategory(category);
   const handleMaterialFilter = (material) => setMaterial(material);
   const handleSizeFilter = (size) => setSize(size);
@@ -79,11 +79,11 @@ function FiltersSideBar({ onFilters }) {
           onFilter={handleCategoryFilter}
           reset={category.length === 0}
           filters={[
-            "T-shirt",
-            "Shirt",
-            "Pants",
+            "Shirts & Blouses",
+            "Cardigans & Jumpers",
+            "Dresses & Shirts",
             "Shoes",
-            "Dress",
+            "Jackets & Coats",
             "Accessories",
           ]}
         >
@@ -94,7 +94,7 @@ function FiltersSideBar({ onFilters }) {
         <CheckBoxFilter
           onFilter={handleSizeFilter}
           reset={size.length === 0}
-          filters={["XS", "S", "L", "M", "X", "XXL", "One Size"]}
+          filters={["XS", "S", "L", "M", "X", "XXL"]}
         >
           Sizes
         </CheckBoxFilter>
@@ -104,12 +104,18 @@ function FiltersSideBar({ onFilters }) {
           onFilter={handleStoreFilter}
           reset={store.length === 0}
           filters={[
-            "EcoChic Boutique",
-            "GreenThread Apparel",
-            "Conscious Couture",
-            "Revive Fashion",
-            "PureStyle Collective",
-            "EarthAura Designs",
+            "EcoDesign",
+            "Green Style",
+            "Nature Creations",
+            "Chic Design",
+            "Sustainable Design",
+            "Creative Eco",
+            "Sustained Innovations",
+            "Green Craft",
+            "Athenian Artistry",
+            "Golden Touch Designs",
+            "Timeless Creations",
+            "Violet Creations"
           ]}
         >
           Stores
