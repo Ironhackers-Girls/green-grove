@@ -1,9 +1,416 @@
 {
-  "wishlist": [
-  ],
-  "cart": [
-  ],
+  "wishlist": [],
+  "cart": [],
   "products": [
+    {
+      "id": "69",
+      "name": "2-pack hair claws",
+      "price": 9.99,
+      "category": "Accessories",
+      "style": "Office",
+      "store": {
+        "id": 6,
+        "name": "Creative Eco",
+        "location": {
+          "city_name": "Brussels",
+          "country": "Belgium",
+          "latitude": 50.8503,
+          "longitude": 4.3517,
+          "distance_to_madrid": 1300,
+          "distance_unit": "km",
+          "transport_method": "train"
+        }
+      },
+      "rating": 2,
+      "weight": 511,
+      "weight_unit": "g",
+      "available_sizes": [
+        "S",
+        "L",
+        "M",
+        "X",
+        "XXL"
+      ],
+      "materials": [
+        "Organic Cotton",
+        "Plant-Based Dyes",
+        "Recycled Denim",
+        "Natural Indigo Dye",
+        "Organic Hemp"
+      ],
+      "modelImage": "https://image.hm.com/assets/hm/9b/ac/9bac6cdfd4e85255d00fd3d56c434bfaf22f1365.jpg",
+      "image": "https://image.hm.com/assets/hm/9b/ac/9bac6cdfd4e85255d00fd3d56c434bfaf22f1365.jpg",
+      "swatches": [
+        {
+          "colorName": "Black/Tortoiseshell-patterned",
+          "colorCode": "272628",
+          "productImage": "https://image.hm.com/assets/hm/9b/ac/9bac6cdfd4e85255d00fd3d56c434bfaf22f1365.jpg"
+        },
+        {
+          "colorName": "Light beige/Marbled",
+          "colorCode": "ECE9E2",
+          "productImage": "https://image.hm.com/assets/hm/4b/60/4b60b3aa57401fd61a0b9b40a053706e30090df3.jpg"
+        }
+      ],
+      "images": [
+        {
+          "url": "https://image.hm.com/assets/hm/7a/80/7a80f3ee5e9678cb311e5df0bee6d66bf75d7917.jpg"
+        }
+      ],
+      "description": "Amazing 2-pack hair claws! Eco-friendly, fashionable, and perfect for your style.",
+      "stock": 39,
+      "date_added": "2021-07-05T12:18:19.566Z",
+      "reviews": [
+        {
+          "user": "Olivia",
+          "comment": "Absolutely perfect for formal wear. Loved the eco-friendly materials!",
+          "rating": 2,
+          "date": "2021-07-06T12:18:19.566Z"
+        }
+      ]
+    },
+    {
+      "id": "13",
+      "name": "Bead-embellished poplin blouse",
+      "price": 22.99,
+      "category": "Shirt & Blouses",
+      "style": "Casual",
+      "store": {
+        "id": 9,
+        "name": "Athenian Artistry",
+        "location": {
+          "city_name": "Athens",
+          "country": "Greece",
+          "latitude": 37.9838,
+          "longitude": 23.7275,
+          "distance_to_madrid": 2200,
+          "distance_unit": "km",
+          "transport_method": "plane"
+        }
+      },
+      "rating": 5,
+      "weight": 264,
+      "weight_unit": "g",
+      "available_sizes": [
+        "XS",
+        "L"
+      ],
+      "materials": [
+        "Plant-Based Dyes",
+        "Recycled Denim",
+        "Natural Indigo Dye",
+        "Organic Hemp"
+      ],
+      "modelImage": "https://image.hm.com/assets/hm/1b/02/1b02c6fd3abda0ccb5fdc1c2ed5054d51187f776.jpg",
+      "image": "https://image.hm.com/assets/hm/f7/fc/f7fcd937410062f0dd307b113d564eb9c522cbc2.jpg",
+      "swatches": [
+        {
+          "colorName": "White",
+          "colorCode": "FFFFFF",
+          "productImage": "https://image.hm.com/assets/hm/f7/fc/f7fcd937410062f0dd307b113d564eb9c522cbc2.jpg"
+        }
+      ],
+      "images": [
+        {
+          "url": "https://image.hm.com/assets/hm/28/67/286703a6adb2ea0060b1ca3708b6ecefca419df1.jpg"
+        },
+        {
+          "url": "https://image.hm.com/assets/hm/57/84/5784e10dc4a352444306460a5872944a55bb9434.jpg"
+        },
+        {
+          "url": "https://image.hm.com/assets/hm/ff/c8/ffc8e835d4bea6045028c3e58ca596bef46e0ec3.jpg"
+        }
+      ],
+      "description": "Amazing Bead-embellished poplin blouse! Eco-friendly, fashionable, and perfect for your style.",
+      "stock": 100,
+      "date_added": "2022-04-21T11:10:46.724Z",
+      "reviews": [
+        {
+          "user": "Emma",
+          "comment": "Absolutely perfect for formal wear. Loved the eco-friendly materials!",
+          "rating": 5,
+          "date": "2022-04-23T11:10:46.724Z"
+        }
+      ]
+    },
+    {
+      "id": "139",
+      "name": "Twill trench coat",
+      "price": 39.99,
+      "category": "Jackets & Coats",
+      "style": "Night",
+      "store": {
+        "id": 11,
+        "name": "Timeless Creations",
+        "location": {
+          "city_name": "Vienna",
+          "country": "Austria",
+          "latitude": 48.2082,
+          "longitude": 16.3738,
+          "distance_to_madrid": 1800,
+          "distance_unit": "km",
+          "transport_method": "train"
+        }
+      },
+      "rating": 5,
+      "weight": 400,
+      "weight_unit": "g",
+      "available_sizes": [
+        "L",
+        "M",
+        "XXL"
+      ],
+      "materials": [
+        "Plant-Based Dyes",
+        "Recycled Denim",
+        "Natural Indigo Dye",
+        "Organic Hemp"
+      ],
+      "modelImage": "https://image.hm.com/assets/hm/a4/c5/a4c527fcd59570bbe23d19b13bd621e0f3bce7a7.jpg",
+      "image": "https://image.hm.com/assets/hm/26/e2/26e23cfb110b798875077437a2498ac46f9943be.jpg",
+      "swatches": [
+        {
+          "colorName": "Light beige",
+          "colorCode": "B2A78D",
+          "productImage": "https://image.hm.com/assets/hm/26/e2/26e23cfb110b798875077437a2498ac46f9943be.jpg"
+        },
+        {
+          "colorName": "Light beige",
+          "colorCode": "D4D0C8",
+          "productImage": "https://image.hm.com/assets/hm/51/5f/515f5c2fb2895d927302e80b81c38ee5cfd0017a.jpg"
+        }
+      ],
+      "images": [
+        {
+          "url": "https://image.hm.com/assets/hm/48/15/48158d19564f1db3839a117fab3a35fd5270363d.jpg"
+        },
+        {
+          "url": "https://image.hm.com/assets/hm/e3/58/e3584874edf16555d120e0770dbda9216c3349ae.jpg"
+        },
+        {
+          "url": "https://image.hm.com/assets/hm/a6/11/a6111cae8b2fb83275e9b438f6d9711c82a7e36b.jpg"
+        },
+        {
+          "url": "https://image.hm.com/assets/hm/e1/ff/e1ff5d66f7e06cf7cb3317cb6f62fb704601ffcd.jpg"
+        },
+        {
+          "url": "https://image.hm.com/assets/hm/b4/d2/b4d26315a475175d17c66fff78560a155fa26d35.jpg"
+        }
+      ],
+      "description": "Amazing Twill trench coat! Eco-friendly, fashionable, and perfect for your style.",
+      "stock": 45,
+      "date_added": "2020-01-24T00:50:59.099Z",
+      "reviews": [
+        {
+          "user": "Liam",
+          "comment": "Beautifully designed and feels luxurious. A must-have!",
+          "rating": 5,
+          "date": "2020-01-26T00:50:59.099Z"
+        },
+        {
+          "user": "Olivia",
+          "comment": "Amazing quality and love the design, though the size runs a little large.",
+          "rating": 4,
+          "date": "2020-01-26T00:50:59.099Z"
+        }
+      ]
+    },
+    {
+      "id": "42",
+      "name": "Belt",
+      "price": 7.99,
+      "category": "Accessories",
+      "style": "Office",
+      "store": {
+        "id": 3,
+        "name": "Nature Creations",
+        "location": {
+          "city_name": "Lisbon",
+          "country": "Portugal",
+          "latitude": 38.7169,
+          "longitude": -9.1395,
+          "distance_to_madrid": 640,
+          "distance_unit": "km",
+          "transport_method": "truck"
+        }
+      },
+      "rating": 1,
+      "weight": 157,
+      "weight_unit": "g",
+      "available_sizes": [
+        "XS",
+        "L",
+        "X",
+        "XXL"
+      ],
+      "materials": [
+        "Organic Cotton",
+        "Plant-Based Dyes",
+        "Natural Indigo Dye",
+        "Recycled Polyester"
+      ],
+      "modelImage": "https://image.hm.com/assets/hm/e5/e1/e5e12cd8a6dc75e984f592d6c62413791e2b1c9d.jpg",
+      "image": "https://image.hm.com/assets/hm/e5/e1/e5e12cd8a6dc75e984f592d6c62413791e2b1c9d.jpg",
+      "swatches": [
+        {
+          "colorName": "Black",
+          "colorCode": "272628",
+          "productImage": "https://image.hm.com/assets/hm/e5/e1/e5e12cd8a6dc75e984f592d6c62413791e2b1c9d.jpg"
+        },
+        {
+          "colorName": "Black",
+          "colorCode": "272628",
+          "productImage": "https://image.hm.com/assets/hm/c6/19/c619acd8ab0e7ca014b39c768174d2ebcb13b84f.jpg"
+        },
+        {
+          "colorName": "Brown",
+          "colorCode": "574134",
+          "productImage": "https://image.hm.com/assets/hm/5c/f7/5cf7b6de7a9124d534b466e0f3a96045aa1afd1a.jpg"
+        },
+        {
+          "colorName": "Black",
+          "colorCode": "272628",
+          "productImage": "https://image.hm.com/assets/hm/ea/14/ea142e6d57097d4bb85fd9c572b696564428fcb4.jpg"
+        }
+      ],
+      "images": [
+        {
+          "url": "https://image.hm.com/assets/hm/3f/74/3f74fb772f9bc6da91128a5964c8eb3d6841e725.jpg"
+        },
+        {
+          "url": "https://image.hm.com/assets/hm/ce/6f/ce6f8008ba847a2a9e398710cd452df51e747569.jpg"
+        },
+        {
+          "url": "https://image.hm.com/assets/hm/0b/91/0b914ece69e38f822b6542b280778383d51b85bd.jpg"
+        }
+      ],
+      "description": "Amazing Belt! Eco-friendly, fashionable, and perfect for your style.",
+      "stock": 29,
+      "date_added": "2023-08-28T02:38:02.348Z",
+      "reviews": [
+        {
+          "user": "John",
+          "comment": "Stylish and warm, but slightly heavier than expected.",
+          "rating": 1,
+          "date": "2023-08-30T02:38:02.348Z"
+        },
+        {
+          "user": "Sophia",
+          "comment": "Great fit and comfortable, but the color is a bit different from the picture.",
+          "rating": 0,
+          "date": "2023-08-29T02:38:02.348Z"
+        }
+      ]
+    },
+    {
+      "id": "94",
+      "name": "Knitted jumper",
+      "price": 19.99,
+      "category": "Cardigans & Jumpers",
+      "style": "Office",
+      "store": {
+        "id": 3,
+        "name": "Nature Creations",
+        "location": {
+          "city_name": "Lisbon",
+          "country": "Portugal",
+          "latitude": 38.7169,
+          "longitude": -9.1395,
+          "distance_to_madrid": 640,
+          "distance_unit": "km",
+          "transport_method": "truck"
+        }
+      },
+      "rating": 2,
+      "weight": 559,
+      "weight_unit": "g",
+      "available_sizes": [
+        "S",
+        "X"
+      ],
+      "materials": [
+        "Organic Cotton",
+        "Plant-Based Dyes",
+        "Natural Indigo Dye"
+      ],
+      "modelImage": "https://image.hm.com/assets/hm/44/ec/44ec55eb551f088ffb8f42cec390de3b23033b89.jpg",
+      "image": "https://image.hm.com/assets/hm/19/b8/19b83b15495e226a636a56993393f83f3875bafa.jpg",
+      "swatches": [
+        {
+          "colorName": "Grey marl",
+          "colorCode": "999A9E",
+          "productImage": "https://image.hm.com/assets/hm/19/b8/19b83b15495e226a636a56993393f83f3875bafa.jpg"
+        },
+        {
+          "colorName": "Dark grey marl",
+          "colorCode": "6E6E6E",
+          "productImage": "https://image.hm.com/assets/hm/ca/3a/ca3a3d625744ad8331fff13a7c1b47e80c4303a0.jpg"
+        },
+        {
+          "colorName": "Cream",
+          "colorCode": "E0D9C8",
+          "productImage": "https://image.hm.com/assets/hm/3c/74/3c74ff1b336c9edbd3df803934c0220a2c0db508.jpg"
+        },
+        {
+          "colorName": "Navy blue",
+          "colorCode": "272836",
+          "productImage": "https://image.hm.com/assets/hm/75/1d/751dce796b4b7204896755ff53871aeb833ce37b.jpg"
+        },
+        {
+          "colorName": "Cream/Striped",
+          "colorCode": "E0D9C8",
+          "productImage": "https://image.hm.com/assets/hm/85/68/8568ddae2ce8b0741138f5fa5eeb9681aa886a4b.jpg"
+        },
+        {
+          "colorName": "Cream/Black striped",
+          "colorCode": "E0D9C8",
+          "productImage": "https://image.hm.com/assets/hm/7f/a6/7fa640ad3fb39d9c0702f5044e590e9ac9548726.jpg"
+        },
+        {
+          "colorName": "Black/Striped",
+          "colorCode": "272628",
+          "productImage": "https://image.hm.com/assets/hm/32/26/32261c1e29ed5ed0219484d4fe452db7e9dfd92c.jpg"
+        },
+        {
+          "colorName": "Black",
+          "colorCode": "272628",
+          "productImage": "https://image.hm.com/assets/hm/a4/9b/a49bf611e704e86674dff0cfc81a73a2378098f9.jpg"
+        },
+        {
+          "colorName": "Light beige marl",
+          "colorCode": "B9B1AA",
+          "productImage": "https://image.hm.com/assets/hm/8a/d7/8ad79350b51da53eadd0a0e9ffa91488d8093f01.jpg"
+        }
+      ],
+      "images": [
+        {
+          "url": "https://image.hm.com/assets/hm/44/c9/44c9c786149082aab3a7cf6d3eaa66dd24845348.jpg"
+        },
+        {
+          "url": "https://image.hm.com/assets/hm/b4/b7/b4b75b87997191862aa22c437582493ef6bb3324.jpg"
+        },
+        {
+          "url": "https://image.hm.com/assets/hm/1f/ca/1fcaaf2c42d3586f5915b3895717ffe57ecf038f.jpg"
+        }
+      ],
+      "description": "Amazing Knitted jumper! Eco-friendly, fashionable, and perfect for your style.",
+      "stock": 7,
+      "date_added": "2023-02-23T01:43:44.475Z",
+      "reviews": [
+        {
+          "user": "Liam",
+          "comment": "Amazing quality and love the design, though the size runs a little large.",
+          "rating": 2,
+          "date": "2023-02-24T01:43:44.475Z"
+        },
+        {
+          "user": "Sophia",
+          "comment": "Stylish and warm, but slightly heavier than expected.",
+          "rating": 1,
+          "date": "2023-02-24T01:43:44.475Z"
+        }
+      ]
+    },
     {
       "id": "137",
       "name": "Tie-belt felted coat",
@@ -9203,415 +9610,6 @@
           "comment": "Great fit and comfortable, but the color is a bit different from the picture.",
           "rating": 0,
           "date": "2020-01-07T05:24:58.105Z"
-        }
-      ]
-    },
-    {
-      "id": "69",
-      "name": "2-pack hair claws",
-      "price": 9.99,
-      "category": "Accessories",
-      "style": "Office",
-      "store": {
-        "id": 6,
-        "name": "Creative Eco",
-        "location": {
-          "city_name": "Brussels",
-          "country": "Belgium",
-          "latitude": 50.8503,
-          "longitude": 4.3517,
-          "distance_to_madrid": 1300,
-          "distance_unit": "km",
-          "transport_method": "train"
-        }
-      },
-      "rating": 2,
-      "weight": 511,
-      "weight_unit": "g",
-      "available_sizes": [
-        "S",
-        "L",
-        "M",
-        "X",
-        "XXL"
-      ],
-      "materials": [
-        "Organic Cotton",
-        "Plant-Based Dyes",
-        "Recycled Denim",
-        "Natural Indigo Dye",
-        "Organic Hemp"
-      ],
-      "modelImage": "https://image.hm.com/assets/hm/9b/ac/9bac6cdfd4e85255d00fd3d56c434bfaf22f1365.jpg",
-      "image": "https://image.hm.com/assets/hm/9b/ac/9bac6cdfd4e85255d00fd3d56c434bfaf22f1365.jpg",
-      "swatches": [
-        {
-          "colorName": "Black/Tortoiseshell-patterned",
-          "colorCode": "272628",
-          "productImage": "https://image.hm.com/assets/hm/9b/ac/9bac6cdfd4e85255d00fd3d56c434bfaf22f1365.jpg"
-        },
-        {
-          "colorName": "Light beige/Marbled",
-          "colorCode": "ECE9E2",
-          "productImage": "https://image.hm.com/assets/hm/4b/60/4b60b3aa57401fd61a0b9b40a053706e30090df3.jpg"
-        }
-      ],
-      "images": [
-        {
-          "url": "https://image.hm.com/assets/hm/7a/80/7a80f3ee5e9678cb311e5df0bee6d66bf75d7917.jpg"
-        }
-      ],
-      "description": "Amazing 2-pack hair claws! Eco-friendly, fashionable, and perfect for your style.",
-      "stock": 39,
-      "date_added": "2021-07-05T12:18:19.566Z",
-      "reviews": [
-        {
-          "user": "Olivia",
-          "comment": "Absolutely perfect for formal wear. Loved the eco-friendly materials!",
-          "rating": 2,
-          "date": "2021-07-06T12:18:19.566Z"
-        }
-      ]
-    },
-    {
-      "id": "13",
-      "name": "Bead-embellished poplin blouse",
-      "price": 22.99,
-      "category": "Shirt & Blouses",
-      "style": "Casual",
-      "store": {
-        "id": 9,
-        "name": "Athenian Artistry",
-        "location": {
-          "city_name": "Athens",
-          "country": "Greece",
-          "latitude": 37.9838,
-          "longitude": 23.7275,
-          "distance_to_madrid": 2200,
-          "distance_unit": "km",
-          "transport_method": "plane"
-        }
-      },
-      "rating": 5,
-      "weight": 264,
-      "weight_unit": "g",
-      "available_sizes": [
-        "XS",
-        "L"
-      ],
-      "materials": [
-        "Plant-Based Dyes",
-        "Recycled Denim",
-        "Natural Indigo Dye",
-        "Organic Hemp"
-      ],
-      "modelImage": "https://image.hm.com/assets/hm/1b/02/1b02c6fd3abda0ccb5fdc1c2ed5054d51187f776.jpg",
-      "image": "https://image.hm.com/assets/hm/f7/fc/f7fcd937410062f0dd307b113d564eb9c522cbc2.jpg",
-      "swatches": [
-        {
-          "colorName": "White",
-          "colorCode": "FFFFFF",
-          "productImage": "https://image.hm.com/assets/hm/f7/fc/f7fcd937410062f0dd307b113d564eb9c522cbc2.jpg"
-        }
-      ],
-      "images": [
-        {
-          "url": "https://image.hm.com/assets/hm/28/67/286703a6adb2ea0060b1ca3708b6ecefca419df1.jpg"
-        },
-        {
-          "url": "https://image.hm.com/assets/hm/57/84/5784e10dc4a352444306460a5872944a55bb9434.jpg"
-        },
-        {
-          "url": "https://image.hm.com/assets/hm/ff/c8/ffc8e835d4bea6045028c3e58ca596bef46e0ec3.jpg"
-        }
-      ],
-      "description": "Amazing Bead-embellished poplin blouse! Eco-friendly, fashionable, and perfect for your style.",
-      "stock": 100,
-      "date_added": "2022-04-21T11:10:46.724Z",
-      "reviews": [
-        {
-          "user": "Emma",
-          "comment": "Absolutely perfect for formal wear. Loved the eco-friendly materials!",
-          "rating": 5,
-          "date": "2022-04-23T11:10:46.724Z"
-        }
-      ]
-    },
-    {
-      "id": "139",
-      "name": "Twill trench coat",
-      "price": 39.99,
-      "category": "Jackets & Coats",
-      "style": "Night",
-      "store": {
-        "id": 11,
-        "name": "Timeless Creations",
-        "location": {
-          "city_name": "Vienna",
-          "country": "Austria",
-          "latitude": 48.2082,
-          "longitude": 16.3738,
-          "distance_to_madrid": 1800,
-          "distance_unit": "km",
-          "transport_method": "train"
-        }
-      },
-      "rating": 5,
-      "weight": 400,
-      "weight_unit": "g",
-      "available_sizes": [
-        "L",
-        "M",
-        "XXL"
-      ],
-      "materials": [
-        "Plant-Based Dyes",
-        "Recycled Denim",
-        "Natural Indigo Dye",
-        "Organic Hemp"
-      ],
-      "modelImage": "https://image.hm.com/assets/hm/a4/c5/a4c527fcd59570bbe23d19b13bd621e0f3bce7a7.jpg",
-      "image": "https://image.hm.com/assets/hm/26/e2/26e23cfb110b798875077437a2498ac46f9943be.jpg",
-      "swatches": [
-        {
-          "colorName": "Light beige",
-          "colorCode": "B2A78D",
-          "productImage": "https://image.hm.com/assets/hm/26/e2/26e23cfb110b798875077437a2498ac46f9943be.jpg"
-        },
-        {
-          "colorName": "Light beige",
-          "colorCode": "D4D0C8",
-          "productImage": "https://image.hm.com/assets/hm/51/5f/515f5c2fb2895d927302e80b81c38ee5cfd0017a.jpg"
-        }
-      ],
-      "images": [
-        {
-          "url": "https://image.hm.com/assets/hm/48/15/48158d19564f1db3839a117fab3a35fd5270363d.jpg"
-        },
-        {
-          "url": "https://image.hm.com/assets/hm/e3/58/e3584874edf16555d120e0770dbda9216c3349ae.jpg"
-        },
-        {
-          "url": "https://image.hm.com/assets/hm/a6/11/a6111cae8b2fb83275e9b438f6d9711c82a7e36b.jpg"
-        },
-        {
-          "url": "https://image.hm.com/assets/hm/e1/ff/e1ff5d66f7e06cf7cb3317cb6f62fb704601ffcd.jpg"
-        },
-        {
-          "url": "https://image.hm.com/assets/hm/b4/d2/b4d26315a475175d17c66fff78560a155fa26d35.jpg"
-        }
-      ],
-      "description": "Amazing Twill trench coat! Eco-friendly, fashionable, and perfect for your style.",
-      "stock": 45,
-      "date_added": "2020-01-24T00:50:59.099Z",
-      "reviews": [
-        {
-          "user": "Liam",
-          "comment": "Beautifully designed and feels luxurious. A must-have!",
-          "rating": 5,
-          "date": "2020-01-26T00:50:59.099Z"
-        },
-        {
-          "user": "Olivia",
-          "comment": "Amazing quality and love the design, though the size runs a little large.",
-          "rating": 4,
-          "date": "2020-01-26T00:50:59.099Z"
-        }
-      ]
-    },
-    {
-      "id": "42",
-      "name": "Belt",
-      "price": 7.99,
-      "category": "Accessories",
-      "style": "Office",
-      "store": {
-        "id": 3,
-        "name": "Nature Creations",
-        "location": {
-          "city_name": "Lisbon",
-          "country": "Portugal",
-          "latitude": 38.7169,
-          "longitude": -9.1395,
-          "distance_to_madrid": 640,
-          "distance_unit": "km",
-          "transport_method": "truck"
-        }
-      },
-      "rating": 1,
-      "weight": 157,
-      "weight_unit": "g",
-      "available_sizes": [
-        "XS",
-        "L",
-        "X",
-        "XXL"
-      ],
-      "materials": [
-        "Organic Cotton",
-        "Plant-Based Dyes",
-        "Natural Indigo Dye",
-        "Recycled Polyester"
-      ],
-      "modelImage": "https://image.hm.com/assets/hm/e5/e1/e5e12cd8a6dc75e984f592d6c62413791e2b1c9d.jpg",
-      "image": "https://image.hm.com/assets/hm/e5/e1/e5e12cd8a6dc75e984f592d6c62413791e2b1c9d.jpg",
-      "swatches": [
-        {
-          "colorName": "Black",
-          "colorCode": "272628",
-          "productImage": "https://image.hm.com/assets/hm/e5/e1/e5e12cd8a6dc75e984f592d6c62413791e2b1c9d.jpg"
-        },
-        {
-          "colorName": "Black",
-          "colorCode": "272628",
-          "productImage": "https://image.hm.com/assets/hm/c6/19/c619acd8ab0e7ca014b39c768174d2ebcb13b84f.jpg"
-        },
-        {
-          "colorName": "Brown",
-          "colorCode": "574134",
-          "productImage": "https://image.hm.com/assets/hm/5c/f7/5cf7b6de7a9124d534b466e0f3a96045aa1afd1a.jpg"
-        },
-        {
-          "colorName": "Black",
-          "colorCode": "272628",
-          "productImage": "https://image.hm.com/assets/hm/ea/14/ea142e6d57097d4bb85fd9c572b696564428fcb4.jpg"
-        }
-      ],
-      "images": [
-        {
-          "url": "https://image.hm.com/assets/hm/3f/74/3f74fb772f9bc6da91128a5964c8eb3d6841e725.jpg"
-        },
-        {
-          "url": "https://image.hm.com/assets/hm/ce/6f/ce6f8008ba847a2a9e398710cd452df51e747569.jpg"
-        },
-        {
-          "url": "https://image.hm.com/assets/hm/0b/91/0b914ece69e38f822b6542b280778383d51b85bd.jpg"
-        }
-      ],
-      "description": "Amazing Belt! Eco-friendly, fashionable, and perfect for your style.",
-      "stock": 29,
-      "date_added": "2023-08-28T02:38:02.348Z",
-      "reviews": [
-        {
-          "user": "John",
-          "comment": "Stylish and warm, but slightly heavier than expected.",
-          "rating": 1,
-          "date": "2023-08-30T02:38:02.348Z"
-        },
-        {
-          "user": "Sophia",
-          "comment": "Great fit and comfortable, but the color is a bit different from the picture.",
-          "rating": 0,
-          "date": "2023-08-29T02:38:02.348Z"
-        }
-      ]
-    },
-    {
-      "id": "94",
-      "name": "Knitted jumper",
-      "price": 19.99,
-      "category": "Cardigans & Jumpers",
-      "style": "Office",
-      "store": {
-        "id": 3,
-        "name": "Nature Creations",
-        "location": {
-          "city_name": "Lisbon",
-          "country": "Portugal",
-          "latitude": 38.7169,
-          "longitude": -9.1395,
-          "distance_to_madrid": 640,
-          "distance_unit": "km",
-          "transport_method": "truck"
-        }
-      },
-      "rating": 2,
-      "weight": 559,
-      "weight_unit": "g",
-      "available_sizes": [
-        "S",
-        "X"
-      ],
-      "materials": [
-        "Organic Cotton",
-        "Plant-Based Dyes",
-        "Natural Indigo Dye"
-      ],
-      "modelImage": "https://image.hm.com/assets/hm/44/ec/44ec55eb551f088ffb8f42cec390de3b23033b89.jpg",
-      "image": "https://image.hm.com/assets/hm/19/b8/19b83b15495e226a636a56993393f83f3875bafa.jpg",
-      "swatches": [
-        {
-          "colorName": "Grey marl",
-          "colorCode": "999A9E",
-          "productImage": "https://image.hm.com/assets/hm/19/b8/19b83b15495e226a636a56993393f83f3875bafa.jpg"
-        },
-        {
-          "colorName": "Dark grey marl",
-          "colorCode": "6E6E6E",
-          "productImage": "https://image.hm.com/assets/hm/ca/3a/ca3a3d625744ad8331fff13a7c1b47e80c4303a0.jpg"
-        },
-        {
-          "colorName": "Cream",
-          "colorCode": "E0D9C8",
-          "productImage": "https://image.hm.com/assets/hm/3c/74/3c74ff1b336c9edbd3df803934c0220a2c0db508.jpg"
-        },
-        {
-          "colorName": "Navy blue",
-          "colorCode": "272836",
-          "productImage": "https://image.hm.com/assets/hm/75/1d/751dce796b4b7204896755ff53871aeb833ce37b.jpg"
-        },
-        {
-          "colorName": "Cream/Striped",
-          "colorCode": "E0D9C8",
-          "productImage": "https://image.hm.com/assets/hm/85/68/8568ddae2ce8b0741138f5fa5eeb9681aa886a4b.jpg"
-        },
-        {
-          "colorName": "Cream/Black striped",
-          "colorCode": "E0D9C8",
-          "productImage": "https://image.hm.com/assets/hm/7f/a6/7fa640ad3fb39d9c0702f5044e590e9ac9548726.jpg"
-        },
-        {
-          "colorName": "Black/Striped",
-          "colorCode": "272628",
-          "productImage": "https://image.hm.com/assets/hm/32/26/32261c1e29ed5ed0219484d4fe452db7e9dfd92c.jpg"
-        },
-        {
-          "colorName": "Black",
-          "colorCode": "272628",
-          "productImage": "https://image.hm.com/assets/hm/a4/9b/a49bf611e704e86674dff0cfc81a73a2378098f9.jpg"
-        },
-        {
-          "colorName": "Light beige marl",
-          "colorCode": "B9B1AA",
-          "productImage": "https://image.hm.com/assets/hm/8a/d7/8ad79350b51da53eadd0a0e9ffa91488d8093f01.jpg"
-        }
-      ],
-      "images": [
-        {
-          "url": "https://image.hm.com/assets/hm/44/c9/44c9c786149082aab3a7cf6d3eaa66dd24845348.jpg"
-        },
-        {
-          "url": "https://image.hm.com/assets/hm/b4/b7/b4b75b87997191862aa22c437582493ef6bb3324.jpg"
-        },
-        {
-          "url": "https://image.hm.com/assets/hm/1f/ca/1fcaaf2c42d3586f5915b3895717ffe57ecf038f.jpg"
-        }
-      ],
-      "description": "Amazing Knitted jumper! Eco-friendly, fashionable, and perfect for your style.",
-      "stock": 7,
-      "date_added": "2023-02-23T01:43:44.475Z",
-      "reviews": [
-        {
-          "user": "Liam",
-          "comment": "Amazing quality and love the design, though the size runs a little large.",
-          "rating": 2,
-          "date": "2023-02-24T01:43:44.475Z"
-        },
-        {
-          "user": "Sophia",
-          "comment": "Stylish and warm, but slightly heavier than expected.",
-          "rating": 1,
-          "date": "2023-02-24T01:43:44.475Z"
         }
       ]
     },
