@@ -3,7 +3,6 @@ import { useState } from "react";
 import SearchIcon from '@mui/icons-material/Search';
 import ShoppingBagOutlinedIcon from '@mui/icons-material/ShoppingBagOutlined';
 import FavoriteBorderOutlinedIcon from '@mui/icons-material/FavoriteBorderOutlined';
-import FavoriteIcon from '@mui/icons-material/Favorite';
 
 
 function NavBar() {
@@ -19,7 +18,7 @@ function NavBar() {
   };
 
   return (
-    <nav className="sticky mx-4 my-4 rounded-md top-4 z-10 bg-secondary backdrop-filter backdrop-blur-lg bg-opacity-30 border-b border-gray-100">
+    <nav className="sticky rounded-md top-4 z-10 bg-my-gray backdrop-filter backdrop-blur-lg bg-opacity-30 border-b border-gray-100">
       <div className="flex flex-wrap items-center justify-between mx-auto p-4">
         <Link to="/">
           <img src="/green-groove-logo.svg" alt="Logo" width="160" />
@@ -35,7 +34,7 @@ function NavBar() {
               <input
                 type="text"
                 id="search-navbar"
-                className="block w-full p-2 ps-10 text-sm text-gray-900 border rounded-full bg-secondary bg-opacity-50"
+                className="block w-full p-2 ps-10 text-sm text-gray-900 border rounded-full bg-my-gray bg-opacity-50"
                 placeholder="Search..."
                 value={searchTerm}
                 onChange={(e) => setSearchTerm(e.target.value)}
@@ -45,10 +44,10 @@ function NavBar() {
           <div className="flex space-x-4">
             <Link to="/wishlist">
               <FavoriteBorderOutlinedIcon
-                className="text-gray-900 hover:text-primary hover:scale-110 transition-all duration-300" />
+                className="text-gray-900 hover:text-dark-green hover:scale-110 transition-all duration-300" />
             </Link>
             <Link to="/cart">
-              <ShoppingBagOutlinedIcon className="text-gray-900 hover:text-primary hover:scale-110 transition-all duration-300" />
+              <ShoppingBagOutlinedIcon className="text-gray-900 hover:text-dark-greeny hover:scale-110 transition-all duration-300" />
             </Link>
           </div>
         </div>
@@ -57,7 +56,7 @@ function NavBar() {
             <li>
               <Link
                 to="/products"
-                className="block text-gray-900 md:hover:bg-transparent md:hover:text-primary md:p-0 hover:scale-110 transition-all duration-300"
+                className="block text-gray-900 md:hover:bg-transparent md:hover:text-dark-green md:p-0 hover:scale-110 transition-all duration-300"
                 aria-current="page"
               >
                 PRODUCTS
@@ -66,7 +65,7 @@ function NavBar() {
             <li><span className="font-bold text-gray-900">·</span></li>
             <li>
               <Link
-                to="/products"
+                to="/about"
                 className="block text-gray-900 md:hover:bg-transparent md:hover:text-primary md:p-0 hover:scale-110 transition-all duration-300"
                 aria-current="page"
               >
@@ -76,7 +75,7 @@ function NavBar() {
             <li><span className="font-bold text-gray-900">·</span></li>
             <li>
               <Link
-                to="/products"
+                to="/contact"
                 className="block text-gray-900 md:hover:bg-transparent md:hover:text-primary md:p-0 hover:scale-110 transition-all duration-300"
                 aria-current="page"
               >
