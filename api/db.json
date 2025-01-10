@@ -3,73 +3,6 @@
   "cart": [],
   "products": [
     {
-      "id": "69",
-      "name": "2-pack hair claws",
-      "price": 9.99,
-      "category": "Accessories",
-      "style": "Office",
-      "store": {
-        "id": 6,
-        "name": "Creative Eco",
-        "location": {
-          "city_name": "Brussels",
-          "country": "Belgium",
-          "latitude": 50.8503,
-          "longitude": 4.3517,
-          "distance_to_madrid": 1300,
-          "distance_unit": "km",
-          "transport_method": "train"
-        }
-      },
-      "rating": 2,
-      "weight": 511,
-      "weight_unit": "g",
-      "available_sizes": [
-        "S",
-        "L",
-        "M",
-        "X",
-        "XXL"
-      ],
-      "materials": [
-        "Organic Cotton",
-        "Plant-Based Dyes",
-        "Recycled Denim",
-        "Natural Indigo Dye",
-        "Organic Hemp"
-      ],
-      "modelImage": "https://image.hm.com/assets/hm/9b/ac/9bac6cdfd4e85255d00fd3d56c434bfaf22f1365.jpg",
-      "image": "https://image.hm.com/assets/hm/9b/ac/9bac6cdfd4e85255d00fd3d56c434bfaf22f1365.jpg",
-      "swatches": [
-        {
-          "colorName": "Black/Tortoiseshell-patterned",
-          "colorCode": "272628",
-          "productImage": "https://image.hm.com/assets/hm/9b/ac/9bac6cdfd4e85255d00fd3d56c434bfaf22f1365.jpg"
-        },
-        {
-          "colorName": "Light beige/Marbled",
-          "colorCode": "ECE9E2",
-          "productImage": "https://image.hm.com/assets/hm/4b/60/4b60b3aa57401fd61a0b9b40a053706e30090df3.jpg"
-        }
-      ],
-      "images": [
-        {
-          "url": "https://image.hm.com/assets/hm/7a/80/7a80f3ee5e9678cb311e5df0bee6d66bf75d7917.jpg"
-        }
-      ],
-      "description": "Amazing 2-pack hair claws! Eco-friendly, fashionable, and perfect for your style.",
-      "stock": 39,
-      "date_added": "2021-07-05T12:18:19.566Z",
-      "reviews": [
-        {
-          "user": "Olivia",
-          "comment": "Absolutely perfect for formal wear. Loved the eco-friendly materials!",
-          "rating": 2,
-          "date": "2021-07-06T12:18:19.566Z"
-        }
-      ]
-    },
-    {
       "id": "13",
       "name": "Bead-embellished poplin blouse",
       "price": 22.99,
@@ -212,93 +145,6 @@
           "comment": "Amazing quality and love the design, though the size runs a little large.",
           "rating": 4,
           "date": "2020-01-26T00:50:59.099Z"
-        }
-      ]
-    },
-    {
-      "id": "42",
-      "name": "Belt",
-      "price": 7.99,
-      "category": "Accessories",
-      "style": "Office",
-      "store": {
-        "id": 3,
-        "name": "Nature Creations",
-        "location": {
-          "city_name": "Lisbon",
-          "country": "Portugal",
-          "latitude": 38.7169,
-          "longitude": -9.1395,
-          "distance_to_madrid": 640,
-          "distance_unit": "km",
-          "transport_method": "truck"
-        }
-      },
-      "rating": 1,
-      "weight": 157,
-      "weight_unit": "g",
-      "available_sizes": [
-        "XS",
-        "L",
-        "X",
-        "XXL"
-      ],
-      "materials": [
-        "Organic Cotton",
-        "Plant-Based Dyes",
-        "Natural Indigo Dye",
-        "Recycled Polyester"
-      ],
-      "modelImage": "https://image.hm.com/assets/hm/e5/e1/e5e12cd8a6dc75e984f592d6c62413791e2b1c9d.jpg",
-      "image": "https://image.hm.com/assets/hm/e5/e1/e5e12cd8a6dc75e984f592d6c62413791e2b1c9d.jpg",
-      "swatches": [
-        {
-          "colorName": "Black",
-          "colorCode": "272628",
-          "productImage": "https://image.hm.com/assets/hm/e5/e1/e5e12cd8a6dc75e984f592d6c62413791e2b1c9d.jpg"
-        },
-        {
-          "colorName": "Black",
-          "colorCode": "272628",
-          "productImage": "https://image.hm.com/assets/hm/c6/19/c619acd8ab0e7ca014b39c768174d2ebcb13b84f.jpg"
-        },
-        {
-          "colorName": "Brown",
-          "colorCode": "574134",
-          "productImage": "https://image.hm.com/assets/hm/5c/f7/5cf7b6de7a9124d534b466e0f3a96045aa1afd1a.jpg"
-        },
-        {
-          "colorName": "Black",
-          "colorCode": "272628",
-          "productImage": "https://image.hm.com/assets/hm/ea/14/ea142e6d57097d4bb85fd9c572b696564428fcb4.jpg"
-        }
-      ],
-      "images": [
-        {
-          "url": "https://image.hm.com/assets/hm/3f/74/3f74fb772f9bc6da91128a5964c8eb3d6841e725.jpg"
-        },
-        {
-          "url": "https://image.hm.com/assets/hm/ce/6f/ce6f8008ba847a2a9e398710cd452df51e747569.jpg"
-        },
-        {
-          "url": "https://image.hm.com/assets/hm/0b/91/0b914ece69e38f822b6542b280778383d51b85bd.jpg"
-        }
-      ],
-      "description": "Amazing Belt! Eco-friendly, fashionable, and perfect for your style.",
-      "stock": 29,
-      "date_added": "2023-08-28T02:38:02.348Z",
-      "reviews": [
-        {
-          "user": "John",
-          "comment": "Stylish and warm, but slightly heavier than expected.",
-          "rating": 1,
-          "date": "2023-08-30T02:38:02.348Z"
-        },
-        {
-          "user": "Sophia",
-          "comment": "Great fit and comfortable, but the color is a bit different from the picture.",
-          "rating": 0,
-          "date": "2023-08-29T02:38:02.348Z"
         }
       ]
     },
@@ -17289,6 +17135,73 @@
           "comment": "Beautifully designed and feels luxurious. A must-have!",
           "rating": 4,
           "date": "2021-02-28T09:01:59.350Z"
+        }
+      ]
+    },
+    {
+      "id": "69",
+      "name": "2-pack hair claws",
+      "price": 9.99,
+      "category": "Accessories",
+      "style": "Office",
+      "store": {
+        "id": 6,
+        "name": "Creative Eco",
+        "location": {
+          "city_name": "Brussels",
+          "country": "Belgium",
+          "latitude": 50.8503,
+          "longitude": 4.3517,
+          "distance_to_madrid": 1300,
+          "distance_unit": "km",
+          "transport_method": "train"
+        }
+      },
+      "rating": 2,
+      "weight": 511,
+      "weight_unit": "g",
+      "available_sizes": [
+        "S",
+        "L",
+        "M",
+        "X",
+        "XXL"
+      ],
+      "materials": [
+        "Organic Cotton",
+        "Plant-Based Dyes",
+        "Recycled Denim",
+        "Natural Indigo Dye",
+        "Organic Hemp"
+      ],
+      "modelImage": "https://image.hm.com/assets/hm/9b/ac/9bac6cdfd4e85255d00fd3d56c434bfaf22f1365.jpg",
+      "image": "https://image.hm.com/assets/hm/9b/ac/9bac6cdfd4e85255d00fd3d56c434bfaf22f1365.jpg",
+      "swatches": [
+        {
+          "colorName": "Black/Tortoiseshell-patterned",
+          "colorCode": "272628",
+          "productImage": "https://image.hm.com/assets/hm/9b/ac/9bac6cdfd4e85255d00fd3d56c434bfaf22f1365.jpg"
+        },
+        {
+          "colorName": "Light beige/Marbled",
+          "colorCode": "ECE9E2",
+          "productImage": "https://image.hm.com/assets/hm/4b/60/4b60b3aa57401fd61a0b9b40a053706e30090df3.jpg"
+        }
+      ],
+      "images": [
+        {
+          "url": "https://image.hm.com/assets/hm/7a/80/7a80f3ee5e9678cb311e5df0bee6d66bf75d7917.jpg"
+        }
+      ],
+      "description": "Amazing 2-pack hair claws! Eco-friendly, fashionable, and perfect for your style.",
+      "stock": 39,
+      "date_added": "2021-07-05T12:18:19.566Z",
+      "reviews": [
+        {
+          "user": "Olivia",
+          "comment": "Absolutely perfect for formal wear. Loved the eco-friendly materials!",
+          "rating": 2,
+          "date": "2021-07-06T12:18:19.566Z"
         }
       ]
     },
