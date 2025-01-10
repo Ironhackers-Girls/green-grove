@@ -1,6 +1,17 @@
 {
-  "wishlist": [],
-  "cart": [],
+  "wishlist": [
+    {
+      "id": "a0f3",
+      "idProduct": "2"
+    }
+  ],
+  "cart": [
+    {
+      "id": "f342",
+      "idProduct": "5",
+      "quantity": 6
+    }
+  ],
   "products": [
     {
       "id": "1",

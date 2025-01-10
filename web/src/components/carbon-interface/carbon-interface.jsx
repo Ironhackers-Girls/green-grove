@@ -170,7 +170,7 @@ function CarbonInterface({ productsCartToCarbon }) {
           </h5>
           <div className="flex items-center space-x-2">
             <p className="text-dark-green sm:text-2xl font-semibold truncate">
-              {productsCartToCarbon.length}
+              {weightProducts.toFixed(2)}
             </p>
             <svg
               xmlns="http://www.w3.org/2000/svg"
