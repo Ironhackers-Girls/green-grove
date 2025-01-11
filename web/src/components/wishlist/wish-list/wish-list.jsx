@@ -31,6 +31,8 @@ function WishList({ className = " " }) {
           setProductsWish(response);
         })
         .catch((error) => console.log(error));
+    } else {
+      setProductsWish([]);
     }
   }, [wishlist]);
 
@@ -42,7 +44,7 @@ function WishList({ className = " " }) {
         setReload(!reload);
         setSnackbarMessage("Product deleted from WishList");
         setSnackbarSeverity("info");
-        setOpenSnackbar(true); 
+        setOpenSnackbar(true);
       })
       .catch((error) => {
         setSnackbarMessage("Error deleting product");
@@ -58,7 +60,7 @@ function WishList({ className = " " }) {
         setReload(!reload);
         setSnackbarMessage("Product added to CartList");
         setSnackbarSeverity("success");
-        setOpenSnackbar(true); 
+        setOpenSnackbar(true);
       })
       .catch((error) => {
         setSnackbarMessage("Error adding product to cart");
@@ -69,7 +71,9 @@ function WishList({ className = " " }) {
   };
 
   return (
-    <div className={`grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-0 ${className}`}>
+    <div
+      className={`grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-0 ${className}`}
+    >
       {productsWish.map((productWish) => (
         <WishItem
           key={productWish.id}
