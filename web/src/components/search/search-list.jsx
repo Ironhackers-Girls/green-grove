@@ -30,7 +30,7 @@ function SearchList({ className = "", filters }) {
   };
 
   return (
-    <div className={`flex flex-wrap gap-3 ${className}`}>
+    <div className={`grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-5 ${className}`}>
       {products.map((product) => (
         <ProductItem
           key={product.id}
@@ -44,3 +44,5 @@ function SearchList({ className = "", filters }) {
 }
 
 export default SearchList;
+
+

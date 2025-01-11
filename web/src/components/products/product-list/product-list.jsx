@@ -7,7 +7,7 @@ import NavigateNextIcon from '@mui/icons-material/NavigateNext';
 import LastPageIcon from '@mui/icons-material/LastPage';
 import FirstPageIcon from '@mui/icons-material/FirstPage';
 
-function ProductList({ className = "", filters }) {
+function ProductList({ filters }) {
   const [products, setProducts] = useState([]);
   const [currentPage, setCurrentPage] = useState(1);
   const [productsPerPage] = useState(12);
@@ -119,7 +119,7 @@ function ProductList({ className = "", filters }) {
   const handleProductAddCart = (product) => {
     ProductsApi.addCart(product.id)
       .then(() => {
-        setSnackbarMessage("Producto añadido al carrito");
+        setSnackbarMessage("Product add to cart");
         setSnackbarSeverity("success");
         setOpenSnackbar(true);
       })
@@ -129,7 +129,7 @@ function ProductList({ className = "", filters }) {
   const handleAddToWishlist = (product) => {
     ProductsApi.addWish(product.id)
       .then(() => {
-        setSnackbarMessage("Producto añadido al wishlist");
+        setSnackbarMessage("Product add to wishlist");
         setSnackbarSeverity("info");
         setOpenSnackbar(true);
       })
@@ -152,7 +152,7 @@ function ProductList({ className = "", filters }) {
           <>
             {Array(12).fill().map((_, index) => (
               <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 animate-pulse" key={index} >
-                <div className="relative w-[400px] h-[400px] sm:h-[500px] md:h-[600px] lg:h-[700px] overflow-hidden bg-gray-300 dark:bg-gray-700">
+                <div className="relative w-[450px] h-[400px] sm:h-[500px] md:h-[600px] lg:h-[700px] overflow-hidden bg-gray-300 dark:bg-gray-700">
                   <div className="absolute top-0 right-0 h-full w-full bg-gray-200 flex items-center justify-center">
                     <svg className="animate-spin -ml-1 mr-3 h-5 w-5 text-dark-green" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
                       <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" ></circle>

@@ -19,16 +19,15 @@ function SearchPage() {
   }, [query]);
 
   return (
-    <>
-      <h3 className="text-3xl font-semibold text-center mb-6">Resultados para "{query}"</h3>
-      <div className="max-w-screen-xl mx-auto px-4">
-        <div className="flex justify-center">
-          <div className="w-full">
-            <SearchList filters={search} />
-          </div>
-        </div>
+    <div>
+    <div className="flex items-center py-4">
+        <h1>Resultados para "{query}"</h1>
       </div>
-    </>
+
+      <section>
+        <SearchList filters={search} />
+      </section>
+    </div>
   );
 }
 

@@ -1,13 +1,19 @@
 import { useState, useEffect } from 'react';
 import StarIcon from "@mui/icons-material/Star";
 import { Radio, RadioGroup } from '@headlessui/react';
+import { Snackbar, Alert } from "@mui/material";
 import { useParams } from 'react-router-dom';
 import * as ProductsApi from '../services/products-services';
 import FavoriteIcon from '@mui/icons-material/Favorite';
+import ShoppingBagIcon from '@mui/icons-material/ShoppingBag';
+
 
 function ProductDetailPage() {
   const { id } = useParams();
   const [product, setProduct] = useState(null);
+  const [openSnackbar, setOpenSnackbar] = useState(false);
+  const [snackbarMessage, setSnackbarMessage] = useState("");
+  const [snackbarSeverity, setSnackbarSeverity] = useState("success");
 
   useEffect(() => {
     ProductsApi.getProduct(id)
@@ -48,7 +54,7 @@ function ProductDetailPage() {
   return (
     <div className="bg-white">
       {/* Contenedor general de la Galería y la Información */}
-      <div className="mt-6 lg:grid lg:grid-cols-4 lg:gap-x-8">
+      <div className="mt-3 lg:grid lg:grid-cols-4 lg:gap-x-8">
 
         {/* Galería de imágenes */}
         <div className="col-span-2 grid grid-cols-2 gap-4">
@@ -154,16 +160,22 @@ function ProductDetailPage() {
             <div className='flex flex-row items-center mt-10'>
               <button
                 onClick={() => handleAddToWishlist(product)}
-                className="flex h-12 w-12 items-center justify-center rounded-full bg-dark-green text-white"
+                className="flex py-3 px-3 items-center justify-center bg-dark-green rounded-full text-white hover:bg-gray-50 border hover:text-red-600 "
               >
                 <FavoriteIcon />
               </button>
               <button
                 type="button"
                 onClick={() => handleProductAddCart(product)}
-                className="ml-2 flex w-full h-12 items-center justify-center rounded-full bg-lime-green text-base font-medium text-dark-green hover:bg-dark-green hover:text-white">
-                Add to bag
+                className="ml-2 w-full h-12 flex items-center justify-center rounded-full hover:gap-2 bg-lime-green  font-medium text-dark-green relative group"
+              >
+                <span>Add to bag</span>
+                <ShoppingBagIcon
+                  className="w-6 h-6 text-dark-green opacity-0 group-hover:opacity-100 transition duration-600"
+                />
               </button>
+
+
 
             </div>
 
@@ -187,6 +199,21 @@ function ProductDetailPage() {
           </div>
         </div>
       </div>
+      {/* Snackbar */}
+      <Snackbar
+        open={openSnackbar}
+        autoHideDuration={1200}
+        anchorOrigin={{ vertical: 'top', horizontal: 'right' }}
+        onClose={() => setOpenSnackbar(false)}
+      >
+        <Alert
+          onClose={() => setOpenSnackbar(false)}
+          severity={snackbarSeverity}
+          sx={{ width: "100%" }}
+        >
+          {snackbarMessage}
+        </Alert>
+      </Snackbar>
     </div>
   );
 }
