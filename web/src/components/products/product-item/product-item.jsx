@@ -15,10 +15,10 @@ function ProductItem({ product, onAddCart, onAddWishList }) {
   };
 
   return (
-    <div 
-    className="group flex w-full flex-col overflow-hidden bg-white">
-      <div className="relative w-full h-[400px] sm:h-[500px] md:h-[600px] lg:h-[700px] overflow-hidden"  onMouseEnter={handleMouseEnter}
-    onMouseLeave={handleMouseLeave} >
+    <div
+      className="group flex w-full flex-col overflow-hidden">
+      <div className="relative w-full h-[400px] sm:h-[500px] md:h-[600px] lg:h-[700px] overflow-hidden" onMouseEnter={handleMouseEnter}
+        onMouseLeave={handleMouseLeave} >
         <Link key={product.id} to={`/products/${product.id}`}>
           <img
             src={imageSrc}
@@ -26,15 +26,10 @@ function ProductItem({ product, onAddCart, onAddWishList }) {
             alt="product image"
           />
         </Link>
-        <div className="absolute -right-16 bottom-0 mr-2 mb-4 space-y-2 transition-all duration-100 group-hover:right-0">
+        <div className="absolute top-2 right-2 p-1 hover:scale-105 transition-all">
+
           <button
-            className="flex h-10 w-10 items-center justify-center rounded-full bg-dark-green text-white hover:bg-gray-700"
-            onClick={() => onAddCart(product)}
-          >
-            <ShoppingBagIcon />
-          </button>
-          <button
-            className="flex h-10 w-10 items-center justify-center rounded-full bg-dark-green text-white hover:bg-gray-700"
+            className="flex h-10 w-10 items-center justify-center text-dark-green hover:text-red-600 hover:bg-my-white hover:rounded-full "
             onClick={() => onAddWishList(product)}
           >
             <FavoriteIcon />
@@ -42,15 +37,23 @@ function ProductItem({ product, onAddCart, onAddWishList }) {
         </div>
       </div>
 
-      <div className="mt-4 pb-5">
+      <div className="mt-4 pb-5  flex flex-row items-center justify-between">
+      <div >
         <Link key={product.id} to={`/products/${product.id}`}>
-          <h5 className="text-center uppercase font-montserrat tracking-tight text-gray-500">{product.name}</h5>
+          <h5 className=" text-sm text-left uppercase font-montserrat tracking-tight text-gray-500">{product.name}</h5>
         </Link>
-        <div className="mb-5 flex justify-center">
+        <div>
           <p>
-            <span className="text-sm font-montserrat font-bold text-gray-900">{product.price}</span>
+            <span className="text-sm text-left font-montserrat font-bold text-gray-900">{product.price}</span>
           </p>
         </div>
+        </div>
+        <button
+            className="flex h-10 w-10 items-center justify-center text-dark-green bg-lime-green rounded-full hover:text-my-white hover:bg-dark-green hover:rounded-full "
+            onClick={() => onAddCart(product)}
+          >
+            <ShoppingBagIcon />
+          </button>
       </div>
     </div>
   );

@@ -2,7 +2,7 @@
 import { useState } from "react";
 import FiltersSideBar from "../components/filters/filters-sidebar/filters-sidebar";
 import ProductList from "../components/products/product-list/product-list";
-import {   Dialog,  DialogBackdrop,  DialogPanel } from '@headlessui/react'
+import { Dialog, DialogBackdrop, DialogPanel } from '@headlessui/react'
 import FilterAltIcon from '@mui/icons-material/FilterAlt';
 import CloseIcon from '@mui/icons-material/Close';
 
@@ -49,27 +49,23 @@ function ProductsPage() {
         </Dialog>
       </div>
 
-      <main className="mx-auto">
-        <div className="flex sm:px-4 lg:px-7 items-baseline justify-between pt-6">
-          <h1 className="text-4xl font-bold font-montserrat tracking-tight text-gray-900">PRODUCTS</h1>
+      <div className="flex items-baseline justify-between py-4">
+        <h1>PRODUCTS</h1>
+        <button
+          type="button"
+          onClick={() => setFiltersOpen(true)}
+          className="flex flex-row gap-1 items-center text-dark-green px-4 py-2 rounded-full hover:bg-lime-green transition"
+        >
+          <FilterAltIcon />
+          <span>Filters</span>
+        </button>
+      </div>
 
-          <div className="flex items-center">
-            <button
-              type="button"
-              onClick={() => setFiltersOpen(true)}
-              className="ml-4 p-2 text-gray-400 hover:text-gray-500"
-            >
-              <span >Filters</span>
-              <FilterAltIcon />
-            </button>
-          </div>
-        </div>
 
-        {/* Product List Section */}
-        <section className="pb-6 pt-6">
-          <ProductList filters={filters} />
-        </section>
-      </main>
+      {/* Product List Section */}
+      <section>
+        <ProductList filters={filters} />
+      </section>
     </div>
   );
 }
