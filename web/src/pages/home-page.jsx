@@ -62,7 +62,7 @@ function Homepage() {
   };
 
   return (
-    <div className="px-7 font-montserrat">
+    <div className="pt-4 font-montserrat">
       {/* Top Section */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-16 items-stretch min-h-[24rem]">
         {/* Left */}

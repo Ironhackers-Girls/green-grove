@@ -98,6 +98,7 @@ function WishList({ className = " " }) {
           ))}
         </>
 
+
       )}
       {/* Alerts */}
       <Snackbar

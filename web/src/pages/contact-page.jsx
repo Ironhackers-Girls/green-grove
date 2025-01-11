@@ -41,7 +41,7 @@ function ContactPage() {
 
   return (
     <div className="font-montserrat py-12">
-      <div className="max-w-full mx-auto px-6 sm:px-10 lg:px-20 space-y-12">
+      <div className="max-w-full mx-auto px-5 sm:px-10 lg:px-15 space-y-12">
         {/* Title */}
         <div className="text-left">
           <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-my-black">
