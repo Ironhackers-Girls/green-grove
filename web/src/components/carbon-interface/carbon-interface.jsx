@@ -149,7 +149,7 @@ function CarbonInterface({ productsCartToCarbon }) {
             emissions, helping users make more sustainable choices.
           </p>
         </div>
-        <div className="text-right flex items-center">
+        <div className="text-right flex flex-wrap items-center justify-center ">
           <img
             src={carbonLogo}
             alt="carbonLogo"
@@ -259,7 +259,7 @@ function CarbonInterface({ productsCartToCarbon }) {
       </div>
 
       {/* Transport */}
-      <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-4 gap-4">
+      <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-4 gap-4">
         <div className="p-6 sm:p-8 rounded-3xl bg-lime-green flex flex-col items-center">
           <img
             src={trainCarbon}
