@@ -34,7 +34,7 @@ function ProductItem({ product, onAddCart, onAddWishList }) {
             <ShoppingBagIcon />
           </button>
           <button
-            className="flex h-10 w-10 items-center justify-center rounded-full bg-dark-greeny text-white hover:bg-gray-700"
+            className="flex h-10 w-10 items-center justify-center rounded-full bg-dark-green text-white hover:bg-gray-700"
             onClick={() => onAddWishList(product)}
           >
             <FavoriteIcon />

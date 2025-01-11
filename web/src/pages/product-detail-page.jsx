@@ -3,8 +3,9 @@ import StarIcon from "@mui/icons-material/Star";
 import { Radio, RadioGroup } from '@headlessui/react';
 import { useParams } from 'react-router-dom';
 import * as ProductsApi from '../services/products-services';
+import FavoriteIcon from '@mui/icons-material/Favorite';
 
-function ProductDetailPage({ onAddCart }) {
+function ProductDetailPage() {
   const { id } = useParams();
   const [product, setProduct] = useState(null);
 
@@ -20,7 +21,21 @@ function ProductDetailPage({ onAddCart }) {
 
   const handleProductAddCart = (product) => {
     ProductsApi.addCart(product.id)
-      .then(() => console.log('Product added to cart'))
+      .then(() => {
+        setSnackbarMessage("Producto añadido al carrito");
+        setSnackbarSeverity("success");
+        setOpenSnackbar(true);
+      })
+      .catch((error) => console.log(error));
+  };
+
+  const handleAddToWishlist = (product) => {
+    ProductsApi.addWish(product.id)
+      .then(() => {
+        setSnackbarMessage("Producto añadido al wishlist");
+        setSnackbarSeverity("info");
+        setOpenSnackbar(true);
+      })
       .catch((error) => console.log(error));
   };
 
@@ -33,7 +48,7 @@ function ProductDetailPage({ onAddCart }) {
   return (
     <div className="bg-white">
       {/* Contenedor general de la Galería y la Información */}
-      <div className="mt-6 mx-auto px-6 lg:grid lg:grid-cols-3 lg:gap-x-8">
+      <div className="mt-6 lg:grid lg:grid-cols-4 lg:gap-x-8">
 
         {/* Galería de imágenes */}
         <div className="col-span-2 grid grid-cols-2 gap-4">
@@ -58,7 +73,7 @@ function ProductDetailPage({ onAddCart }) {
         </div>
 
         {/* Información del producto */}
-        <div className="sticky top-24 max-h-screen overflow-y-auto">
+        <div className="sticky col-span-2 top-24 max-h-screen overflow-y-auto">
           <h1 className="text-2xl font-bold text-gray-900 sm:text-3xl">{product.name}</h1>
           <p className="text-3xl tracking-tight text-gray-900">${product.price}</p>
 
@@ -72,14 +87,14 @@ function ProductDetailPage({ onAddCart }) {
                     key={rating}
                     aria-hidden="true"
                     className={classNames(
-                      product.rating > rating ? 'text-gray-900' : 'text-gray-200',
+                      product.rating > rating ? 'text-dark-green' : 'text-gray-200',
                       'size-5 shrink-0'
                     )}
                   />
                 ))}
               </div>
               <p className="sr-only">{product.rating} out of 5 stars</p>
-              <a href="#" className="ml-3 text-sm font-medium text-indigo-600 hover:text-indigo-500">
+              <a href="#" className="ml-3 text-sm font-medium text-dark-green">
                 {reviews.length} reviews
               </a>
             </div>
@@ -88,20 +103,27 @@ function ProductDetailPage({ onAddCart }) {
           {/* Opciones */}
           <div className="mt-10">
             {/* Colores */}
-            <div>
+            <div className="mt-10">
               <h3 className="text-sm font-medium text-gray-900">Color</h3>
-              <fieldset aria-label="Choose a color" className="mt-4">
-                <RadioGroup value={product.swatches[0]} onChange={() => { }} className="flex items-center gap-x-3">
+              <fieldset aria-label="Choose  a color" className="mt-4">
+                <RadioGroup className="grid grid-cols-8 gap-4 sm:grid-cols-8 lg:grid-cols-8">
                   {product.swatches.map((swatch) => (
-                    <Radio
-                      key={swatch.colorCode}
+                    <Radio key={swatch.colorCode}
                       value={swatch}
-                      aria-label={swatch.colorName}
-                      className="relative -m-0.5 flex cursor-pointer items-center justify-center rounded-full p-0.5 focus:outline-none"
-                    >
+                      aria-label={swatch.colorName} className="cursor-pointer bg-gray-50 text-gray-900 shadow-sm group relative flex flex-col  items-center justify-center rounded-md border px-2 py-2 text-sm font-medium font-montserrat uppercase focus:outline-none data-[focus]:ring-2 data-[focus]:ring-dark-green sm:flex-1 sm:py-6">
+                      <img
+                        src={swatch.productImage}
+                        className="relative w-16 h-24 mb-2 object-cover transition-all duration-700"
+                        alt="product image"
+                      />
                       <span
                         aria-hidden="true"
-                        className={classNames('bg-' + swatch.colorCode, 'size-8 rounded-full border')}
+                        className="size-5 rounded-full border"
+                        style={{ backgroundColor: `#${swatch.colorCode}` }}
+                      />
+                      <span
+                        aria-hidden="true"
+                        className="pointer-events-none absolute -inset-px rounded-md border-2 border-transparent group-data-[focus]:border group-data-[checked]:border-dark-green"
                       />
                     </Radio>
                   ))}
@@ -110,13 +132,18 @@ function ProductDetailPage({ onAddCart }) {
             </div>
 
             {/* Tallas */}
+
             <div className="mt-10">
               <h3 className="text-sm font-medium text-gray-900">Size</h3>
               <fieldset aria-label="Choose a size" className="mt-4">
-                <RadioGroup className="grid grid-cols-4 gap-4 sm:grid-cols-8 lg:grid-cols-4">
+                <RadioGroup className="grid grid-cols-8 gap-4 sm:grid-cols-8 lg:grid-cols-8">
                   {product.available_sizes.map((size) => (
-                    <Radio key={size} value={size} className="cursor-pointer bg-white text-gray-900">
+                    <Radio key={size} value={size} className="cursor-pointer bg-gray-50 text-gray-900 shadow-sm group relative flex items-center justify-center rounded-md border px-2 py-2 text-sm font-medium font-montserrat uppercase hover:bg-white focus:outline-none data-[focus]:ring-2 data-[focus]:ring-dark-green sm:flex-1 sm:py-6">
                       <span>{size}</span>
+                      <span
+                        aria-hidden="true"
+                        className="pointer-events-none absolute -inset-px rounded-md border-2 border-transparent group-data-[focus]:border group-data-[checked]:border-dark-green"
+                      />
                     </Radio>
                   ))}
                 </RadioGroup>
@@ -124,13 +151,22 @@ function ProductDetailPage({ onAddCart }) {
             </div>
 
             {/* Añadir al carrito */}
-            <button
-              type="button"
-              onClick={() => handleProductAddCart(product)}
-              className="mt-10 flex w-full items-center justify-center rounded-md border border-transparent bg-indigo-600 px-8 py-3 text-base font-medium text-white hover:bg-indigo-700"
-            >
-              Add to bag
-            </button>
+            <div className='flex flex-row items-center mt-10'>
+              <button
+                onClick={() => handleAddToWishlist(product)}
+                className="flex h-12 w-12 items-center justify-center rounded-full bg-dark-green text-white"
+              >
+                <FavoriteIcon />
+              </button>
+              <button
+                type="button"
+                onClick={() => handleProductAddCart(product)}
+                className="ml-2 flex w-full h-12 items-center justify-center rounded-full bg-lime-green text-base font-medium text-dark-green hover:bg-dark-green hover:text-white">
+                Add to bag
+              </button>
+
+            </div>
+
           </div>
 
           {/* Descripción y detalles */}
@@ -139,11 +175,11 @@ function ProductDetailPage({ onAddCart }) {
             <p className="text-base text-gray-900">{product.description}</p>
 
             <div className="mt-10">
-              <h3 className="text-sm font-medium text-gray-900">Materials</h3>
+              <h3 className="text-sm font-medium font-montserrat text-gray-900">Materials</h3>
               <ul role="list" className="list-disc space-y-2 pl-4 text-sm">
                 {product.materials.map((material, index) => (
                   <li key={index} className="text-gray-400">
-                    <span className="text-gray-600">{material}</span>
+                    <span className="text-gray-600 font-montserrat">{material}</span>
                   </li>
                 ))}
               </ul>
