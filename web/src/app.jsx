@@ -1,5 +1,5 @@
 import { Route, Routes } from 'react-router-dom';
-import { CartPage, HomePage, ProductDetailPage, ProductsPage, SearchPage, WishlistPage, ContactPage, AboutPage } from './pages';
+import { CartPage, HomePage, ProductDetailPage, ProductsPage, SearchPage, WishlistPage, ContactPage, AboutPage, NotFoundPage } from './pages';
 import { PageLayout } from './components/layouts';
 import NavBar from './components/ui/navbar/navbar';
 import Footer from './components/ui/footer/footer';
@@ -21,6 +21,7 @@ function App() {
           <Route path='/wishlist' element={<WishlistPage />} />
           <Route path='/contact' element={<ContactPage/>} />
           <Route path='/about' element={<AboutPage />} />
+          <Route path='*' element={<NotFoundPage/>} />
         </Routes>
         <Footer/>
       </PageLayout>
