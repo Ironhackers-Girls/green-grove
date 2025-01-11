@@ -86,9 +86,10 @@ function WishList({ className = " " }) {
       {/* Alerts */}
       <Snackbar
         open={openSnackbar}
-        autoHideDuration={6000}
+        autoHideDuration={1200}
         anchorOrigin={{ vertical: "top", horizontal: "right" }}
         onClose={() => setOpenSnackbar(false)}
+        sx={{ top: "80px" }}
       >
         <Alert
           onClose={() => setOpenSnackbar(false)}
