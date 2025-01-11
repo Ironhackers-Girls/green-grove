@@ -25,11 +25,11 @@ function Footer() {
             <img
               src={footerLogo}
               alt="Green Grove Logo"
-              className="w-auto h-8"
+              width="160"
             />
             <p className="mt-4 text-sm">
-              Our vision is to offer sustainable fashion that reduces carbon
-              footprints and promotes a greener future.
+              Our vision is to offer sustainable fashion<br></br> that reduces carbon
+              footprints<br></br> and promotes a greener future.
             </p>
           </div>
 
@@ -98,7 +98,8 @@ function Footer() {
         
         {/* Footer Bottom */}
         <div className="flex flex-col md:flex-row justify-between text-sm text-my-gray">
-          <p>©2025 Green Grove. All rights reserved</p>
+          <p>©2025 Green Grove. <br></br>This project was created as part of the Ironhack bootcamp.<br></br>
+          All product rights belong to H&M.</p>
           <div className="flex space-x-4 mt-4 md:mt-0">
             <a href="#" className="hover:text-lime-green">
               Privacy & Policy
