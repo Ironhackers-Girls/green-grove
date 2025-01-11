@@ -2,6 +2,10 @@ import { useEffect, useState } from "react";
 import * as ProductsApi from "../../../services/products-services.js";
 import ProductItem from "../product-item/product-item.jsx";
 import { Snackbar, Alert } from "@mui/material";
+import NavigateBeforeIcon from '@mui/icons-material//NavigateBefore';
+import NavigateNextIcon from '@mui/icons-material/NavigateNext';
+import LastPageIcon from '@mui/icons-material/LastPage';
+import FirstPageIcon from '@mui/icons-material/FirstPage';
 
 function ProductList({ className = "", filters }) {
   const [products, setProducts] = useState([]);
@@ -158,35 +162,45 @@ function ProductList({ className = "", filters }) {
       </div>
 
       {/* Paginación */}
-      <div className="flex justify-center space-x-2 my-4">
+      <div className="flex justify-center space-x-2 my-4 items-center">
         <button
           onClick={() => handlePageChange(1)}
-          className="px-4 py-2 bg-blue-500 text-white rounded-md"
+          className="px-2 py-2 border border-gray-300 hover:bg-lime-green rounded-full"
           disabled={currentPage === 1}
         >
-          First
+          <FirstPageIcon />
         </button>
         <button
           onClick={() => handlePageChange(currentPage - 1)}
-          className="px-4 py-2 bg-blue-500 text-white rounded-md"
+          className="px-2 py-2 border border-gray-300 hover:bg-lime-green rounded-full"
           disabled={currentPage === 1}
         >
-          Previous
+          <NavigateBeforeIcon />
         </button>
-        <span className="self-center">{`Page ${currentPage} of ${totalPages}`}</span>
+        <div>
+          {[...Array(totalPages)].map((_, index) => (
+            <button
+              key={index}
+              onClick={() => handlePageChange(index + 1)} // +1 para las páginas empezando desde 1
+              className="px-2 py-2 ml-2 h-10 w-10 border bg-lime-green hover:bg-dark-green rounded-full font-montserrat hover:text-white"
+              >
+              {index + 1} {/* Muestra el número de la página */}
+            </button>
+          ))}
+        </div>
         <button
           onClick={() => handlePageChange(currentPage + 1)}
-          className="px-4 py-2 bg-blue-500 text-white rounded-md"
+          className="px-2 py-2 border border-gray-300 hover:bg-lime-green rounded-full"
           disabled={currentPage === totalPages}
         >
-          Next
+          <NavigateNextIcon />
         </button>
         <button
           onClick={() => handlePageChange(totalPages)}
-          className="px-4 py-2 bg-blue-500 text-white rounded-md"
+          className="px-2 py-2 border border-gray-300 hover:bg-lime-green rounded-full"
           disabled={currentPage === totalPages}
         >
-          Last
+          <LastPageIcon />
         </button>
       </div>
 

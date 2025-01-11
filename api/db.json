@@ -1,6 +1,22 @@
 {
-  "wishlist": [],
-  "cart": [],
+  "wishlist": [
+    {
+      "id": "0e41",
+      "idProduct": "139"
+    }
+  ],
+  "cart": [
+    {
+      "id": "ab7c",
+      "idProduct": "137",
+      "quantity": 1
+    },
+    {
+      "id": "b788",
+      "idProduct": "139",
+      "quantity": 1
+    }
+  ],
   "products": [
     {
       "id": "13",
@@ -750,11 +766,6 @@
           "colorName": "Blue/Striped",
           "colorCode": "314E8C",
           "productImage": "https://image.hm.com/assets/hm/3e/77/3e771d5349f7cd8927b12bc5ba3626ece0ea2626.jpg"
-        },
-        {
-          "colorName": "White",
-          "colorCode": "FFFFFF",
-          "productImage": "https://image.hm.com/assets/hm/67/13/6713ec7b40376fa8ab7269d570c994bb5fd0a454.jpg"
         },
         {
           "colorName": "Light pink",
