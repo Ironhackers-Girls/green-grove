@@ -27,9 +27,9 @@ function Footer() {
               alt="Green Grove Logo"
               width="160"
             />
-            <p className="mt-4 text-sm">
-              Our vision is to offer sustainable fashion<br></br> that reduces carbon
-              footprints<br></br> and promotes a greener future.
+            <p className="mt-4 text-sm max-w-xs">
+              Our vision is to offer sustainable fashion that reduces carbon
+              footprints and promotes a greener future.
             </p>
           </div>
 
