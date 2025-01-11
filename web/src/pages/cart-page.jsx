@@ -38,7 +38,7 @@ function CartPage() {
   return (
     <div className="p-4 font-montserrat">
       <div>
-        <h3 className="text-2xl font-bold text-dark-green">YOUR CART</h3>
+        <h1>YOUR CART</h1>
       </div>
       <div className="cart-page grid grid-cols-1 md:grid-cols-2 gap-6 w-full">
         <div className="cart-left flex flex-col w-full">
