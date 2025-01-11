@@ -18,23 +18,54 @@ function NavBar() {
   };
 
   return (
-    <nav className="sticky rounded-md top-4 z-10 bg-my-gray backdrop-filter backdrop-blur-lg bg-opacity-30 border-b border-gray-100">
-      <div className="flex flex-wrap items-center justify-between mx-auto p-4">
+    <nav className="sticky rounded-md top-4 z-10 bg-my-gray backdrop-filter backdrop-blur-lg bg-opacity-70 border-b border-my-white">
+      <div className="flex flex-row items-center justify-between mx-auto p-4">
         <Link to="/">
           <img src="/green-groove-logo.svg" alt="Logo" width="160" />
         </Link>
-        <div className="flex md:order-2 items-center space-x-4">
-          {/* Formulario de búsqueda */}
+        <div className="items-center justify-between hidden w-full lg:flex lg:w-auto">
+          <ul className="flex flex-row p0 mt-0 font-montserrat font-medium gap-7 ld:gap-2">
+            <li>
+              <Link
+                to="/products"
+                className="block text-gray-900 hover:text-dark-green hover:scale-110 transition-all duration-300"
+                aria-current="page"
+              >
+                PRODUCTS
+              </Link>
+            </li>
+            <li><span className="font-bold text-gray-900">·</span></li>
+            <li>
+              <Link
+                to="/about"
+                className="block text-gray-900 hover:text-dark-green hover:scale-110 transition-all duration-300"
+                aria-current="page"
+              >
+                ABOUT US
+              </Link>
+            </li>
+            <li><span className="font-bold text-gray-900">·</span></li>
+            <li>
+              <Link
+                to="/contact"
+                className="block text-gray-900 hover:text-dark-green hover:scale-110 transition-all duration-300"
+                aria-current="page"
+              >
+                CONTACT
+              </Link>
+            </li>
+          </ul>
+        </div>
+        <div className="flex items-center space-x-4">
           <div className="relative hidden md:block">
             <form onSubmit={handleSearchSubmit}>
               <div className="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
                 <SearchIcon className="w-4 h-4 text-gray-900" />
-                <span className="sr-only">Search icon</span>
               </div>
               <input
                 type="text"
                 id="search-navbar"
-                className="block w-full p-2 ps-10 text-sm text-gray-900 border rounded-full bg-my-gray bg-opacity-50"
+                className="block w-full p-2 ps-10 text-sm text-gray-900 border rounded-full bg-my-gray"
                 placeholder="Search..."
                 value={searchTerm}
                 onChange={(e) => setSearchTerm(e.target.value)}
@@ -47,42 +78,9 @@ function NavBar() {
                 className="text-gray-900 hover:text-dark-green hover:scale-110 transition-all duration-300" />
             </Link>
             <Link to="/cart">
-              <ShoppingBagOutlinedIcon className="text-gray-900 hover:text-dark-greeny hover:scale-110 transition-all duration-300" />
+              <ShoppingBagOutlinedIcon className="text-gray-900 hover:text-dark-green hover:scale-110 transition-all duration-300" />
             </Link>
           </div>
-        </div>
-        <div className="items-center justify-between hidden w-full md:flex md:w-auto md:order-1">
-          <ul className="flex flex-col p-4 md:p-0 mt-4 font-montserrat font-medium md:space-x-8 md:flex-row md:mt-0 md:border-0 md:bg-transparent">
-            <li>
-              <Link
-                to="/products"
-                className="block text-gray-900 md:hover:bg-transparent md:hover:text-dark-green md:p-0 hover:scale-110 transition-all duration-300"
-                aria-current="page"
-              >
-                PRODUCTS
-              </Link>
-            </li>
-            <li><span className="font-bold text-gray-900">·</span></li>
-            <li>
-              <Link
-                to="/about"
-                className="block text-gray-900 md:hover:bg-transparent md:hover:text-primary md:p-0 hover:scale-110 transition-all duration-300"
-                aria-current="page"
-              >
-                ABOUT US
-              </Link>
-            </li>
-            <li><span className="font-bold text-gray-900">·</span></li>
-            <li>
-              <Link
-                to="/contact"
-                className="block text-gray-900 md:hover:bg-transparent md:hover:text-primary md:p-0 hover:scale-110 transition-all duration-300"
-                aria-current="page"
-              >
-                CONTACT
-              </Link>
-            </li>
-          </ul>
         </div>
       </div>
     </nav>

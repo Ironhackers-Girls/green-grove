@@ -17,7 +17,7 @@ function Footer() {
   };
 
   return (
-    <footer className="bg-my-black text-my-white py-10 font-montserrat rounded-md">
+    <footer className="bg-my-black text-my-white py-10 font-montserrat rounded-md mt-16">
       <div className="mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Logo and Vision */}

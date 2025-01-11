@@ -72,17 +72,33 @@ function WishList({ className = " " }) {
 
   return (
     <div
-      className={`grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-0 ${className}`}
-    >
-      {productsWish.map((productWish) => (
-        <WishItem
-          key={productWish.id}
-          product={productWish}
-          onDeleteWish={handleDeleteWishList}
-          onAddCart={handleProductAddCart}
-        />
-      ))}
+      className={`grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 ${className}`}>
+      {productsWish.length > 0 ? (
+        productsWish.map((productWish) => (
+          <WishItem
+            key={productWish.id}
+            product={productWish}
+            onDeleteWish={handleDeleteWishList}
+            onAddCart={handleProductAddCart}
+          />
+        ))
+      ) : (
+        <>
+          {Array(12).fill().map((_, index) => (
+            <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 animate-pulse" key={index} >
+              <div className="relative w-[400px] h-[400px] sm:h-[500px] md:h-[600px] lg:h-[700px] overflow-hidden bg-gray-300 dark:bg-gray-700">
+                <div className="absolute top-0 right-0 h-full w-full bg-gray-200 flex items-center justify-center">
+                  <svg className="animate-spin -ml-1 mr-3 h-5 w-5 text-dark-green" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                    <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" ></circle>
+                    <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                  </svg>
+                </div>
+              </div>
+            </div>
+          ))}
+        </>
 
+      )}
       {/* Alerts */}
       <Snackbar
         open={openSnackbar}
