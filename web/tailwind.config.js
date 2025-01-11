@@ -15,5 +15,20 @@ export default {
       },
     }
   },
-  plugins: [],
+
+  plugins: [
+    function ({ addBase, theme }) {
+      addBase({
+        h1: {
+          fontSize: theme("fontSize.4xl"),
+          fontWeight: theme("fontWeight.bold"),
+          letterSpacing: theme("letterSpacing.tight"),
+          color: theme("colors.dark-green"),
+          fontFamily: theme("fontFamily.montserrat"),
+          paddingTop: theme("spacing.4"),
+          paddingBottom: theme("spacing.4"),
+        },
+      });
+    },
+  ],
 };
