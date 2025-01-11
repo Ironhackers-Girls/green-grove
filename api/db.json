@@ -1,6 +1,12 @@
 {
   "wishlist": [],
-  "cart": [],
+  "cart": [
+    {
+      "id": "49f2",
+      "idProduct": "13",
+      "quantity": 1
+    }
+  ],
   "products": [
     {
       "id": "13",

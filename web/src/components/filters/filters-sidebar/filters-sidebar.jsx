@@ -79,7 +79,7 @@ function FiltersSideBar({ onFilters }) {
           onFilter={handleCategoryFilter}
           reset={category.length === 0}
           filters={[
-            "Shirts & Blouses",
+            "Shirt & Blouses",
             "Cardigans & Jumpers",
             "Dresses & Shirts",
             "Shoes",
