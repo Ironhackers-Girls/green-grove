@@ -2,14 +2,13 @@ import { Link } from "react-router-dom";
 
 function CartItem({ product, onDeleteCart, onIncrement, onDecrement }) {
   return (
-    <div className="flex items-center bg-my-white rounded-3xl p-8 w-full lg:w-full xl:w-full shadow-md">
+    <div className="flex items-center bg-my-white rounded-3xl p-6 sm:p-8 w-full shadow-md gap-4 sm:gap-6">
       <Link
         key={product.id}
         to={`/products/${product.id}`}
-        className="max-w-[120px] max-h-[160px]"
+        className="w-[100px] sm:w-[120px] lg:w-[140px]" 
       >
-        {/* Image */}
-        <div className="w-full h-full">
+        <div className="w-full aspect-[3/4]"> 
           <img
             src={product.image}
             alt="cart image"
@@ -18,30 +17,31 @@ function CartItem({ product, onDeleteCart, onIncrement, onDecrement }) {
         </div>
       </Link>
 
-      {/* Description */}
-      <div className="flex-1 px-6">
+      {/* Product Description */}
+      <div className="flex-1 px-4 sm:px-6 text-center sm:text-left">
         <div>
-          <h5 className="text-lg font-semibold text-my-black">
+          <h5 className="text-base sm:text-lg lg:text-xl font-semibold text-my-black">
             {product.name}
           </h5>
-          <p className="text-sm">{product.store.name}</p>
+          <p className="text-xs sm:text-sm lg:text-base text-gray-500">
+            {product.store.name}
+          </p>
         </div>
-
-        <p className="text-xl font-semibold text-my-black mt-2">
+        <p className="text-lg sm:text-xl lg:text-2xl font-semibold text-my-black mt-2">
           ${product.price}
         </p>
       </div>
 
       {/* Buttons */}
-      <div className="flex flex-col sm:space-y-0 sm:space-x-4 items-end sm:items-end w-full sm:w-auto justify-end">
-        {/* Delete */}
+      <div className="flex flex-col items-end w-full sm:w-auto justify-end">
+        {/* Delete Button */}
         <button
-          className="w-8 h-8 sm:w-10 sm:h-10 flex items-center justify-center text-red-500 rounded-full hover:bg-red-200 mb-5 sm:mb-7"
+          className="w-8 h-8 sm:w-10 sm:h-10 flex items-center justify-center text-red-500 rounded-full hover:bg-red-200 mb-4 sm:mb-6"
           onClick={() => onDeleteCart(product)}
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            className="h-6 w-6"
+            className="h-5 w-5 sm:h-6 sm:w-6"
             viewBox="0 0 24 24"
             strokeWidth="2"
             stroke="currentColor"
@@ -63,7 +63,7 @@ function CartItem({ product, onDeleteCart, onIncrement, onDecrement }) {
           >
             -
           </button>
-          <p className="text-lg font-medium text-my-black font-montserrat">
+          <p className="text-sm sm:text-lg font-medium text-my-black font-montserrat">
             {product.quantity}
           </p>
           <button

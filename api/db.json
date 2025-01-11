@@ -1,22 +1,6 @@
 {
-  "wishlist": [
-    {
-      "id": "0e41",
-      "idProduct": "139"
-    }
-  ],
-  "cart": [
-    {
-      "id": "ab7c",
-      "idProduct": "137",
-      "quantity": 1
-    },
-    {
-      "id": "b788",
-      "idProduct": "139",
-      "quantity": 1
-    }
-  ],
+  "wishlist": [],
+  "cart": [],
   "products": [
     {
       "id": "13",
