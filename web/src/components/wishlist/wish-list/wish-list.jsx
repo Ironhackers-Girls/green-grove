@@ -2,20 +2,38 @@ import { useEffect, useState } from "react";
 import * as ProductsApi from "../../../services/products-services";
 import WishItem from "../wish-item/wish-item.jsx";
 import { Snackbar, Alert } from "@mui/material";
+import animationEmpty from "../../../assets/empty-animation.json";
+import Lottie from "react-lottie";
+
 
 function WishList({ className = " " }) {
   const [wishlist, setWishlist] = useState([]);
   const [productsWish, setProductsWish] = useState([]);
   const [reload, setReload] = useState(false);
+  const [error, setError] = useState(null);
+  const [loading, setLoading] = useState(true);
   // Alerts
   const [openSnackbar, setOpenSnackbar] = useState(false);
   const [snackbarMessage, setSnackbarMessage] = useState("");
   const [snackbarSeverity, setSnackbarSeverity] = useState("success");
 
+  const lottieOptions = {
+    loop: true,
+    autoplay: true,
+    animationData: animationEmpty,
+    rendererSettings: {
+      preserveAspectRatio: "xMidYMid slice",
+    },
+  };
+
   useEffect(() => {
     ProductsApi.listWish()
       .then((wishlist) => setWishlist(wishlist))
-      .catch((error) => console.log(error));
+      .catch((err) => {
+        setError("Products not available at the moment");
+        console.error(err);
+      })
+      .finally(() => setLoading(false));
   }, [reload]);
 
   useEffect(() => {
@@ -71,20 +89,10 @@ function WishList({ className = " " }) {
   };
 
   return (
-    <div
-      className={`grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 ${className}`}>
-      {productsWish.length > 0 ? (
-        productsWish.map((productWish) => (
-          <WishItem
-            key={productWish.id}
-            product={productWish}
-            onDeleteWish={handleDeleteWishList}
-            onAddCart={handleProductAddCart}
-          />
-        ))
-      ) : (
+    <div>
+      {loading && (
         <>
-          {Array(12).fill().map((_, index) => (
+          {Array(4).fill().map((_, index) => (
             <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 animate-pulse" key={index} >
               <div className="relative w-[400px] h-[400px] sm:h-[500px] md:h-[600px] lg:h-[700px] overflow-hidden bg-gray-300 dark:bg-gray-700">
                 <div className="absolute top-0 right-0 h-full w-full bg-gray-200 flex items-center justify-center">
@@ -97,9 +105,38 @@ function WishList({ className = " " }) {
             </div>
           ))}
         </>
-
-
       )}
+      {error && <p>{error}</p>}
+
+      {!loading && !error && wishlist.length === 0 && (
+        <div className="flex flex-col w-full justify-center items-center mb-5">
+          <Lottie
+            options={lottieOptions}
+            height={400}
+            width={400}
+            style={{ cursor: "default" }}
+          />
+          <p className="text-center text-gray-500">
+            Your wishlist is currently empty.
+          </p>
+        </div>
+      )}
+
+      {!loading && !error && wishlist.length > 0 && (
+        <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+          {productsWish.map((productWish) => (
+            <WishItem
+              key={productWish.id}
+              product={productWish}
+              onDeleteWish={handleDeleteWishList}
+              onAddCart={handleProductAddCart}
+            />
+          ))}
+        </div>
+      )}
+
+
+
       {/* Alerts */}
       <Snackbar
         open={openSnackbar}
