@@ -4,15 +4,15 @@ import StockFilter from "../stock-filter";
 import PriceFilter from "../price-filter";
 import RatingFilter from "../rating-filter";
 
-function FiltersSideBar({ onFilters }) {
-  const [category, setCategory] = useState([]);
-  const [price, setPrice] = useState([0, 100]);
-  const [size, setSize] = useState([]);
-  const [style, setStyle] = useState([]);
-  const [store, setStore] = useState([]);
-  const [material, setMaterial] = useState([]);
-  const [stock, setStock] = useState(false);
-  const [rating, setRating] = useState(null);
+function FiltersSideBar({ initialFilters, onFilters }) {
+  const [category, setCategory] = useState(initialFilters.category || []);
+  const [price, setPrice] = useState(initialFilters.price || [0, 200]);
+  const [size, setSize] = useState(initialFilters.size || []);
+  const [style, setStyle] = useState(initialFilters.style || []);
+  const [store, setStore] = useState(initialFilters.store || []);
+  const [material, setMaterial] = useState(initialFilters.material || []);
+  const [stock, setStock] = useState(initialFilters.stock || false);
+  const [rating, setRating] = useState(initialFilters.rating || null);
 
   useEffect(() => {
     const filters = {
@@ -28,12 +28,7 @@ function FiltersSideBar({ onFilters }) {
 
     onFilters(filters);
 
-    console.log("En filter side bar:", filters)
-
   }, [category, price, size, style, store, material, stock, rating]);
-
-
-
 
   const handleCategoryFilter = (category) => setCategory(category);
   const handleMaterialFilter = (material) => setMaterial(material);
@@ -44,116 +39,86 @@ function FiltersSideBar({ onFilters }) {
   const handlePriceFilter = (price) => setPrice(price);
   const handleRatingFilter = (rating) => setRating(rating);
 
-  const handleResetFilters = () => {
-    setCategory([]);
-    setStore([]);
-    setMaterial([]);
-    setSize([]);
-    setStyle([]);
-    setStock(false);
-    setPrice([0, 100]);
-    setRating(null);
-  };
-
   return (
     <div className="flex flex-col">
-      <div className="p-2">Filters side bar</div>
-      <div className="p-2">
-        <CheckBoxFilter
-          onFilter={handleMaterialFilter}
-          reset={material.length === 0}
-          filters={[
-            "Organic Cotton",
-            "Plant-Based Dyes",
-            "Recycled Denim",
-            "Natural Indigo Dye",
-            "Organic Hemp",
-            "Recycled Polyester",
-          ]}
-        >
-          Materials
-        </CheckBoxFilter>
-      </div>
-      <div className="p-2">
-        <CheckBoxFilter
-          onFilter={handleCategoryFilter}
-          reset={category.length === 0}
-          filters={[
-            "Shirt & Blouses",
-            "Cardigans & Jumpers",
-            "Dresses & Shirts",
-            "Shoes",
-            "Jackets & Coats",
-            "Accessories",
-          ]}
-        >
-          Category
-        </CheckBoxFilter>
-      </div>
-      <div className="p-2">
-        <CheckBoxFilter
-          onFilter={handleSizeFilter}
-          reset={size.length === 0}
-          filters={["XS", "S", "L", "M", "X", "XXL"]}
-        >
-          Sizes
-        </CheckBoxFilter>
-      </div>
-      <div className="p-2">
-        <CheckBoxFilter
-          onFilter={handleStoreFilter}
-          reset={store.length === 0}
-          filters={[
-            "EcoDesign",
-            "Green Style",
-            "Nature Creations",
-            "Chic Design",
-            "Sustainable Design",
-            "Creative Eco",
-            "Sustained Innovations",
-            "Green Craft",
-            "Athenian Artistry",
-            "Golden Touch Designs",
-            "Timeless Creations",
-            "Violet Creations"
-          ]}
-        >
-          Stores
-        </CheckBoxFilter>
-      </div>
-      <div className="p-2">
-        <CheckBoxFilter
-          onFilter={handleStyleFilter}
-          reset={style.length === 0}
-          filters={["Night", "Office", "Casual", "Gym", "Formal"]}
-        >
-          Style
-        </CheckBoxFilter>
-      </div>
-      <div className="p-2">
-        <StockFilter onFilter={handleStockFilter} reset={stock}>
-          Fuera de Stock
-        </StockFilter>
-      </div>
-      <div className="p-2">
-        <PriceFilter
-          onFilter={handlePriceFilter}
-          reset={price[0] === 0 || price[1] === 100}
-        >
-          Price
-        </PriceFilter>
-      </div>
-      <div className="p-2">
-        <RatingFilter onFilter={handleRatingFilter} reset={rating} />
-      </div>
-      <div className="p-2">
-        <button
-          className="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600"
-          onClick={handleResetFilters}
-        >
-          Reset
-        </button>
-      </div>
+      <CheckBoxFilter
+        onFilter={handleMaterialFilter}
+        selected={material}
+        filters={[
+          "Organic Cotton",
+          "Plant-Based Dyes",
+          "Recycled Denim",
+          "Natural Indigo Dye",
+          "Organic Hemp",
+          "Recycled Polyester",
+        ]}
+      >
+        Materials
+      </CheckBoxFilter>
+      <CheckBoxFilter
+        onFilter={handleCategoryFilter}
+        selected={category}
+        filters={[
+          "Shirt & Blouses",
+          "Cardigans & Jumpers",
+          "Dresses & Shirts",
+          "Shoes",
+          "Jackets & Coats",
+          "Accessories",
+        ]}
+      >
+        Category
+      </CheckBoxFilter>
+
+      <CheckBoxFilter
+        onFilter={handleSizeFilter}
+        selected={size}
+        filters={["XS", "S", "L", "M", "X", "XXL"]}
+      >
+        Sizes
+      </CheckBoxFilter>
+
+      <CheckBoxFilter
+        onFilter={handleStoreFilter}
+        selected={store}
+        filters={[
+          "EcoDesign",
+          "Green Style",
+          "Nature Creations",
+          "Chic Design",
+          "Sustainable Design",
+          "Creative Eco",
+          "Sustained Innovations",
+          "Green Craft",
+          "Athenian Artistry",
+          "Golden Touch Designs",
+          "Timeless Creations",
+          "Violet Creations"
+        ]}
+      >
+        Stores
+      </CheckBoxFilter>
+
+      <CheckBoxFilter
+        onFilter={handleStyleFilter}
+        selected={style}
+        filters={["Night", "Office", "Casual", "Gym", "Formal"]}
+      >
+        Style
+      </CheckBoxFilter>
+      <StockFilter onFilter={handleStockFilter} selected={stock}>
+        Fuera de Stock
+      </StockFilter>
+
+      <PriceFilter
+        onFilter={handlePriceFilter}
+        selected={price}
+      >
+        Price
+      </PriceFilter>
+
+      <RatingFilter onFilter={handleRatingFilter} selected={rating} />
+
     </div>
   );
 }

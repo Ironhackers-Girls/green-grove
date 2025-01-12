@@ -89,9 +89,9 @@ function WishList({ className = " " }) {
   };
 
   return (
-    <div>
+    <div className="min-h-[700px] flex items-center justify-center">
       {loading && (
-        <>
+        <div className="grid grid-cols gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
           {Array(4).fill().map((_, index) => (
             <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 animate-pulse" key={index} >
               <div className="relative w-[400px] h-[400px] sm:h-[500px] md:h-[600px] lg:h-[700px] overflow-hidden bg-gray-300 dark:bg-gray-700">
@@ -104,11 +104,10 @@ function WishList({ className = " " }) {
               </div>
             </div>
           ))}
-        </>
+        </div>
       )}
-      {error && <p>{error}</p>}
 
-      {!loading && !error && wishlist.length === 0 && (
+      {!loading && error && wishlist.length === 0 && (
         <div className="flex flex-col w-full justify-center items-center mb-5">
           <Lottie
             options={lottieOptions}

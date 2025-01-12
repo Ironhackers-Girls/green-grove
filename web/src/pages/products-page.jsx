@@ -30,20 +30,32 @@ function ProductsPage() {
           <div className="fixed inset-0 z-40 flex">
             <DialogPanel
               transition
-              className="relative ml-auto flex size-full max-w-xs transform flex-col overflow-y-auto bg-white py-4 pb-12 shadow-xl transition duration-300 ease-in-out data-[closed]:translate-x-full"
+              className="relative ml-auto flex size-full max-w-xl transform flex-col overflow-y-auto bg-white  shadow-xl transition duration-300 ease-in-out data-[closed]:translate-x-full"
             >
-              <div className="flex items-center justify-between px-4">
-                <h2 className="text-lg font-medium text-gray-900">Filters</h2>
+              <div className="flex items-center justify-between px-4 py-4 sticky top-0 z-10 bg-my-white border-b border-my-gray">
+                <h2 className="text-lg font-medium text-dark-green">Filters</h2>
                 <button
                   type="button"
                   onClick={() => setFiltersOpen(false)}
-                  className="-mr-2 flex size-10 items-center justify-center rounded-md bg-white p-2 text-gray-400"
+                  className="-mr-2 flex size-10 items-center justify-center rounded-md text-dark-green"
                 >
                   <span className="sr-only">Close menu</span>
                   <CloseIcon />
                 </button>
               </div>
-              <FiltersSideBar onFilters={handleFilters} />
+              <FiltersSideBar initialFilters={filters} onFilters={handleFilters} />
+              <div className="flex flex-row items-center px-4 py-4 sticky bottom-0 z-10 bg-my-white border-t border-my-gray">
+                <button
+                  className="ml-auto px-6 py-3 my-0 bg-lime-green text-dark-green text-xs sm:text-sm font-semibold rounded-full hover:bg-dark-green hover:text-white transition-all"
+                  onClick={() => {
+                    setFilters([]);
+                    setFiltersOpen(false);
+                  }}
+                >
+                  Reset
+                </button>
+              </div>
+
             </DialogPanel>
           </div>
         </Dialog>
