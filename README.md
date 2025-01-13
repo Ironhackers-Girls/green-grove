@@ -2,7 +2,7 @@
 
 **Green Grove** is a sustainable women's fashion website that calculates the carbon footprint of product shipping using the **Carbon Interface API**. This project combines advanced technology, interactive design, and environmental responsibility to deliver a unique and conscious shopping experience.
 
-![Green Grove GIF](../web/src/assets/greengrove.gif)
+![Green Grove GIF](./web/src/assets/greengrove.gif)
 
 <!-- ✨ **[Visit Green Grove here](https://your-link-to-green-grove.com)** -->
 
