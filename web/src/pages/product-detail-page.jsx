@@ -172,11 +172,11 @@ function ProductDetailPage() {
               <button
                 type="button"
                 onClick={() => handleProductAddCart(product)}
-                className="ml-2 w-full h-12 flex items-center justify-center rounded-full hover:gap-2 bg-lime-green  font-medium text-dark-green relative group"
+                className="ml-2 w-full h-12 flex items-center justify-center rounded-full hover:gap-2 bg-lime-green font-medium text-dark-green relative group"
               >
                 <span>Add to bag</span>
                 <ShoppingBagIcon
-                  className="w-6 h-6 text-dark-green opacity-0 group-hover:opacity-100 transition duration-600"
+                  className="w-6 h-6 text-dark-green opacity-0 group-hover:opacity-100 transition-transform transform duration-600"
                 />
               </button>
 
@@ -185,25 +185,57 @@ function ProductDetailPage() {
             </div>
 
           </div>
-
-          {/* Descripción y detalles */}
-          <div className="py-10">
-            <h3 className="sr-only">Description</h3>
-            <p className="text-base text-gray-900">{product.description}</p>
-
-            <div className="mt-10">
-              <h3 className="text-sm font-medium font-montserrat text-gray-900">Materials</h3>
-              <ul role="list" className="list-disc space-y-2 pl-4 text-sm">
-                {product.materials.map((material, index) => (
-                  <li key={index} className="text-gray-400">
-                    <span className="text-gray-600 font-montserrat">{material}</span>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          </div>
         </div>
       </div>
+      {/* Sección de Materiales y Reseñas */}
+      <div className="mt-5 bg-gray-50 p-6 rounded-lg">
+        <div className="py-10">
+          <h2 className="text-lg font-bold font-montserrat mb-3 text-gray-900">Description</h2>
+          <p className="text-base font-montserrat text-gray-900">{product.description}</p>
+          <div className="mt-10">
+            <h2 className="text-lg font-bold font-montserrat mb-3 text-gray-900">Materials</h2>
+            <ul role="list" className="list-disc space-y-2 pl-4 text-sm">
+              {product.materials.map((material, index) => (
+                <li key={index} className="text-gray-400">
+                  <span className="text-gray-600 font-montserrat">{material}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
+
+        {/* Reseñas */}
+        <div>
+          <h2 className="text-lg font-bold font-montserrat mb-3 text-gray-900">Reviews</h2>
+          {reviews.length > 0 ? (
+            <ul role="list" className="space-y-4 mt-4">
+              {reviews.map((review, index) => (
+                <li key={index} className="p-4 border rounded-lg shadow-sm bg-white">
+                  <div className="flex items-center justify-between">
+                    <span className="text-sm font-medium font-montserrat text-gray-900">{review.user}</span>
+                    <span className="text-xs font-montserrat text-gray-500">{new Date(review.date).toLocaleDateString()}</span>
+                  </div>
+                  <div className="mt-2 flex">
+                    {[...Array(5)].map((_, ratingIndex) => (
+                      <StarIcon
+                        key={ratingIndex}
+                        className={classNames(
+                          review.rating > ratingIndex ? 'text-dark-green' : 'text-gray-200',
+                          'w-5 h-5'
+                        )}
+                      />
+                    ))}
+                  </div>
+                  <p className="mt-2 text-sm font-montserrat text-gray-700">{review.comment}</p>
+                </li>
+              ))}
+            </ul>
+          ) : (
+            <p className="text-sm text-gray-600 mt-4">No reviews available.</p>
+          )}
+        </div>
+      </div>
+
       {/* Snackbar */}
       <Snackbar
         open={openSnackbar}

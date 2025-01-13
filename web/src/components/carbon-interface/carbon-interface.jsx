@@ -72,26 +72,26 @@ function CarbonInterface({ productsCartToCarbon }) {
     setWeightProducts(totalWeightInKilos);
   }, [productsCartToCarbon]);
 
-  // useEffect(() => {
-  //   if (storesArray.length > 0) {
-  //     Promise.all(
-  //       storesArray.map((store) =>
-  //         CarbonApi.getEstimate(store).then((response) => ({
-  //           storeName: store.name,
-  //           estimateData: response.data,
-  //           transportMethod: store.transportMethod,
-  //         }))
-  //       )
-  //     )
-  //       .then((responses) => {
-  //         setEstimate(responses);
-  //         console.log("Listo:", responses);
-  //       })
-  //       .catch((error) => {
-  //         console.error("Error al obtener las estimaciones:", error);
-  //       });
-  //   }
-  // }, [storesArray]);
+  useEffect(() => {
+    if (storesArray.length > 0) {
+      Promise.all(
+        storesArray.map((store) =>
+          CarbonApi.getEstimate(store).then((response) => ({
+            storeName: store.name,
+            estimateData: response.data,
+            transportMethod: store.transportMethod,
+          }))
+        )
+      )
+        .then((responses) => {
+          setEstimate(responses);
+          console.log("Listo:", responses);
+        })
+        .catch((error) => {
+          console.error("Error al obtener las estimaciones:", error);
+        });
+    }
+  }, [storesArray]);
 
   useEffect(() => {
     let totalEstimates = 0;
@@ -142,7 +142,7 @@ function CarbonInterface({ productsCartToCarbon }) {
             Carbon Interface
           </h2>
           <p className="text-my-black font-bold text-sm sm:text-base lg:text-lg">
-            Calculate the emissions of your purchase
+            Calculate the emissions of your purchase to Madrid
           </p>
           <p className="text-my-black text-sm">
             The Carbon Interface calculates and visualizes carbon<br></br>{" "}
@@ -159,6 +159,7 @@ function CarbonInterface({ productsCartToCarbon }) {
           <h2 className="text-my-black font-semibold text-3xl sm:text-5xl lg:text-7xl">
             {totalEstimate}g
           </h2>
+
         </div>
       </div>
 

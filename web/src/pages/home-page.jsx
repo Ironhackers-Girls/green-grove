@@ -64,9 +64,9 @@ function Homepage() {
   return (
     <div className="pt-4 font-montserrat">
       {/* Top Section */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-16 items-stretch min-h-[24rem]">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8 items-stretch min-h-[24rem]">
         {/* Left */}
-        <div className="flex justify-center items-center">
+        <div className="flex justify-center items-center h-[80vh]">
           <video
             src={videoHome}
             alt="Sustainability"
@@ -79,12 +79,12 @@ function Homepage() {
 
         {/* Right*/}
         <div className="flex flex-col justify-between h-full gap-6">
-          <div className="bg-lime-green py-7 px-7 rounded-xl flex flex-col flex-grow max-h-[80vh] overflow-hidden">
-            <h2 className="text-4xl md:text-4xl lg:text-6xl xl:text-7xl font-semibold text-black mb-20">
+          <div className="bg-lime-green py-7 px-7 rounded-xl flex flex-col justify-between flex-grow max-h-[80vh] overflow-hidden">
+            <h2 className=" font-montserrat text-4xl md:text-4xl lg:text-6xl xl:text-7xl font-semibold text-black mb-20">
               SUSTAINABLE STYLE <br></br>FOR A BETTER
               <br></br>WORLD
             </h2>
-            <p className="text-my-black mt-20 text-sm md:text-sm">
+            <p className="text-my-black font-montserrat mt-20 text-sm md:text-lg">
               We're redefining fashion by measuring the carbon footprint of
               every product, reducing waste, and championing a future of
               conscious consumption—real impact, real change.

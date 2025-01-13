@@ -119,7 +119,7 @@ function ProductList({ filters }) {
   const handleProductAddCart = (product) => {
     ProductsApi.addCart(product.id)
       .then(() => {
-        setSnackbarMessage("Product add to cart");
+        setSnackbarMessage("Product added to cart");
         setSnackbarSeverity("success");
         setOpenSnackbar(true);
       })
@@ -129,7 +129,7 @@ function ProductList({ filters }) {
   const handleAddToWishlist = (product) => {
     ProductsApi.addWish(product.id)
       .then(() => {
-        setSnackbarMessage("Product add to wishlist");
+        setSnackbarMessage("Product added to wishlist");
         setSnackbarSeverity("info");
         setOpenSnackbar(true);
       })
