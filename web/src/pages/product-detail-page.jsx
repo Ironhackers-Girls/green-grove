@@ -22,7 +22,12 @@ function ProductDetailPage() {
   }, [id]);
 
   if (!product) {
-    return <div>Loading...</div>;
+    return <div className="animate-pulse pt-5">
+      <div className="grid grid-cols-2 gap-4 mb-4">
+        <div className="h-screen bg-gray-200 rounded-lg"></div>
+        <div className="h-screen bg-gray-200 rounded-lg"></div>
+      </div>
+    </div>;
   }
 
   const handleProductAddCart = (product) => {
