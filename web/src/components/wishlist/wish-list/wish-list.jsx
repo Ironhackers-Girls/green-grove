@@ -107,7 +107,7 @@ function WishList({ className = " " }) {
         </div>
       )}
 
-      {!loading && error && wishlist.length === 0 && (
+      {!loading && wishlist.length === 0 && (
         <div className="flex flex-col w-full justify-center items-center mb-5">
           <Lottie
             options={lottieOptions}
@@ -122,7 +122,7 @@ function WishList({ className = " " }) {
       )}
 
       {!loading && !error && wishlist.length > 0 && (
-        <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+        <div className=" w-full grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 px-0">
           {productsWish.map((productWish) => (
             <WishItem
               key={productWish.id}
